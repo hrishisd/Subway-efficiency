@@ -80,6 +80,8 @@ Three scopes are kept apart:
 - **No passenger-km** source was found, so there is no cost per passenger-km for Seoul.
 - **Trips** count entries plus transfers in from other operators' lines (승차인원+환승인원), close to NTD's boardings. Trips on through-running commuter services count only on Seoul Metro's own sections.
 - **Staff** (about 16,900) is the whole corporation's head count, including some staff on contract work and side businesses.
+- **2022-2024 (added in a second pass):** operating revenue and operating loss for 2022-2024 come from an aggregator page (`sankun_seoul_metro_financials`, secondary, unverified). Cost for those years is an estimate: revenue minus operating income, less assumed contract work and depreciation (method [`seoul_opex_from_revenue_operating_loss`](../../methods/seoul_opex_from_revenue_operating_loss.md)). 2024 trips (2.42 billion), train-km (42.0 million) and stations (273) come from the city's summary of Seoul Metro's 2024 statistics (`seoul_mediahub_2025_ridership_2024`). **2024 estimates in 2024 PPP dollars: $8.85 per car-km ($8.05-9.99) and $1.30 per trip ($1.24-1.35)**, close to 2019 ($8.84 and $1.12). No 2024 staff count or fare revenue was found, so there are no 2024 productivity or farebox figures.
+- A news report gives Seoul Metro's own 2025 cost per passenger as 1,817 won (row `seoul_metro_2025_opex_per_trip_mt`, own scope). Its cost definition is not stated, so it is not compared with the estimates above.
 - **Fares:** 14.9% of riders travelled free in 2018, mostly seniors (source `newdaily_2019_seoul_metro`, secondary). Seoul Metro reports that it gets no compensation for this (source `mt_2026_seoul_metro_loss`, secondary), which holds farebox recovery down.
 
 ### Singapore (`singapore_mrt`)
@@ -87,6 +89,8 @@ Three scopes are kept apart:
 - **Only SMRT Trains** (North-South, East-West and Circle lines, plus Thomson-East Coast from FY2023/24). SBS Transit reports bus and rail together, so the North East and Downtown lines are not covered.
 - **Cost is an estimate** from revenue minus EBIT (method [`smrt_opex_from_revenue_ebit`](../../methods/smrt_opex_from_revenue_ebit.md); range -20% to +10%, +25% for FY2023/24). SMRT Corporation is private and publishes no cost breakdown.
 - Car-km, ridership and passenger-km are reported (rounded to the nearest million). No staff numbers, so no productivity ratios. Years FY2021/22 to FY2023/24 only; the first is pandemic-affected.
+- **FY2014/15 and FY2015/16 (added in a second pass):** SMRT's last annual report before delisting (`smrt_ar_2016`) splits Rail into Train (MRT) and LRT. Train revenue was S$644.2 and S$670.2 million and EBIT S$13.4 and S$12.0 million (EBIT read from chart labels). Estimated cost is about S$631 and S$658 million. The readable part of the report has no car-km or ridership, so these years give a cost trend but no unit costs. FY2014/15 has no PPP factor in the repository (factors start in 2015).
+- The Public Transport Council's 2024 fare review annex has no rail cost or cost per passenger-km; it repeats the "more than $2 billion" subsidy figure and SMRT Trains' S$6.2 million operating profit.
 - Under the New Rail Financing Framework the government (LTA) owns trains and infrastructure; the operator pays licence charges. The government pays "more than $2 billion annually" in operating subsidies to bus and rail together (source `ptc_fmmr_2023`, p.2).
 
 ### Beijing (`beijing_subway`)
@@ -96,13 +100,13 @@ Three scopes are kept apart:
 
 ### Shanghai (`shanghai_metro`)
 
-- **No usable data found.** Shanghai Shentong Metro Co. (the listed company) runs only a small part of the network. The parent Shanghai Shentong Metro Group publishes financial statements through the Shanghai Clearing House for its bonds, but this project could not reach them. Not compiled.
+- **No usable data found.** A second pass read one of Shanghai Shentong Metro Co.'s listed-company filings (its 2025 related-party transactions notice on cninfo). It shows that the line-operating companies (运一 to 运四) belong to the unlisted parent group, not to the listed company, so the listed company's reports do not give network operating cost. The parent Shanghai Shentong Metro Group publishes financial statements through the Shanghai Clearing House for its bonds, but this project could not reach them. Not compiled.
 
 ## What could not be found (open questions)
 
 - Tokyo: passenger-km for FY2019-FY2023 (in MLIT table (2), Excel only); Tokyo Metro staff for FY2018; FY2024 MLIT data (not yet published).
 - Hong Kong: 2015; the cost of the heavy-rail lines alone; heavy-rail fare revenue by year in a readable form.
-- Seoul: depreciation, car-km and passenger-km; all years after 2019 in a primary source. Seoul Metro publishes statements for 2017-2025 as Excel files at http://www.seoulmetro.co.kr/kr/page.do?menuIdx=110.
+- Seoul: depreciation, contract work, staff, fare revenue and passenger-km; 2020-2024 in a primary source (2022-2024 revenue and operating loss are from a secondary source). The data.go.kr dataset 15139455 (서울교통공사_손익계산서, CSV) could not be downloaded here; the KIS credit rating report blocks automated access. Seoul Metro publishes statements for 2017-2025 as Excel files at http://www.seoulmetro.co.kr/kr/page.do?menuIdx=110.
 - Singapore: any cost breakdown or staff numbers; SBS Transit rail on its own.
-- Shanghai and Beijing: primary operator cost data (bond-issuer financial statements on the Shanghai Clearing House site).
+- Shanghai and Beijing: primary operator cost data (bond-issuer financial statements on the Shanghai Clearing House site). A Beijing draft standard on rail operating indicators (beijing.gov.cn, 2024) defines cost per car-km, per passenger-km and per trip but publishes no values. No academic paper with values was found in this pass.
 - The common blocker: this environment cannot open Excel files from the web, and several sites block automated access.

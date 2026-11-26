@@ -97,12 +97,83 @@ def seoul():
                        source_locator=f"Train-km from the input row; cars per train from 사업보고서 2.가 업무량 p.16, row 전동차(편성), {v['cars']}({v['sets']})",
                        method_id="seoul_car_km_from_train_km", inputs=tk,
                        notes=f"ESTIMATE. Train-km x average cars per train set ({cpt:.2f}) x (1 - share of empty running, 2-7%)."))
+    seoul_later(sid, out)
     write(sid, out)
+
+
+# Later years from secondary sources (see docs/peers/asia.md).
+# sankun_seoul_metro_financials: 재무정보 table (백만원), 매출액 and 영업이익.
+SEOUL_LATER_FIN = {2022: (1768373, -934513), 2023: (1870727, -845201), 2024: (2068193, -945492)}
+# Assumed ranges (won) for 2022-2024: contract work and depreciation; see method seoul_opex_from_revenue_operating_loss.
+SEOUL_LATER_CONSIGN = (70e9, 40e9, 110e9)
+SEOUL_LATER_DEP = (410e9, 340e9, 480e9)
+# 2024 transport statistics, seoul_mediahub_2025_ridership_2024.
+SEOUL_2024 = dict(trips=2417520000, train_km=42040917, stations=273)
+
+
+def seoul_later(sid, out):
+    scope = "whole_agency_less_contract_work"
+    src = "sankun_seoul_metro_financials"
+    for y, (rev, oi) in SEOUL_LATER_FIN.items():
+        loc = "재무정보 table (단위: 백만원), column '{}년 12월', row '{}' (multiplied by 1,000,000)"
+        r = f"{sid}_{y}_operating_revenue_sankun"
+        e = f"{sid}_{y}_ebit_sankun"
+        note = "Secondary (aggregator page citing public disclosures). Whole corporation, including contract work and ancillary businesses."
+        out.append(row(obs_id=r, system_id=sid, year=y, year_basis="calendar", metric_id="operating_revenue",
+                       value=fmt(rev * 1e6), unit="KRW", currency="KRW", price_basis="nominal", scope="whole_agency",
+                       value_type="reported", source_id=src, source_locator=loc.format(y, "매출액"), notes=note))
+        out.append(row(obs_id=e, system_id=sid, year=y, year_basis="calendar", metric_id="ebit",
+                       value=fmt(oi * 1e6), unit="KRW", currency="KRW", price_basis="nominal", scope="whole_agency",
+                       value_type="reported", source_id=src, source_locator=loc.format(y, "영업이익"),
+                       notes=note + " Operating income (영업이익); negative is an operating loss."))
+        gross = (rev - oi) * 1e6
+        c, clo, chi = SEOUL_LATER_CONSIGN
+        d, dlo, dhi = SEOUL_LATER_DEP
+        out.append(row(obs_id=f"{sid}_{y}_opex_total_est", system_id=sid, year=y, year_basis="calendar",
+                       metric_id="opex_total", value=fmt(gross - c - d), value_low=fmt(gross - chi - dhi),
+                       value_high=fmt(gross - clo - dlo), unit="KRW", currency="KRW", price_basis="nominal",
+                       scope=scope, value_type="estimated", source_id=src,
+                       source_locator="Computed from the input rows listed in inputs and the ranges in the method note",
+                       method_id="seoul_opex_from_revenue_operating_loss", inputs=f"{r};{e}",
+                       notes="ESTIMATE. (매출액 - 영업이익) minus assumed contract work (40-110 billion won) minus assumed depreciation (340-480 billion won). Inputs are from a secondary source."))
+    y, v, src = 2024, SEOUL_2024, "seoul_mediahub_2025_ridership_2024"
+    out.append(row(obs_id=f"{sid}_{y}_unlinked_trips_mh", system_id=sid, year=y, year_basis="calendar",
+                   metric_id="unlinked_trips", value=fmt(v["trips"]), unit="trips", scope=scope,
+                   value_type="reported", source_id=src,
+                   source_locator="Article body, sentence '수송 인원은 전년 대비 2.5% 늘어난 총 24억 1,752만 명' (24억 1,752만 = 2,417,520,000)",
+                   notes="Lines 1-8, 2024 transport statistics of Seoul Metro as published by the city. Assumed to use the same counting rule (entries plus transfers in) as the 2018-2019 수송인원."))
+    tk = f"{sid}_{y}_train_km_mh"
+    out.append(row(obs_id=tk, system_id=sid, year=y, year_basis="calendar", metric_id="train_km",
+                   value=fmt(v["train_km"]), unit="km", scope="lines_1_8_incl_empty_running", value_type="reported",
+                   source_id=src, source_locator="Article body, sentence '총 160만 499회 운행하며 4,204만 917km를 달렸다' (4,204만 917km = 42,040,917 km)",
+                   notes="Distance run by trains on lines 1-8. Assumed to include empty running, like 열차주행키로 in 2018-2019."))
+    out.append(row(obs_id=f"{sid}_{y}_stations_mh", system_id=sid, year=y, year_basis="calendar", metric_id="stations",
+                   value="273", unit="count", scope=scope, value_type="reported", source_id=src,
+                   source_locator="Article body, sentence '서울 지하철 1~8호선 273개 역 중'"))
+    # Car-km: 2019 cars per set, wider range because the 2024 fleet is not in the source.
+    cpt = SEOUL[2019]["cars"] / SEOUL[2019]["sets"]
+    d, dl, dh = SEOUL_DEADHEAD
+    out.append(row(obs_id=f"{sid}_{y}_car_km_est", system_id=sid, year=y, year_basis="calendar",
+                   metric_id="car_km", value=fmt(v["train_km"] * cpt * (1 - d)),
+                   value_low=fmt(v["train_km"] * cpt * (1 - dh) * 0.95),
+                   value_high=fmt(v["train_km"] * cpt * (1 - dl) * 1.03),
+                   unit="km", scope=scope, value_type="estimated", source_id=SEOUL_SRC,
+                   source_locator=f"Train-km from the input row; cars per train set from the 2019 사업보고서 2.가 업무량 p.16, row 전동차(편성), {SEOUL[2019]['cars']}({SEOUL[2019]['sets']})",
+                   method_id="seoul_car_km_from_train_km", inputs=tk,
+                   notes=f"ESTIMATE. 2024 train-km x 2019 average cars per train set ({cpt:.2f}) x (1 - share of empty running, 2-7%); range widened by -5%/+3% because the 2024 fleet mix is not in a source."))
+    # Press figure: 2025 cost per passenger, Seoul Metro's own definition.
+    out.append(row(obs_id=f"{sid}_2025_opex_per_trip_mt", system_id=sid, year=2025, year_basis="calendar",
+                   metric_id="opex_per_trip", value="1817", unit="KRW/trip", currency="KRW", price_basis="nominal",
+                   scope="seoul_metro_press_cost_per_passenger", value_type="reported", source_id="mt_2026_seoul_metro_loss",
+                   source_locator="Article body: Seoul Metro's 2025 cost per passenger carried, 1,817원 (against an average fare of 1,036원)",
+                   notes="Secondary (news report of Seoul Metro's own figure). The article does not say what the cost includes (it may include depreciation and interest), so it is not directly comparable with opex_total-based cost per trip. Kept in its own scope."))
 
 
 # ---------------- Singapore SMRT Trains ----------------
 # year = calendar year in which the April-March financial year starts.
 SMRT = {
+    2014: dict(src="smrt_ar_2016", page="pp.34-35", fy="FY2015", rev=644.2, ebit=13.4),
+    2015: dict(src="smrt_ar_2016", page="pp.34-35", fy="FY2016", rev=670.2, ebit=12.0),
     2021: dict(src="smrt_group_review_2324", page="pp.35-36", fy="FY21/22", rev=645.5, ebit=16.0,
                car_km=142, trips=480, pkm=4914, route=137, lines="North-South, East-West and Circle lines"),
     2022: dict(src="smrt_group_review_2324", page="pp.35-36", fy="FY22/23", rev=813.2, ebit=6.1,
@@ -121,6 +192,21 @@ def singapore():
                            value=fmt(value), unit=unit, currency=cur, price_basis="nominal" if cur else "",
                            scope=scope, value_type="reported", source_id=v["src"], source_locator=loc, notes=note))
             return oid
+        if "car_km" not in v:
+            # Annual report FY2016: Train (MRT) segment, chart labels; revenue confirmed in text p.35.
+            loc = f"Group Performance, Rail Business, Train revenue and EBIT chart labels, {v['page']}, {v['fy']} (S$ million; multiplied by 1,000,000)"
+            r = rep("operating_revenue", v["rev"] * 1e6, "SGD", loc, "SGD",
+                    "SMRT Train (MRT: North-South, East-West and Circle lines) revenue, excluding the Bukit Panjang LRT. Read from chart labels; FY2016 value also in text p.35 ('Revenue from Train operations increased by $26.0 million or 4.0% to $670.2 million').")
+            e = rep("ebit", v["ebit"] * 1e6, "SGD", loc, "SGD",
+                    "Train EBIT, read from chart labels. FY2016 includes a net property tax refund of S$16.4 million; text p.35 says Train operations would have lost S$4.4 million without it.")
+            base = (v["rev"] - v["ebit"]) * 1e6
+            out.append(row(obs_id=f"{sid}_{y}_opex_total_est", system_id=sid, year=y, year_basis="fiscal_apr_mar",
+                           metric_id="opex_total", value=fmt(base), value_low=fmt(base * 0.80), value_high=fmt(base * 1.10),
+                           unit="SGD", currency="SGD", price_basis="nominal", scope=scope, value_type="estimated",
+                           source_id=v["src"], source_locator="Computed from the input rows listed in inputs",
+                           method_id="smrt_opex_from_revenue_ebit", inputs=f"{r};{e}",
+                           notes="ESTIMATE. Revenue minus EBIT. Before the 2016 transfer of rail assets to LTA, SMRT owned its trains, so depreciation is a larger share than in later years (covered by the low end)."))
+            continue
         fin = f"SMRT Trains' Key Financial Data, {v['page']}, row {v['fy']}, column '{{}}' (S$ million; multiplied by 1,000,000)"
         opr = f"SMRT Trains Key Operating Data, {v['page']}, column {v['fy']}, row '{{}}'"
         r = rep("operating_revenue", v["rev"] * 1e6, "SGD", fin.format("Revenue ($M)"), "SGD",
