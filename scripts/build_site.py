@@ -235,7 +235,7 @@ chart(id="load", section="rider", kind="scatter",
       takeaway=f"Tokyo and Hong Kong are cheap per rider mostly because their cars carry "
                f"{min(LOADR):.1f} to {max(LOADR):.1f} times as many people as NYC's, not because their trains are much "
                f"cheaper to run.",
-      note="Cost per passenger-km = cost per car-km ÷ passengers per car.",
+      note="Cost per passenger-km = cost per car-km ÷ passengers per car. A car-km is one rail car moving one kilometre.",
       iso=[0.1, 0.2, 0.4, 0.8], points=pts)
 
 # ------------------------------------------------------------------ 6. decomposition
@@ -409,13 +409,15 @@ FACTOR_VERDICTS = [
 
 # ------------------------------------------------------------------ headline tiles
 pk_tokyo = pkd["tokyo_metro"]
+trip_tokyo = [(r, e) for r, e, s in ratio_range(2019, "opex_per_trip", ["tokyo_metro"])][0]
+# Headline tiles lead with the per-rider measures (Hrishi, 2026-11-26); cost per car-km is secondary.
 tiles = [
-    {"value": f"+{(lo19[0] - 1) * 100:.0f}% to +{(hi19[0] - 1) * 100:.0f}%", "est": hi19[1] or lo19[1],
-     "label": "NYC cost per car-km above foreign peers, 2019", "target": "carkm"},
-    {"value": xs(pkd["london_underground"][0]), "est": pkd["london_underground"][1],
-     "label": "NYC cost per passenger-km relative to London, 2019", "target": "pkm"},
     {"value": xs(pk_tokyo[0]), "est": pk_tokyo[1], "label": "NYC cost per passenger-km relative to Tokyo Metro, 2019",
      "target": "pkm"},
+    {"value": xs(pkd["london_underground"][0]), "est": pkd["london_underground"][1],
+     "label": "NYC cost per passenger-km relative to London, 2019", "target": "pkm"},
+    {"value": xs(trip_tokyo[0]), "est": trip_tokyo[1], "label": "NYC cost per trip relative to Tokyo Metro, 2019",
+     "target": "trip"},
     {"value": f"{min(rr):.0f}–{max(rr):.0f}×", "est": False,
      "label": "more often NYC trains fail than Hong Kong's and Singapore's", "target": "mdbf"},
 ]
