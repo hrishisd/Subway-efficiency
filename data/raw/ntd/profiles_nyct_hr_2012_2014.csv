@@ -1,0 +1,4 @@
+report_year,source_id,opex_total,fare_revenue,car_revenue_miles,car_revenue_hours,unlinked_trips,passenger_miles,directional_route_miles,cars_max_service,printed_opex_per_vrm,printed_opex_per_vrh,printed_opex_per_pmt,printed_opex_per_upt
+2012,ntd_profiles_top50_2012,3744080311,2742048577,341625293,18798236,2569543549,10327239920,487.5,5272,10.96,199.17,0.36,1.46
+2013,ntd_profile_nyct_2013,4763488213,3030746003,344975317,19018610,2656476693,10865592355,487.5,5238,13.81,250.46,0.44,1.79
+2014,ntd_profile_nyct_2014,5022082486,3171793085,345106130,18938907,2743004452,11152745285,487.5,5238,14.55,265.17,0.45,1.83

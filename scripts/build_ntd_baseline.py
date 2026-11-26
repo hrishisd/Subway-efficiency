@@ -77,13 +77,14 @@ class Builder:
         self.rows = {}
 
     def add(self, system, year, metric, value, unit, *, currency="", value_type="reported",
-            source, locator, method="", inputs=(), notes=""):
-        oid = f"{system}_{year}_{metric}_ntd"
+            source, locator, method="", inputs=(), notes="", tag="", price_basis=None):
+        oid = f"{system}_{year}_{metric}{tag}_ntd"
         assert oid not in self.rows, oid
         self.rows[oid] = {
             "obs_id": oid, "system_id": system, "year": str(year), "year_basis": YEAR_BASIS,
             "metric_id": metric, "value": fmt(value, value_type != "reported"), "value_low": "", "value_high": "",
-            "unit": unit, "currency": currency, "price_basis": "nominal" if currency else "",
+            "unit": unit, "currency": currency,
+            "price_basis": price_basis or ("nominal" if currency else ""),
             "scope": SCOPE, "value_type": value_type, "verification": "unverified",
             "source_id": source, "source_locator": locator, "method_id": method,
             "inputs": ";".join(inputs), "notes": notes,
@@ -133,7 +134,29 @@ def main():
         for r in csv.DictReader(f):
             brk[(r["ntd_id"], int(r["report_year"]))] = r
 
+    with open(RAW / "profiles_nyct_hr_2012_2014.csv", newline="") as f:
+        profiles = list(csv.DictReader(f))
+    with open(RAW / "opex_by_type_nyct_hr_2022_2025.csv", newline="") as f:
+        by_type = list(csv.DictReader(f))
+    cpi = {}
+    with open(ROOT / "data" / "price_indices.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["index_id"] == "us_cpi_u":
+                cpi[int(r["year"])] = float(r["value"])
+
     errors = check(ts, emp, brk)
+    for r in profiles:  # printed ratios in the same PDF must match our transcription
+        o = float(r["opex_total"])
+        for den, col in (("car_revenue_miles", "printed_opex_per_vrm"), ("car_revenue_hours", "printed_opex_per_vrh"),
+                         ("passenger_miles", "printed_opex_per_pmt"), ("unlinked_trips", "printed_opex_per_upt")):
+            if round(o / float(r[den]), 2) != float(r[col]):
+                errors.append(f"profile {r['report_year']}: {col} does not match")
+    for r in by_type:
+        parts = sum(float(v) for k, v in r.items() if k not in ("report_year", "total") and v)
+        if abs(parts - float(r["total"])) > 0.5:
+            errors.append(f"by-type {r['report_year']}: classes do not sum")
+        if abs(float(r["total"]) - ts[("20008", int(r["report_year"]))]["Operating Expenses"]) > 0.5:
+            errors.append(f"by-type {r['report_year']}: total differs from TS2.1")
     if errors:
         print("\n".join(errors))
         return 1
@@ -169,6 +192,33 @@ def main():
                   locator=f"Dataset amkt-4ehs; ntd_id={nid}, mode=HR, type_of_service=DO, "
                           f"report_year={year}; column {col}")
 
+    # ---- reported: NTD agency profiles, NYC 2012-2014 ------------------------
+    labels = {"opex_total": ("Operating Expenses", "USD", "USD"),
+              "fare_revenue": ("Fare Revenues", "USD", "USD"),
+              "car_revenue_miles": ("Annual Vehicle Revenue Miles", "mi", ""),
+              "car_revenue_hours": ("Annual Vehicle Revenue Hours", "hours", ""),
+              "unlinked_trips": ("Annual Unlinked Trips", "trips", ""),
+              "passenger_miles": ("Annual Passenger Miles", "mi", ""),
+              "directional_route_miles": ("Fixed Guideway Directional Route Miles", "mi", ""),
+              "cars_max_service": ("Vehicles Operated in Maximum Service", "cars", "")}
+    for r in profiles:
+        year = int(r["report_year"])
+        for metric, (label, unit, cur) in labels.items():
+            b.add("nyc_subway", year, metric, float(r[metric]), unit, currency=cur, source=r["source_id"],
+                  locator=f"Heavy Rail row of the modal characteristics table, column \"{label}\"",
+                  notes="Single-year NTD agency profile; series before 2015 is not from TS2.1. "
+                        "No breakdown by function in this source.")
+    # ---- reported: NYC operating expense by object class, 2022-2025 ---------
+    for r in by_type:
+        year = int(r["report_year"])
+        for col in r:
+            if col in ("report_year", "total") or r[col] == "":
+                continue
+            b.add("nyc_subway", year, f"opex_type_{col}", float(r[col]), "USD", currency="USD",
+                  source="ntd_opex_by_type",
+                  locator=f"Dataset j5uj-anzx; ntd_id=20008, mode=HR, type_of_service=DO, "
+                          f"report_year={year}; column {col}")
+
     # ---- derived ----------------------------------------------------------
     def derive(sysid, year, metric, value, unit, inputs, method, currency="", notes=""):
         src = b.rows[inputs[0]]["source_id"]
@@ -177,7 +227,7 @@ def main():
               method=method, inputs=inputs, notes=notes)
 
     for sysid in SYSTEMS.values():
-        for year in range(2015, 2026):
+        for year in range(2012, 2026):
             g = lambda m: b.val(sysid, year, m)
             o = lambda m: b.oid(sysid, year, m)
             if o("opex_total") is None:
@@ -192,8 +242,9 @@ def main():
             ga = g("opex_general_administration")
             derive(sysid, year, "opex_per_car_km", opex / g("car_km"), "USD/car-km",
                    [o("opex_total"), o("car_km")], "ntd_unit_ratios", "USD")
-            derive(sysid, year, "opex_excl_ga_per_car_km", (opex - ga) / g("car_km"), "USD/car-km",
-                   [o("opex_total"), o("opex_general_administration"), o("car_km")], "ntd_unit_ratios", "USD")
+            if ga is not None:
+                derive(sysid, year, "opex_excl_ga_per_car_km", (opex - ga) / g("car_km"), "USD/car-km",
+                       [o("opex_total"), o("opex_general_administration"), o("car_km")], "ntd_unit_ratios", "USD")
             derive(sysid, year, "opex_per_car_hour", opex / g("car_revenue_hours"), "USD/car-hour",
                    [o("opex_total"), o("car_revenue_hours")], "ntd_unit_ratios", "USD")
             derive(sysid, year, "opex_per_passenger_km", opex / g("passenger_km"), "USD/passenger-km",
@@ -238,6 +289,20 @@ def main():
                 derive(sysid, year, "opex_per_employee_hour", opex / hours, "USD/hour",
                        [o("opex_total"), o("employee_hours_operating")], "ntd_unit_ratios", "USD",
                        notes="All operating expense (not only labor) per operating labor hour")
+
+    # ---- derived: constant 2024 dollars (CPI-U) ------------------------------
+    REAL = ["opex_total", "fare_revenue", "opex_per_car_km", "opex_excl_ga_per_car_km",
+            "opex_per_passenger_km", "opex_per_trip", "opex_per_car_hour"]
+    for oid, r in list(b.rows.items()):
+        if r["metric_id"] not in REAL or r["price_basis"] != "nominal":
+            continue
+        year = int(r["year"])
+        factor = cpi[2024] / cpi[year]
+        b.add(r["system_id"], year, r["metric_id"], float(r["value"]) * factor, r["unit"], currency="USD",
+              value_type="derived", source="fred_cpiaucns",
+              locator=f"CPI-U annual averages for {year} and 2024 in data/price_indices.csv",
+              method="ntd_cpi_real_2024", inputs=[oid], tag="_real2024", price_basis="real_USD_2024_CPI-U",
+              notes=f"Nominal value x CPI-U 2024 / CPI-U {year} = x {factor:.4f}")
 
     # ---- merge with other rows and write ------------------------------------
     with open(OBS, newline="", encoding="utf-8") as f:
