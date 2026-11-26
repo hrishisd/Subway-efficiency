@@ -138,11 +138,11 @@ def main():
         profiles = list(csv.DictReader(f))
     with open(RAW / "opex_by_type_nyct_hr_2022_2025.csv", newline="") as f:
         by_type = list(csv.DictReader(f))
-    cpi = {}
-    with open(ROOT / "data" / "price_indices.csv", newline="") as f:
+    defl = {}  # US GDP deflator, the same factors method ppp_usd_2024 uses
+    with open(ROOT / "data" / "raw" / "ppp" / "ppp_deflator.csv", newline="") as f:
         for r in csv.DictReader(f):
-            if r["index_id"] == "us_cpi_u":
-                cpi[int(r["year"])] = float(r["value"])
+            if r["factor_id"].startswith("us_gdp_deflator_"):
+                defl[int(r["year"])] = float(r["value"])
 
     errors = check(ts, emp, brk)
     for r in profiles:  # printed ratios in the same PDF must match our transcription
@@ -290,23 +290,31 @@ def main():
                        [o("opex_total"), o("employee_hours_operating")], "ntd_unit_ratios", "USD",
                        notes="All operating expense (not only labor) per operating labor hour")
 
-    # ---- derived: constant 2024 dollars (CPI-U) ------------------------------
+    # ---- derived: constant 2024 dollars (US GDP deflator) ------------------------------
     REAL = ["opex_total", "fare_revenue", "opex_per_car_km", "opex_excl_ga_per_car_km",
             "opex_per_passenger_km", "opex_per_trip", "opex_per_car_hour"]
     for oid, r in list(b.rows.items()):
         if r["metric_id"] not in REAL or r["price_basis"] != "nominal":
             continue
         year = int(r["year"])
-        factor = cpi[2024] / cpi[year]
+        factor = defl[2024] / defl[year]
         b.add(r["system_id"], year, r["metric_id"], float(r["value"]) * factor, r["unit"], currency="USD",
-              value_type="derived", source="fred_cpiaucns",
-              locator=f"CPI-U annual averages for {year} and 2024 in data/price_indices.csv",
-              method="ntd_cpi_real_2024", inputs=[oid], tag="_real2024", price_basis="real_USD_2024_CPI-U",
-              notes=f"Nominal value x CPI-U 2024 / CPI-U {year} = x {factor:.4f}")
+              value_type="derived", source="fred_gdp_deflator",
+              locator=f"us_gdp_deflator_{year} and us_gdp_deflator_2024 in data/raw/ppp/ppp_deflator.csv",
+              method="ntd_gdp_deflator_real_2024",
+              inputs=[oid, f"us_gdp_deflator_{year}", "us_gdp_deflator_2024"], tag="_real2024", price_basis="real_USD_2024_GDP_deflator",
+              notes=f"Nominal value x US GDP deflator 2024 / {year} = x {factor:.4f}")
 
     # ---- merge with other rows and write ------------------------------------
     with open(OBS, newline="", encoding="utf-8") as f:
-        keep = [r for r in csv.DictReader(f) if not r["obs_id"].endswith("_ntd")]
+        old = list(csv.DictReader(f))
+    keep = [r for r in old if not r["obs_id"].endswith("_ntd")]
+    # Keep a `verified` mark when the rebuilt row has the same value as before.
+    prev = {r["obs_id"]: r for r in old if r["obs_id"].endswith("_ntd")}
+    for oid, r in b.rows.items():
+        o = prev.get(oid)
+        if o and all(o[k] == r[k] for k in ("value", "value_low", "value_high")):
+            r["verification"] = o["verification"]
     allrows = keep + list(b.rows.values())
     allrows.sort(key=lambda r: (r["system_id"], int(r["year"]), r["metric_id"], r["obs_id"]))
     with open(OBS, "w", newline="", encoding="utf-8") as f:

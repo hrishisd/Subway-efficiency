@@ -10,7 +10,7 @@
 | --- | --- |
 | Money value in nominal local currency for year t | The first obs_id in `inputs` |
 | PPP conversion factor for the country, year t (LCU per international $) | `ppp_<iso3>_<t>` in `data/raw/ppp/ppp_deflator.csv`, from source `worldbank_ppp` |
-| US GDP deflator, year t and 2024 | `us_gdp_deflator_<t>` and `us_gdp_deflator_2024` in the same file, from source `worldbank_us_gdp_deflator` |
+| US GDP deflator, year t and 2024 | `us_gdp_deflator_<t>` and `us_gdp_deflator_2024` in the same file, from source `fred_gdp_deflator` (BEA series A191RD3A086NBEA, 2017 = 100) |
 
 ## Formula
 
@@ -26,6 +26,7 @@ Ratios in money (for example cost per car-km) are converted the same way, which 
 - **Year t is the row's `year`.** For fiscal years that do not match the calendar year (for example TfL's April to March year), `year` is the calendar year in which the fiscal year starts, and this method uses that year's factor. The error from this is a few percent at most, except in high-inflation Turkey (see below).
 - **Euro countries use their own national PPP factor** (France, Spain and Germany differ), not one euro-area rate.
 - **US dollar rows (US systems)** have PPP = 1, so only the deflator applies.
+- **One US deflator everywhere.** The NYC and other US constant-dollar rows (method `ntd_gdp_deflator_real_2024`) use the same `us_gdp_deflator_<year>` factors, so a peer value in PPP 2024 dollars and an NYC value in 2024 dollars can be compared directly. Until 2026-11-26 the US rows used CPI-U, which gave values about 2% different.
 
 ## Range
 

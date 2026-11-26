@@ -6,8 +6,8 @@ Phase 3 output for the Asian peers. Rows are in [`../../data/observations.csv`](
 
 ## Main findings (first read)
 
-1. **The Asian metros cost about the same as NYC per car-km, but far less per passenger.** In 2019, Tokyo Metro spent $9.41 per car-km and Toei $8.35, against $11.01 for NYC (NYC's NTD figure of $9.12, restated in 2024 dollars with the same US deflator). Hong Kong's heavy rail was lower, about $6.43 (estimate). So NYC is 15-70% more expensive per unit of service, not several times more.
-2. **Per passenger-km and per trip the gap is large: 3 to 4 times.** NYC cost $0.37 per passenger-km and $2.32 per trip in 2019 (2024 dollars). Tokyo Metro, Toei and Hong Kong cost $0.11-0.14 per passenger-km (estimates) and about $1.00-1.16 per trip. Seoul cost about $1.11 per trip (estimate).
+1. **The Asian metros cost about the same as NYC per car-km, but far less per passenger.** In 2019, Tokyo Metro spent $9.42 per car-km and Toei $8.36, against $11.02 for NYC (NYC's NTD figure of $9.12, restated in 2024 dollars with the same US deflator). Hong Kong's heavy rail was lower, about $6.44 (estimate). So NYC is 15-70% more expensive per unit of service, not several times more.
+2. **Per passenger-km and per trip the gap is large: 3 to 4 times.** NYC cost $0.37 per passenger-km and $2.32 per trip in 2019 (2024 dollars). Tokyo Metro, Toei and Hong Kong cost $0.11-0.14 per passenger-km (estimates) and about $1.00-1.16 per trip. Seoul cost about $1.12 per trip (estimate).
 3. **The main reason is full trains, not cheap trains.** An average car carried 59-76 passengers in Tokyo and Hong Kong in 2019, against 30 in NYC. Car sizes differ between systems, so per-car figures still need a check against per-train-km or per-seat figures (phase 4).
 4. **Staffing per car-km is lower in Tokyo and Hong Kong, but Seoul is like NYC.** Tokyo Metro had 36-37 staff per million car-km, Toei 28 and Hong Kong about 29 (estimate), against 49 in NYC (2023). Seoul Metro had about 50 (estimate; its count includes every employee of the corporation). Passenger-km per employee is about 4 times NYC's in Tokyo and Hong Kong.
 5. **These metros cover their operating costs from fares.** Tokyo Metro and Toei recovered 145-170% of operating cost (excluding depreciation) from fares before the pandemic, and MTR's whole Hong Kong transport business 140-150%. Seoul recovered about 78% (estimate), held down by free rides for seniors. NYC recovered 70% in 2019 and 45% in 2023.
@@ -18,10 +18,10 @@ Phase 3 output for the Asian peers. Rows are in [`../../data/observations.csv`](
 
 | System | Cost per passenger-km | Cost per trip | Cost per car-km | Farebox recovery | Avg trip (km) | Avg passengers per car | Staff per million car-km | Passenger-km per staff |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Tokyo Metro | $0.12 | $0.97 | $9.22 | 153% | 8.0 | 76.3 | – | – |
-| Toei Subway | $0.14 | $0.96 | $8.06 | 171% | 7.0 | 58.8 | 28.5 | 2,064k |
-| Hong Kong MTR heavy rail | **$0.09 (est.)** | **$0.96 (est.)** | **$5.53 (est.)** | – | 10.8 | 62.5 | **29.8 (est.)** | **2,100k (est.)** |
-| Seoul Metro lines 1-8 | – | **$1.13 (est.)** | **$8.99 (est.)** | **78% (est.)** | – | – | **51.0 (est.)** | – |
+| Tokyo Metro | $0.12 | $0.97 | $9.23 | 153% | 8.0 | 76.3 | – | – |
+| Toei Subway | $0.14 | $0.96 | $8.07 | 171% | 7.0 | 58.8 | 28.5 | 2,064k |
+| Hong Kong MTR heavy rail | **$0.09 (est.)** | **$0.96 (est.)** | **$5.54 (est.)** | – | 10.8 | 62.5 | **29.8 (est.)** | **2,100k (est.)** |
+| Seoul Metro lines 1-8 | – | **$1.13 (est.)** | **$9.00 (est.)** | **78% (est.)** | – | – | **51.0 (est.)** | – |
 
 ## Unit cost, 2019 (last year before the pandemic)
 
@@ -29,10 +29,10 @@ Phase 3 output for the Asian peers. Rows are in [`../../data/observations.csv`](
 
 | System | Cost per passenger-km | Cost per trip | Cost per car-km | Farebox recovery | Avg trip (km) | Avg passengers per car | Staff per million car-km | Passenger-km per staff |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Tokyo Metro | **$0.12 (est.)** | $1.00 | $9.41 | 147% | **8.0 (est.)** | **75.8 (est.)** | 37.2 | **2,039k (est.)** |
-| Toei Subway | **$0.14 (est.)** | $0.99 | $8.35 | 163% | **7.0 (est.)** | **58.5 (est.)** | 28.0 | **2,086k (est.)** |
-| Hong Kong MTR heavy rail | **$0.11 (est.)** | **$1.16 (est.)** | **$6.43 (est.)** | – | 10.6 | 58.8 | **28.7 (est.)** | **2,047k (est.)** |
-| Seoul Metro lines 1-8 | – | **$1.11 (est.)** | **$8.83 (est.)** | **78% (est.)** | – | – | **50.0 (est.)** | – |
+| Tokyo Metro | **$0.12 (est.)** | $1.00 | $9.42 | 147% | **8.0 (est.)** | **75.8 (est.)** | 37.2 | **2,039k (est.)** |
+| Toei Subway | **$0.14 (est.)** | $1.00 | $8.36 | 163% | **7.0 (est.)** | **58.5 (est.)** | 28.0 | **2,086k (est.)** |
+| Hong Kong MTR heavy rail | **$0.11 (est.)** | **$1.16 (est.)** | **$6.44 (est.)** | – | 10.6 | 58.8 | **28.7 (est.)** | **2,047k (est.)** |
+| Seoul Metro lines 1-8 | – | **$1.12 (est.)** | **$8.84 (est.)** | **78% (est.)** | – | – | **50.0 (est.)** | – |
 
 ## Unit cost, 2023
 
@@ -40,12 +40,12 @@ Phase 3 output for the Asian peers. Rows are in [`../../data/observations.csv`](
 
 | System | Cost per passenger-km | Cost per trip | Cost per car-km | Farebox recovery | Avg trip (km) | Avg passengers per car | Staff per million car-km | Passenger-km per staff |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Tokyo Metro | **$0.13 (est.)** | $1.01 | $8.33 | 147% | **8.0 (est.)** | **66.0 (est.)** | 36.0 | **1,833k (est.)** |
+| Tokyo Metro | **$0.13 (est.)** | $1.01 | $8.34 | 147% | **8.0 (est.)** | **66.0 (est.)** | 36.0 | **1,833k (est.)** |
 | Toei Subway | **$0.15 (est.)** | $1.07 | $7.72 | 145% | **7.0 (est.)** | **50.1 (est.)** | 28.3 | **1,768k (est.)** |
 | Hong Kong MTR heavy rail | **$0.10 (est.)** | **$1.12 (est.)** | **$6.36 (est.)** | – | 11.1 | 63.2 | **28.4 (est.)** | **2,227k (est.)** |
 | Singapore SMRT Trains | **$0.14 (est.)** | **$1.57 (est.)** | **$7.13 (est.)** | – | 10.8 | 49.2 | – | – |
 
-NYC for comparison, in 2024 US dollars (NTD values from `docs/ntd_baseline.md` times the US GDP deflator ratio, 1.2063 for 2019 and 1.0248 for 2023): 2019 cost per passenger-km $0.37, per trip $2.32, per car-km $11.01, farebox recovery 70%, average trip 6.2 km, 29.5 passengers per car. 2023: $0.48, $3.07, $11.20, 45%, 6.4 km, 23.3 passengers per car, 48.6 staff per million car-km, 479,000 passenger-km per employee. These are not separate data rows; the deflator factors are in `data/raw/ppp/ppp_deflator.csv`.
+NYC for comparison, in 2024 US dollars (NTD values from `docs/ntd_baseline.md` times the US GDP deflator ratio, 1.2078 for 2019 and 1.0256 for 2023; rows `*_real2024_ntd`): 2019 cost per passenger-km $0.37, per trip $2.32, per car-km $11.02, farebox recovery 70%, average trip 6.2 km, 29.5 passengers per car. 2023: $0.48, $3.07, $11.21, 45%, 6.4 km, 23.3 passengers per car, 48.6 staff per million car-km, 479,000 passenger-km per employee. These match the `*_real2024_ntd` rows, which use the same deflator factors as the PPP rows (`data/raw/ppp/ppp_deflator.csv`).
 
 Staff counts are head counts (not full-time equivalents) at the end of the year, except where the notes say otherwise. NYC's staff figure is the NTD count of operating employees.
 
@@ -80,7 +80,7 @@ Three scopes are kept apart:
 - **No passenger-km** source was found, so there is no cost per passenger-km for Seoul.
 - **Trips** count entries plus transfers in from other operators' lines (승차인원+환승인원), close to NTD's boardings. Trips on through-running commuter services count only on Seoul Metro's own sections.
 - **Staff** (about 16,900) is the whole corporation's head count, including some staff on contract work and side businesses.
-- **2022-2024 (added in a second pass):** operating revenue and operating loss for 2022-2024 come from an aggregator page (`sankun_seoul_metro_financials`, secondary, unverified). Cost for those years is an estimate: revenue minus operating income, less assumed contract work and depreciation (method [`seoul_opex_from_revenue_operating_loss`](../../methods/seoul_opex_from_revenue_operating_loss.md)). 2024 trips (2.42 billion), train-km (42.0 million) and stations (273) come from the city's summary of Seoul Metro's 2024 statistics (`seoul_mediahub_2025_ridership_2024`). **2024 estimates in 2024 PPP dollars: $8.85 per car-km ($8.05-9.99) and $1.30 per trip ($1.24-1.35)**, close to 2019 ($8.83 and $1.11). No 2024 staff count or fare revenue was found, so there are no 2024 productivity or farebox figures.
+- **2022-2024 (added in a second pass):** operating revenue and operating loss for 2022-2024 come from an aggregator page (`sankun_seoul_metro_financials`, secondary, unverified). Cost for those years is an estimate: revenue minus operating income, less assumed contract work and depreciation (method [`seoul_opex_from_revenue_operating_loss`](../../methods/seoul_opex_from_revenue_operating_loss.md)). 2024 trips (2.42 billion), train-km (42.0 million) and stations (273) come from the city's summary of Seoul Metro's 2024 statistics (`seoul_mediahub_2025_ridership_2024`). **2024 estimates in 2024 PPP dollars: $8.85 per car-km ($8.05-9.99) and $1.30 per trip ($1.24-1.35)**, close to 2019 ($8.84 and $1.12). No 2024 staff count or fare revenue was found, so there are no 2024 productivity or farebox figures.
 - A news report gives Seoul Metro's own 2025 cost per passenger as 1,817 won (row `seoul_metro_2025_opex_per_trip_mt`, own scope). Its cost definition is not stated, so it is not compared with the estimates above.
 - **Fares:** 14.9% of riders travelled free in 2018, mostly seniors (source `newdaily_2019_seoul_metro`, secondary). Seoul Metro reports that it gets no compensation for this (source `mt_2026_seoul_metro_loss`, secondary), which holds farebox recovery down.
 
