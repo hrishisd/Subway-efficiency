@@ -87,4 +87,20 @@ Estimated rows (289, mostly Madrid, Seoul and Tokyo cost splits) stay `unverifie
 
 ## Overall
 
-Across both passes, about 3,900 values were checked against their sources or recomputed. No wrong number was found. About 10 hand-collected rows (roughly 2%) had a wrong scope, locator, wording or outdated fact. The only material correction is WMATA's automation status (automatic train operation restarted on the Red Line in December 2024).
+Across the three passes, about 4,500 values were checked against their sources or recomputed. No wrong number was found. About 10 hand-collected rows (roughly 2%) had a wrong scope, locator, wording or outdated fact. The only material correction is WMATA's automation status (automatic train operation restarted on the Red Line in December 2024).
+
+## Results (pass 3: follow-up peer data from PRs 12 and 13, 2026-11-26)
+
+| Data | Rows checked | Result |
+| --- | --- | --- |
+| Seoul 2018 (prior-year column of the 2019 settlement): fare revenue, operating expense, contract-work cost, staff | 4 | all match; now `verified` |
+| Seoul 2024 ridership, train-km, stations (Seoul city article of 2025-02-21) | 3 | all match; now `verified` |
+| Seoul 2022-2024 revenue and operating income (sankun.com aggregator) | 6 | transcriptions match; stay `unverified` (secondary, names no document) |
+| Singapore SMRT Train revenue and EBIT, FY2015 and FY2016 (Annual Report 2016) | 4 | values agree, but only through an extraction summary of the chart; Train + LRT sums match the verbatim Rail totals on p.9. Stay `unverified` |
+| Berlin U-Bahn cost per trip 2017 (Abgeordnetenhaus Drucksache 18/15985, Frage 14, p.6) | 1 | matches (0,93 EUR, includes attributable infrastructure); now `verified` |
+| New estimated rows (Seoul opex 2022-2024, Seoul car-km 2024, SMRT opex FY2015-16) | 6 | recompute with their method notes, including low and high |
+| PPP rows after the rebuild | 385 (+90 low, +90 high) | all recompute |
+
+No wrong numbers. One fix: PR 12 regenerated the Seoul rows from `scripts/build_seoul_singapore_inputs.py`, which still held the old page numbers, so the pass 2 locator fix was lost. The fix is now in the script itself (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31).
+
+Open point: the Seoul 2022-2024 cost estimates rest on an aggregator page and on assumed depreciation (340-480 billion won). They should be replaced with Seoul Metro's own statements when those can be downloaded.

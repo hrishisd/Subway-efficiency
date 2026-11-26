@@ -62,20 +62,20 @@ def seoul():
                            value=fmt(value), unit=unit, currency=cur, price_basis="nominal" if cur else "",
                            scope=sc, value_type="reported", source_id=SEOUL_SRC, source_locator=loc, notes=note))
             return oid
-        pl = "손익계산서 pp.28-32, {} column, row '{}' (원)"
-        o1 = rep("opex_incl_depreciation", v["opex"], "KRW", "사업수익·사업비용 summary p.17, 영업비용, " + v["col"] + " (원); equals 매출원가 + 판매비와관리비 on pp.28-32", cur="KRW",
+        pl = "손익계산서 pp.28-31, {} column, row '{}' (원)"
+        o1 = rep("opex_incl_depreciation", v["opex"], "KRW", "사업수익·사업비용 summary p.16, 영업비용, " + v["col"] + " (원); equals 매출원가 + 판매비와관리비 on pp.28-31", cur="KRW",
                  note="Whole corporation: includes depreciation, contract work for others (수탁사업원가) and ancillary businesses.", sc="whole_agency")
         o2 = rep("opex_other_business", v["consign"], "KRW", pl.format(v["col"], "매출원가 2. 수탁사업원가"), cur="KRW",
                  note="Construction and operation done under contract for others (for example Line 9 phase 2-3 and extensions); revenue equals cost.", sc="whole_agency")
         rep("fare_revenue", v["fare"], "KRW", pl.format(v["col"], "매출액 1. 운수사업수익"), cur="KRW",
             note="Transport revenue of the corporation (lines 1-8 fares after settlement with other operators).")
-        tr = rep("unlinked_trips", v["trips"] * 1000, "trips", f"사업보고서 2.가 업무량, p.16, row 수송인원, column 계 ({v['ucol']}) (천명; multiplied by 1,000)",
+        tr = rep("unlinked_trips", v["trips"] * 1000, "trips", f"사업보고서 2.가 업무량, p.15, row 수송인원, column 계 ({v['ucol']}) (천명; multiplied by 1,000)",
                  note="Lines 1-8. Seoul Metro counts entries plus transfers in from other operators' lines (승차인원+환승인원, see seoul_city_subway_overview_2025), close to NTD boardings; transfers between its own lines are not counted again.")
-        tk = rep("train_km", v["train_km"] * 1000, "km", f"사업보고서 2.가 업무량, p.16, row 열차주행키로, column 계 ({v['ucol']}) (천km; multiplied by 1,000)",
+        tk = rep("train_km", v["train_km"] * 1000, "km", f"사업보고서 2.가 업무량, p.15, row 열차주행키로, column 계 ({v['ucol']}) (천km; multiplied by 1,000)",
                  note="Includes empty running (회송포함), so it is slightly more than revenue train-km. Kept in its own scope so no ratio uses it directly.", tag="smgross", sc="lines_1_8_incl_empty_running")
-        rep("route_km", v["route_km"], "km", f"사업보고서 2.가 업무량, p.16, row 영업연장, column 계 ({v['ucol']})")
-        rep("stations", v["stations"], "count", f"사업보고서 2.가 업무량, p.16, row 역수, column 계 ({v['ucol']})")
-        rep("employees_fte", v["staff"], "employees", f"사업보고서 2.마 직원 현황, p.14, 현원, {'당년도말' if y == 2019 else '전년도말'}",
+        rep("route_km", v["route_km"], "km", f"사업보고서 2.가 업무량, p.15, row 영업연장, column 계 ({v['ucol']})")
+        rep("stations", v["stations"], "count", f"사업보고서 2.가 업무량, p.15, row 역수, column 계 ({v['ucol']})")
+        rep("employees_fte", v["staff"], "employees", f"사업보고서 2.마 직원 현황, p.13, 현원, {'당년도말' if y == 2019 else '전년도말'}",
             note="Head count at year end (현원) of the whole corporation, excluding non-standing board members. Includes staff on contract work and ancillary businesses (a few percent). Not FTE.")
         # estimated opex excluding depreciation and contract work
         dep, dlo, dhi = SEOUL_DEP
@@ -94,7 +94,7 @@ def seoul():
                        value_low=fmt(v["train_km"] * 1000 * cpt * (1 - dh) * 0.97),
                        value_high=fmt(v["train_km"] * 1000 * cpt * (1 - dl) * 1.02),
                        unit="km", scope=scope, value_type="estimated", source_id=SEOUL_SRC,
-                       source_locator=f"Train-km from the input row; cars per train from 사업보고서 2.가 업무량 p.16, row 전동차(편성), {v['cars']}({v['sets']})",
+                       source_locator=f"Train-km from the input row; cars per train from 사업보고서 2.가 업무량 p.15, row 전동차(편성), {v['cars']}({v['sets']})",
                        method_id="seoul_car_km_from_train_km", inputs=tk,
                        notes=f"ESTIMATE. Train-km x average cars per train set ({cpt:.2f}) x (1 - share of empty running, 2-7%)."))
     seoul_later(sid, out)
@@ -158,7 +158,7 @@ def seoul_later(sid, out):
                    value_low=fmt(v["train_km"] * cpt * (1 - dh) * 0.95),
                    value_high=fmt(v["train_km"] * cpt * (1 - dl) * 1.03),
                    unit="km", scope=scope, value_type="estimated", source_id=SEOUL_SRC,
-                   source_locator=f"Train-km from the input row; cars per train set from the 2019 사업보고서 2.가 업무량 p.16, row 전동차(편성), {SEOUL[2019]['cars']}({SEOUL[2019]['sets']})",
+                   source_locator=f"Train-km from the input row; cars per train set from the 2019 사업보고서 2.가 업무량 p.15, row 전동차(편성), {SEOUL[2019]['cars']}({SEOUL[2019]['sets']})",
                    method_id="seoul_car_km_from_train_km", inputs=tk,
                    notes=f"ESTIMATE. 2024 train-km x 2019 average cars per train set ({cpt:.2f}) x (1 - share of empty running, 2-7%); range widened by -5%/+3% because the 2024 fleet mix is not in a source."))
     # Press figure: 2025 cost per passenger, Seoul Metro's own definition.
