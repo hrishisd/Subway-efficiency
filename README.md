@@ -6,7 +6,7 @@ This repository holds the dataset, the sources behind every number, and the anal
 
 ## Status
 
-Phase 1 (scoping) is done. See [`docs/scoping.md`](docs/scoping.md). Phase 2 (NYC baseline from the National Transit Database) is next.
+Phase 1 (scoping) is done. See [`docs/scoping.md`](docs/scoping.md). Phase 2 (NYC baseline from the National Transit Database, 2015 to 2025, with six US peers) is in [`docs/ntd_baseline.md`](docs/ntd_baseline.md). Years 2000 to 2014 are still open.
 
 ## Layout
 
@@ -19,6 +19,8 @@ Phase 1 (scoping) is done. See [`docs/scoping.md`](docs/scoping.md). Phase 2 (NY
 | [`sources/sources.csv`](sources/sources.csv) | Every source, with URL and access date |
 | [`methods/`](methods/) | One note per derived or estimated figure method |
 | [`scripts/validate.py`](scripts/validate.py) | Checks that every number has a valid source and method |
+| [`scripts/build_ntd_baseline.py`](scripts/build_ntd_baseline.py) | Rebuilds the NTD rows from the raw extracts in [`data/raw/ntd/`](data/raw/ntd/) |
+| [`docs/ntd_baseline.md`](docs/ntd_baseline.md) | Phase 2 summary: NYC and US peers from NTD |
 
 ## Core rule
 

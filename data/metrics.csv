@@ -13,3 +13,57 @@ opex_per_car_km,Operating expense per car-km,currency/km,opex_total divided by c
 opex_per_passenger_km,Operating expense per passenger-km,currency/km,opex_total divided by passenger_km.
 opex_per_trip,Operating expense per trip,currency/trip,opex_total divided by unlinked_trips.
 farebox_recovery,Farebox recovery ratio,ratio,fare_revenue divided by opex_total.
+opex_vehicle_operations,Operating expense: vehicle operations,currency,"NTD function 'Vehicle Operations' (running revenue service). Exact definition: NTD Policy Manual; not yet checked."
+opex_vehicle_maintenance,Operating expense: vehicle maintenance,currency,"NTD function 'Vehicle Maintenance' (maintaining the car fleet). Exact definition: NTD Policy Manual; not yet checked."
+opex_facility_maintenance,Operating expense: facility maintenance,currency,"NTD function 'Facility Maintenance' (fixed assets such as track, signals and stations). Exact definition: NTD Policy Manual; not yet checked."
+opex_general_administration,Operating expense: general administration,currency,"NTD function 'General Administration', including administrative and overhead costs the reporter allocates to the mode."
+opex_excl_ga_per_car_km,Operating expense excluding general administration per car-km,currency/km,"(opex_total minus opex_general_administration) divided by car_km. Shows cost without overhead, per the scoping rule."
+opex_per_car_hour,Operating expense per car revenue hour,currency/hour,opex_total divided by car_revenue_hours.
+opex_per_employee_hour,Operating expense per operating labor hour,currency/hour,opex_total divided by employee_hours_operating. Not a wage: includes non-labor costs.
+car_revenue_miles,Vehicle (car) revenue miles,mi,NTD 'Vehicle Revenue Miles' for rail: miles run by individual passenger cars in revenue service. Source unit for car_km.
+car_revenue_hours,Vehicle (car) revenue hours,hours,NTD 'Vehicle Revenue Hours' for rail: hours run by individual passenger cars in revenue service. Not train hours.
+passenger_miles,Passenger miles,mi,NTD 'Passenger Miles Traveled'. Source unit for passenger_km.
+directional_route_miles,Directional route miles,mi,NTD 'Directional Route Miles': route length counted once per direction of travel. Roughly twice the route length.
+directional_route_km,Directional route kilometers,km,directional_route_miles converted to km.
+cars_max_service,Cars operated in maximum service,cars,NTD 'Vehicles Operated in Maximum Service': cars in service at the peak.
+train_revenue_miles,Train revenue miles,mi,NTD Breakdowns table 'Train Revenue Miles': miles run by whole trains in revenue service.
+train_km,Train revenue kilometers,km,train_revenue_miles converted to km.
+avg_trip_length_km,Average trip length,km,passenger_km divided by unlinked_trips.
+avg_car_load,Average passengers per car,passengers,passenger_km divided by car_km: the average number of passengers on board a car in revenue service.
+avg_cars_per_train,Average cars per train,cars,car_km divided by train_km.
+major_mechanical_failures,Major mechanical failures,failures,NTD Breakdowns table, column major_mechanical_failures. Exact definition: NTD Policy Manual; not yet checked. See method ntd_mdbf_major.
+other_mechanical_failures,Other mechanical failures,failures,NTD Breakdowns table, column other_mechanical_failures. Reporting practice varies widely between agencies and years (see method ntd_mdbf_major).
+total_mechanical_failures,Total mechanical failures,failures,Sum of major and other mechanical failures.
+employees_operating,Operating employees,employees,NTD employee count (full-time plus part-time) in the four operating functions; capital labor excluded. Part-time staff count as one each.
+employee_hours_operating,Operating labor hours,hours,NTD employee work hours (full-time plus part-time) in the four operating functions; capital labor excluded.
+employees_vehicle_operations,Employees: vehicle operations,employees,Full-time plus part-time NTD employee count in vehicle operations.
+employees_vehicle_maintenance,Employees: vehicle maintenance,employees,Full-time plus part-time NTD employee count in vehicle maintenance.
+employees_facility_maintenance,Employees: facility maintenance,employees,Full-time plus part-time NTD employee count in facility maintenance.
+employees_general_administration,Employees: general administration,employees,Full-time plus part-time NTD employee count in general administration.
+employees_per_million_car_km,Operating employees per million car-km,employees/million km,employees_operating divided by car_km in millions. Main labor-productivity measure.
+passenger_km_per_employee,Passenger-km per operating employee,km/employee,passenger_km divided by employees_operating.
+trips_per_employee,Trips per operating employee,trips/employee,unlinked_trips divided by employees_operating.
+employee_count_vehicle_operations_ft,"NTD employee count, vehicle operations, full-time",employees,"As published in the NTD Employees table (column vehicle_operations_count, full-time rows). Some agencies report fractional values."
+employee_hours_vehicle_operations_ft,"NTD employee work hours, vehicle operations, full-time",hours,"As published in the NTD Employees table (column vehicle_operations_hours, full-time rows)."
+employee_count_vehicle_operations_pt,"NTD employee count, vehicle operations, part-time",employees,"As published in the NTD Employees table (column vehicle_operations_count, part-time rows). Some agencies report fractional values."
+employee_hours_vehicle_operations_pt,"NTD employee work hours, vehicle operations, part-time",hours,"As published in the NTD Employees table (column vehicle_operations_hours, part-time rows)."
+employee_count_vehicle_maintenance_ft,"NTD employee count, vehicle maintenance, full-time",employees,"As published in the NTD Employees table (column vehicle_maintenance_count, full-time rows). Some agencies report fractional values."
+employee_hours_vehicle_maintenance_ft,"NTD employee work hours, vehicle maintenance, full-time",hours,"As published in the NTD Employees table (column vehicle_maintenance_hours, full-time rows)."
+employee_count_vehicle_maintenance_pt,"NTD employee count, vehicle maintenance, part-time",employees,"As published in the NTD Employees table (column vehicle_maintenance_count, part-time rows). Some agencies report fractional values."
+employee_hours_vehicle_maintenance_pt,"NTD employee work hours, vehicle maintenance, part-time",hours,"As published in the NTD Employees table (column vehicle_maintenance_hours, part-time rows)."
+employee_count_facility_maintenance_ft,"NTD employee count, facility maintenance, full-time",employees,"As published in the NTD Employees table (column facility_maintenance_count, full-time rows). Some agencies report fractional values."
+employee_hours_facility_maintenance_ft,"NTD employee work hours, facility maintenance, full-time",hours,"As published in the NTD Employees table (column facility_maintenance_hours, full-time rows)."
+employee_count_facility_maintenance_pt,"NTD employee count, facility maintenance, part-time",employees,"As published in the NTD Employees table (column facility_maintenance_count, part-time rows). Some agencies report fractional values."
+employee_hours_facility_maintenance_pt,"NTD employee work hours, facility maintenance, part-time",hours,"As published in the NTD Employees table (column facility_maintenance_hours, part-time rows)."
+employee_count_general_administration_ft,"NTD employee count, general administration, full-time",employees,"As published in the NTD Employees table (column general_administration_count, full-time rows). Some agencies report fractional values."
+employee_hours_general_administration_ft,"NTD employee work hours, general administration, full-time",hours,"As published in the NTD Employees table (column general_administration_hours, full-time rows)."
+employee_count_general_administration_pt,"NTD employee count, general administration, part-time",employees,"As published in the NTD Employees table (column general_administration_count, part-time rows). Some agencies report fractional values."
+employee_hours_general_administration_pt,"NTD employee work hours, general administration, part-time",hours,"As published in the NTD Employees table (column general_administration_hours, part-time rows)."
+employee_count_capital_labor_ft,"NTD employee count, capital labor, full-time",employees,"As published in the NTD Employees table (column capital_labor_count, full-time rows). Some agencies report fractional values."
+employee_hours_capital_labor_ft,"NTD employee work hours, capital labor, full-time",hours,"As published in the NTD Employees table (column capital_labor_hours, full-time rows)."
+employee_count_capital_labor_pt,"NTD employee count, capital labor, part-time",employees,"As published in the NTD Employees table (column capital_labor_count, part-time rows). Some agencies report fractional values."
+employee_hours_capital_labor_pt,"NTD employee work hours, capital labor, part-time",hours,"As published in the NTD Employees table (column capital_labor_hours, part-time rows)."
+employee_count_total_ft,"NTD employee count, total, full-time",employees,"As published in the NTD Employees table (column total_employee_count, full-time rows). Some agencies report fractional values."
+employee_hours_total_ft,"NTD employee work hours, total, full-time",hours,"As published in the NTD Employees table (column total_hours, full-time rows)."
+employee_count_total_pt,"NTD employee count, total, part-time",employees,"As published in the NTD Employees table (column total_employee_count, part-time rows). Some agencies report fractional values."
+employee_hours_total_pt,"NTD employee work hours, total, part-time",hours,"As published in the NTD Employees table (column total_hours, part-time rows)."
