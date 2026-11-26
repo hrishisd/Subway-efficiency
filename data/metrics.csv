@@ -40,7 +40,7 @@ employees_vehicle_operations,Employees: vehicle operations,employees,Full-time p
 employees_vehicle_maintenance,Employees: vehicle maintenance,employees,Full-time plus part-time NTD employee count in vehicle maintenance.
 employees_facility_maintenance,Employees: facility maintenance,employees,Full-time plus part-time NTD employee count in facility maintenance.
 employees_general_administration,Employees: general administration,employees,Full-time plus part-time NTD employee count in general administration.
-employees_per_million_car_km,Employees per million car-km,employees/million km,"Staff divided by car_km in millions. US systems use employees_operating; other systems use employees_fte. Main labor-productivity measure."
+employees_per_million_car_km,Employees per million car-km,employees/million km,Staff divided by car_km in millions. US systems use employees_operating; other systems use employees_fte. Main labor-productivity measure.
 passenger_km_per_employee,Passenger-km per employee,km/employee,"passenger_km divided by staff (employees_operating for US systems, employees_fte for other systems)."
 trips_per_employee,Trips per employee,trips/employee,"unlinked_trips divided by staff (employees_operating for US systems, employees_fte for other systems)."
 employee_count_vehicle_operations_ft,"NTD employee count, vehicle operations, full-time",employees,"As published in the NTD Employees table (column vehicle_operations_count, full-time rows). Some agencies report fractional values."
@@ -68,6 +68,10 @@ employee_hours_total_ft,"NTD employee work hours, total, full-time",hours,"As pu
 employee_count_total_pt,"NTD employee count, total, part-time",employees,"As published in the NTD Employees table (column total_employee_count, part-time rows). Some agencies report fractional values."
 employee_hours_total_pt,"NTD employee work hours, total, part-time",hours,"As published in the NTD Employees table (column total_hours, part-time rows)."
 opex_per_train_km,Operating expense per train-km,currency/km,opex_total divided by train_km.
+opex_direct,Operating expense: direct,currency,"Operating cost the agency books directly to the metro business (operations, maintenance, stations), before allocated central overhead. Excludes depreciation, capital renewals and interest unless stated."
+opex_indirect_allocated,Operating expense: allocated indirect cost,currency,"Central or indirect operating cost the agency allocates to the metro business (similar in role to NTD general administration)."
+cars_fleet,Cars in fleet,cars,"Number of passenger cars owned (fleet size), not cars in service."
+operating_revenue,Operating revenue,currency,"Total revenue from operations (net sales) in the stated scope, including any payments from government for service if the source does not separate them."
 opex_type_operators_wages,Operating expense by object class: operators' wages,currency,"NTD Operating Expenses by Type, column operators_wages. Object classes sum to opex_total."
 opex_type_other_salaries_wages,Operating expense by object class: other salaries and wages,currency,"NTD Operating Expenses by Type, column other_salaries_wages. Object classes sum to opex_total."
 opex_type_operator_paid_absences,Operating expense by object class: operators' paid absences,currency,"NTD Operating Expenses by Type, column operator_paid_absences. Object classes sum to opex_total."
@@ -82,3 +86,11 @@ opex_type_casualty_and_liability,Operating expense by object class: casualty and
 opex_type_taxes,Operating expense by object class: taxes,currency,"NTD Operating Expenses by Type, column taxes. Object classes sum to opex_total."
 opex_type_purchased_transportation,Operating expense by object class: purchased transportation,currency,"NTD Operating Expenses by Type, column purchased_transportation. Object classes sum to opex_total."
 opex_type_miscellaneous,Operating expense by object class: miscellaneous,currency,"NTD Operating Expenses by Type, column miscellaneous. Object classes sum to opex_total."
+opex_incl_depreciation,Operating expense including depreciation,currency,Operating expense as published when the source includes depreciation (for example MLIT 営業費計). Used only to derive opex_total.
+depreciation,Depreciation and amortisation,currency,Depreciation charged to operating expense in the stated scope.
+employees_headcount_parent,Employees of the operating company only (headcount),employees,"Staff of the operating company itself in the stated segment, excluding subsidiaries. Shown next to employees_fte where a group figure is used."
+operating_subsidy,Operating subsidy from government,currency,Government money received for operating purposes in the stated scope (not capital grants). Say in notes what it pays for; some of it services past debt.
+opex_staff_costs,Operating expense: staff costs,currency,"Staff costs and related expenses (wages, benefits, pension) inside opex_total, as the source publishes them."
+opex_other_business,Operating expense of businesses outside the metro,currency,Costs the source reports for activities that are not running the metro (for example construction or operation done under contract for others). Used to remove them from a whole-agency total.
+operating_revenue,Operating revenue,currency,"All operating revenue of the stated scope (fares, other transport income and, where stated, government payments for services)."
+ebit,Earnings before interest and tax,currency,Operating profit as the source reports it.

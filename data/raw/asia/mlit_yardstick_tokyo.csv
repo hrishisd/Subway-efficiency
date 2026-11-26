@@ -1,0 +1,517 @@
+fiscal_year,operator,item_ja,item_en,value,unit
+2015,東京地下鉄,旅客営業キロ,route_km,195.1,km
+2015,東京地下鉄,旅客延日キロ,route_km_days,71407,km
+2015,東京地下鉄,輸送人員,passengers,2586479,thousand
+2015,東京地下鉄,輸送人キロ,passenger_km,20753046,thousand km
+2015,東京地下鉄,旅客列車キロ,train_km,34997,thousand km
+2015,東京地下鉄,旅客車両キロ,car_km,289435,thousand km
+2015,東京地下鉄,線路延長,track_km,411.6,km
+2015,東京地下鉄,車両数,cars,2728,cars
+2015,東京地下鉄,駅数,stations,179,stations
+2015,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,184830120,thousand JPY
+2015,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,142333835,thousand JPY
+2015,東京地下鉄,旅客運輸収入 計,fare_revenue,327163955,thousand JPY
+2015,東京地下鉄,運輸雑収 計,other_revenue,34069004,thousand JPY
+2015,東京地下鉄,営業収益計,operating_revenue,362621626,thousand JPY
+2015,東京地下鉄,線路保存費 計,track_maintenance,27771240,thousand JPY
+2015,東京地下鉄,電路保存費 計,electrical_maintenance,13954048,thousand JPY
+2015,東京地下鉄,車両保存費 計,vehicle_maintenance,19819116,thousand JPY
+2015,東京地下鉄,運転費 計,train_operation,37612755,thousand JPY
+2015,東京地下鉄,運輸費 計,station_and_traffic,65185999,thousand JPY
+2015,東京地下鉄,保守管理費 計,maintenance_management,12867126,thousand JPY
+2015,東京地下鉄,輸送管理費 計,transport_management,7202147,thousand JPY
+2015,東京地下鉄,運送費計,transport_expenses_total,184412431,thousand JPY
+2015,東京地下鉄,案内宣伝費 計,publicity,887284,thousand JPY
+2015,東京地下鉄,厚生福利施設費 計,welfare_facilities,3413683,thousand JPY
+2015,東京地下鉄,一般管理費 計,general_administration,12942015,thousand JPY
+2015,東京地下鉄,合計,opex_before_depreciation_and_taxes,201655413,thousand JPY
+2015,東京地下鉄,減価償却費,depreciation,63909147,thousand JPY
+2015,東京地下鉄,諸税,taxes,9643010,thousand JPY
+2015,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,275207570,thousand JPY
+2015,東京地下鉄,差引営業費計,operating_expenses_net,274817712,thousand JPY
+2015,東京都,旅客営業キロ,route_km,109.0,km
+2015,東京都,旅客延日キロ,route_km_days,39894,km
+2015,東京都,輸送人員,passengers,950158,thousand
+2015,東京都,輸送人キロ,passenger_km,6601965,thousand km
+2015,東京都,旅客列車キロ,train_km,15404,thousand km
+2015,東京都,旅客車両キロ,car_km,119408,thousand km
+2015,東京都,線路延長,track_km,228.1,km
+2015,東京都,車両数,cars,1146,cars
+2015,東京都,駅数,stations,106,stations
+2015,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,71130912,thousand JPY
+2015,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,63538341,thousand JPY
+2015,東京都,旅客運輸収入 計,fare_revenue,134669253,thousand JPY
+2015,東京都,運輸雑収 計,other_revenue,9200446,thousand JPY
+2015,東京都,営業収益計,operating_revenue,143869699,thousand JPY
+2015,東京都,線路保存費 計,track_maintenance,11105803,thousand JPY
+2015,東京都,電路保存費 計,electrical_maintenance,9925848,thousand JPY
+2015,東京都,車両保存費 計,vehicle_maintenance,9451657,thousand JPY
+2015,東京都,運転費 計,train_operation,14875763,thousand JPY
+2015,東京都,運輸費 計,station_and_traffic,26640783,thousand JPY
+2015,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2015,東京都,輸送管理費 計,transport_management,3309411,thousand JPY
+2015,東京都,運送費計,transport_expenses_total,75309265,thousand JPY
+2015,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2015,東京都,厚生福利施設費 計,welfare_facilities,182845,thousand JPY
+2015,東京都,一般管理費 計,general_administration,3273149,thousand JPY
+2015,東京都,合計,opex_before_depreciation_and_taxes,78765259,thousand JPY
+2015,東京都,減価償却費,depreciation,45596307,thousand JPY
+2015,東京都,諸税,taxes,0,thousand JPY
+2015,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,124361566,thousand JPY
+2015,東京都,差引営業費計,operating_expenses_net,124361566,thousand JPY
+2016,東京地下鉄,旅客営業キロ,route_km,195.1,km
+2016,東京地下鉄,旅客延日キロ,route_km_days,71212,km
+2016,東京地下鉄,輸送人員,passengers,2642116,thousand
+2016,東京地下鉄,輸送人キロ,passenger_km,21195432,thousand km
+2016,東京地下鉄,旅客列車キロ,train_km,34994,thousand km
+2016,東京地下鉄,旅客車両キロ,car_km,289345,thousand km
+2016,東京地下鉄,線路延長,track_km,411.6,km
+2016,東京地下鉄,車両数,cars,2766,cars
+2016,東京地下鉄,駅数,stations,179,stations
+2016,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,187759629,thousand JPY
+2016,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,145732855,thousand JPY
+2016,東京地下鉄,旅客運輸収入 計,fare_revenue,333492484,thousand JPY
+2016,東京地下鉄,運輸雑収 計,other_revenue,34185839,thousand JPY
+2016,東京地下鉄,営業収益計,operating_revenue,369109760,thousand JPY
+2016,東京地下鉄,線路保存費 計,track_maintenance,30895565,thousand JPY
+2016,東京地下鉄,電路保存費 計,electrical_maintenance,14922594,thousand JPY
+2016,東京地下鉄,車両保存費 計,vehicle_maintenance,20324384,thousand JPY
+2016,東京地下鉄,運転費 計,train_operation,35764708,thousand JPY
+2016,東京地下鉄,運輸費 計,station_and_traffic,65569031,thousand JPY
+2016,東京地下鉄,保守管理費 計,maintenance_management,9669937,thousand JPY
+2016,東京地下鉄,輸送管理費 計,transport_management,7947929,thousand JPY
+2016,東京地下鉄,運送費計,transport_expenses_total,185094148,thousand JPY
+2016,東京地下鉄,案内宣伝費 計,publicity,758077,thousand JPY
+2016,東京地下鉄,厚生福利施設費 計,welfare_facilities,3928094,thousand JPY
+2016,東京地下鉄,一般管理費 計,general_administration,15043111,thousand JPY
+2016,東京地下鉄,合計,opex_before_depreciation_and_taxes,204823430,thousand JPY
+2016,東京地下鉄,減価償却費,depreciation,66637592,thousand JPY
+2016,東京地下鉄,諸税,taxes,11234360,thousand JPY
+2016,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,282695382,thousand JPY
+2016,東京地下鉄,差引営業費計,operating_expenses_net,282281934,thousand JPY
+2016,東京都,旅客営業キロ,route_km,109.0,km
+2016,東京都,旅客延日キロ,route_km_days,39785,km
+2016,東京都,輸送人員,passengers,973642,thousand
+2016,東京都,輸送人キロ,passenger_km,6776092,thousand km
+2016,東京都,旅客列車キロ,train_km,15359,thousand km
+2016,東京都,旅客車両キロ,car_km,120380,thousand km
+2016,東京都,線路延長,track_km,228.1,km
+2016,東京都,車両数,cars,1132,cars
+2016,東京都,駅数,stations,106,stations
+2016,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,72241793,thousand JPY
+2016,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,65082832,thousand JPY
+2016,東京都,旅客運輸収入 計,fare_revenue,137324625,thousand JPY
+2016,東京都,運輸雑収 計,other_revenue,9448422,thousand JPY
+2016,東京都,営業収益計,operating_revenue,146773047,thousand JPY
+2016,東京都,線路保存費 計,track_maintenance,11507716,thousand JPY
+2016,東京都,電路保存費 計,electrical_maintenance,7565808,thousand JPY
+2016,東京都,車両保存費 計,vehicle_maintenance,9589311,thousand JPY
+2016,東京都,運転費 計,train_operation,14978265,thousand JPY
+2016,東京都,運輸費 計,station_and_traffic,26945351,thousand JPY
+2016,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2016,東京都,輸送管理費 計,transport_management,3197426,thousand JPY
+2016,東京都,運送費計,transport_expenses_total,73783877,thousand JPY
+2016,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2016,東京都,厚生福利施設費 計,welfare_facilities,180388,thousand JPY
+2016,東京都,一般管理費 計,general_administration,3517545,thousand JPY
+2016,東京都,合計,opex_before_depreciation_and_taxes,77481810,thousand JPY
+2016,東京都,減価償却費,depreciation,43321344,thousand JPY
+2016,東京都,諸税,taxes,0,thousand JPY
+2016,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,120803154,thousand JPY
+2016,東京都,差引営業費計,operating_expenses_net,120803154,thousand JPY
+2017,東京地下鉄,旅客営業キロ,route_km,195.1,km
+2017,東京地下鉄,輸送人員,passengers,2709065,thousand
+2017,東京地下鉄,輸送人キロ,passenger_km,21715878,thousand km
+2017,東京地下鉄,旅客列車キロ,train_km,35257,thousand km
+2017,東京地下鉄,旅客車両キロ,car_km,290408,thousand km
+2017,東京地下鉄,線路延長,track_km,411.6,km
+2017,東京地下鉄,車両数,cars,2728,cars
+2017,東京地下鉄,駅数,stations,179,stations
+2017,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,191675333,thousand JPY
+2017,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,149875424,thousand JPY
+2017,東京地下鉄,旅客運輸収入 計,fare_revenue,341550757,thousand JPY
+2017,東京地下鉄,運輸雑収 計,other_revenue,33802736,thousand JPY
+2017,東京地下鉄,営業収益計,operating_revenue,376469151,thousand JPY
+2017,東京地下鉄,線路保存費 計,track_maintenance,32220138,thousand JPY
+2017,東京地下鉄,電路保存費 計,electrical_maintenance,18252058,thousand JPY
+2017,東京地下鉄,車両保存費 計,vehicle_maintenance,19019103,thousand JPY
+2017,東京地下鉄,運転費 計,train_operation,36912515,thousand JPY
+2017,東京地下鉄,運輸費 計,station_and_traffic,67094452,thousand JPY
+2017,東京地下鉄,保守管理費 計,maintenance_management,10090295,thousand JPY
+2017,東京地下鉄,輸送管理費 計,transport_management,8799301,thousand JPY
+2017,東京地下鉄,運送費計,transport_expenses_total,192387862,thousand JPY
+2017,東京地下鉄,案内宣伝費 計,publicity,812206,thousand JPY
+2017,東京地下鉄,厚生福利施設費 計,welfare_facilities,3751093,thousand JPY
+2017,東京地下鉄,一般管理費 計,general_administration,16100625,thousand JPY
+2017,東京地下鉄,合計,opex_before_depreciation_and_taxes,213051786,thousand JPY
+2017,東京地下鉄,減価償却費,depreciation,71663130,thousand JPY
+2017,東京地下鉄,諸税,taxes,11125138,thousand JPY
+2017,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,295840054,thousand JPY
+2017,東京地下鉄,差引営業費計,operating_expenses_net,295330930,thousand JPY
+2017,東京都,旅客営業キロ,route_km,109.0,km
+2017,東京都,輸送人員,passengers,1004534,thousand
+2017,東京都,輸送人キロ,passenger_km,7000089,thousand km
+2017,東京都,旅客列車キロ,train_km,15383,thousand km
+2017,東京都,旅客車両キロ,car_km,121486,thousand km
+2017,東京都,線路延長,track_km,228.1,km
+2017,東京都,車両数,cars,1142,cars
+2017,東京都,駅数,stations,106,stations
+2017,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,73425674,thousand JPY
+2017,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,66851398,thousand JPY
+2017,東京都,旅客運輸収入 計,fare_revenue,140277072,thousand JPY
+2017,東京都,運輸雑収 計,other_revenue,9437818,thousand JPY
+2017,東京都,営業収益計,operating_revenue,149714890,thousand JPY
+2017,東京都,線路保存費 計,track_maintenance,12288848,thousand JPY
+2017,東京都,電路保存費 計,electrical_maintenance,7317343,thousand JPY
+2017,東京都,車両保存費 計,vehicle_maintenance,10965036,thousand JPY
+2017,東京都,運転費 計,train_operation,14970084,thousand JPY
+2017,東京都,運輸費 計,station_and_traffic,27610029,thousand JPY
+2017,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2017,東京都,輸送管理費 計,transport_management,3378743,thousand JPY
+2017,東京都,運送費計,transport_expenses_total,76530083,thousand JPY
+2017,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2017,東京都,厚生福利施設費 計,welfare_facilities,198181,thousand JPY
+2017,東京都,一般管理費 計,general_administration,3632552,thousand JPY
+2017,東京都,合計,opex_before_depreciation_and_taxes,80360816,thousand JPY
+2017,東京都,減価償却費,depreciation,42783230,thousand JPY
+2017,東京都,諸税,taxes,0,thousand JPY
+2017,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,123144046,thousand JPY
+2017,東京都,差引営業費計,operating_expenses_net,123144046,thousand JPY
+2018,東京地下鉄,旅客営業キロ,route_km,195.1,km
+2018,東京地下鉄,輸送人員,passengers,2766167,thousand
+2018,東京地下鉄,輸送人キロ,passenger_km,22187104,thousand km
+2018,東京地下鉄,旅客列車キロ,train_km,35405,thousand km
+2018,東京地下鉄,旅客車両キロ,car_km,290686,thousand km
+2018,東京地下鉄,線路延長,track_km,411.7,km
+2018,東京地下鉄,車両数,cars,2719,cars
+2018,東京地下鉄,駅数,stations,179,stations
+2018,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,195266606,thousand JPY
+2018,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,153242974,thousand JPY
+2018,東京地下鉄,旅客運輸収入 計,fare_revenue,348509580,thousand JPY
+2018,東京地下鉄,運輸雑収 計,other_revenue,33725028,thousand JPY
+2018,東京地下鉄,営業収益計,operating_revenue,383372078,thousand JPY
+2018,東京地下鉄,線路保存費 計,track_maintenance,30935742,thousand JPY
+2018,東京地下鉄,電路保存費 計,electrical_maintenance,16657512,thousand JPY
+2018,東京地下鉄,車両保存費 計,vehicle_maintenance,19464849,thousand JPY
+2018,東京地下鉄,運転費 計,train_operation,38317236,thousand JPY
+2018,東京地下鉄,運輸費 計,station_and_traffic,68604243,thousand JPY
+2018,東京地下鉄,保守管理費 計,maintenance_management,9556253,thousand JPY
+2018,東京地下鉄,輸送管理費 計,transport_management,10316794,thousand JPY
+2018,東京地下鉄,運送費計,transport_expenses_total,193852629,thousand JPY
+2018,東京地下鉄,案内宣伝費 計,publicity,1540702,thousand JPY
+2018,東京地下鉄,厚生福利施設費 計,welfare_facilities,3892735,thousand JPY
+2018,東京地下鉄,一般管理費 計,general_administration,16447115,thousand JPY
+2018,東京地下鉄,合計,opex_before_depreciation_and_taxes,215733181,thousand JPY
+2018,東京地下鉄,減価償却費,depreciation,74240454,thousand JPY
+2018,東京地下鉄,諸税,taxes,11899968,thousand JPY
+2018,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,301873603,thousand JPY
+2018,東京地下鉄,差引営業費計,operating_expenses_net,301314343,thousand JPY
+2018,東京都,旅客営業キロ,route_km,109.0,km
+2018,東京都,輸送人員,passengers,1029829,thousand
+2018,東京都,輸送人キロ,passenger_km,7193317,thousand km
+2018,東京都,旅客列車キロ,train_km,15429,thousand km
+2018,東京都,旅客車両キロ,car_km,122418,thousand km
+2018,東京都,線路延長,track_km,228.1,km
+2018,東京都,車両数,cars,1174,cars
+2018,東京都,駅数,stations,106,stations
+2018,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,75084499,thousand JPY
+2018,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,68609375,thousand JPY
+2018,東京都,旅客運輸収入 計,fare_revenue,143693874,thousand JPY
+2018,東京都,運輸雑収 計,other_revenue,9302148,thousand JPY
+2018,東京都,営業収益計,operating_revenue,152996022,thousand JPY
+2018,東京都,線路保存費 計,track_maintenance,13699712,thousand JPY
+2018,東京都,電路保存費 計,electrical_maintenance,8254630,thousand JPY
+2018,東京都,車両保存費 計,vehicle_maintenance,10640873,thousand JPY
+2018,東京都,運転費 計,train_operation,15003389,thousand JPY
+2018,東京都,運輸費 計,station_and_traffic,28823174,thousand JPY
+2018,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2018,東京都,輸送管理費 計,transport_management,3403208,thousand JPY
+2018,東京都,運送費計,transport_expenses_total,79824986,thousand JPY
+2018,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2018,東京都,厚生福利施設費 計,welfare_facilities,208459,thousand JPY
+2018,東京都,一般管理費 計,general_administration,3771548,thousand JPY
+2018,東京都,合計,opex_before_depreciation_and_taxes,83804993,thousand JPY
+2018,東京都,減価償却費,depreciation,42174660,thousand JPY
+2018,東京都,諸税,taxes,0,thousand JPY
+2018,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,125979653,thousand JPY
+2018,東京都,差引営業費計,operating_expenses_net,125979653,thousand JPY
+2021,東京地下鉄,旅客営業キロ,route_km,195.0,km
+2021,東京地下鉄,輸送人員,passengers,1903783,thousand
+2021,東京地下鉄,旅客列車キロ,train_km,36063,thousand km
+2021,東京地下鉄,旅客車両キロ,car_km,295873,thousand km
+2021,東京地下鉄,線路延長,track_km,411.4,km
+2021,東京地下鉄,車両数,cars,2736,cars
+2021,東京地下鉄,駅数,stations,180,stations
+2021,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,139609405,thousand JPY
+2021,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,105483200,thousand JPY
+2021,東京地下鉄,旅客運輸収入 計,fare_revenue,245092605,thousand JPY
+2021,東京地下鉄,運輸雑収 計,other_revenue,26721819,thousand JPY
+2021,東京地下鉄,営業収益計,operating_revenue,272751806,thousand JPY
+2021,東京地下鉄,線路保存費 計,track_maintenance,26954471,thousand JPY
+2021,東京地下鉄,電路保存費 計,electrical_maintenance,18094542,thousand JPY
+2021,東京地下鉄,車両保存費 計,vehicle_maintenance,19379920,thousand JPY
+2021,東京地下鉄,運転費 計,train_operation,37832009,thousand JPY
+2021,東京地下鉄,運輸費 計,station_and_traffic,64098722,thousand JPY
+2021,東京地下鉄,保守管理費 計,maintenance_management,9691858,thousand JPY
+2021,東京地下鉄,輸送管理費 計,transport_management,8214508,thousand JPY
+2021,東京地下鉄,運送費計,transport_expenses_total,184266030,thousand JPY
+2021,東京地下鉄,案内宣伝費 計,publicity,847897,thousand JPY
+2021,東京地下鉄,厚生福利施設費 計,welfare_facilities,4114834,thousand JPY
+2021,東京地下鉄,一般管理費 計,general_administration,13096327,thousand JPY
+2021,東京地下鉄,合計,opex_before_depreciation_and_taxes,202325088,thousand JPY
+2021,東京地下鉄,減価償却費,depreciation,84086166,thousand JPY
+2021,東京地下鉄,諸税,taxes,12032700,thousand JPY
+2021,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,298443954,thousand JPY
+2021,東京地下鉄,差引営業費計,operating_expenses_net,297979180,thousand JPY
+2021,東京都,旅客営業キロ,route_km,109.0,km
+2021,東京都,輸送人員,passengers,728727,thousand
+2021,東京都,旅客列車キロ,train_km,15653,thousand km
+2021,東京都,旅客車両キロ,car_km,123887,thousand km
+2021,東京都,線路延長,track_km,228.1,km
+2021,東京都,車両数,cars,1206,cars
+2021,東京都,駅数,stations,106,stations
+2021,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,54088217,thousand JPY
+2021,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,48226454,thousand JPY
+2021,東京都,旅客運輸収入 計,fare_revenue,102314671,thousand JPY
+2021,東京都,運輸雑収 計,other_revenue,8847328,thousand JPY
+2021,東京都,営業収益計,operating_revenue,111161999,thousand JPY
+2021,東京都,線路保存費 計,track_maintenance,13803879,thousand JPY
+2021,東京都,電路保存費 計,electrical_maintenance,7751131,thousand JPY
+2021,東京都,車両保存費 計,vehicle_maintenance,9348579,thousand JPY
+2021,東京都,運転費 計,train_operation,15111188,thousand JPY
+2021,東京都,運輸費 計,station_and_traffic,28998606,thousand JPY
+2021,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2021,東京都,輸送管理費 計,transport_management,3381596,thousand JPY
+2021,東京都,運送費計,transport_expenses_total,78394979,thousand JPY
+2021,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2021,東京都,厚生福利施設費 計,welfare_facilities,211630,thousand JPY
+2021,東京都,一般管理費 計,general_administration,3851593,thousand JPY
+2021,東京都,合計,opex_before_depreciation_and_taxes,82458202,thousand JPY
+2021,東京都,減価償却費,depreciation,44474296,thousand JPY
+2021,東京都,諸税,taxes,0,thousand JPY
+2021,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,126932498,thousand JPY
+2021,東京都,差引営業費計,operating_expenses_net,126932498,thousand JPY
+2022,東京地下鉄,旅客営業キロ,route_km,195.0,km
+2022,東京地下鉄,輸送人員,passengers,2171911,thousand
+2022,東京地下鉄,旅客列車キロ,train_km,35027,thousand km
+2022,東京地下鉄,旅客車両キロ,car_km,290315,thousand km
+2022,東京地下鉄,線路延長,track_km,411.4,km
+2022,東京地下鉄,車両数,cars,2722,cars
+2022,東京地下鉄,駅数,stations,180,stations
+2022,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,169374899,thousand JPY
+2022,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,111990095,thousand JPY
+2022,東京地下鉄,旅客運輸収入 計,fare_revenue,281364994,thousand JPY
+2022,東京地下鉄,運輸雑収 計,other_revenue,26437876,thousand JPY
+2022,東京地下鉄,営業収益計,operating_revenue,308778315,thousand JPY
+2022,東京地下鉄,線路保存費 計,track_maintenance,24263230,thousand JPY
+2022,東京地下鉄,電路保存費 計,electrical_maintenance,17797158,thousand JPY
+2022,東京地下鉄,車両保存費 計,vehicle_maintenance,20123989,thousand JPY
+2022,東京地下鉄,運転費 計,train_operation,49486803,thousand JPY
+2022,東京地下鉄,運輸費 計,station_and_traffic,68737523,thousand JPY
+2022,東京地下鉄,保守管理費 計,maintenance_management,9527277,thousand JPY
+2022,東京地下鉄,輸送管理費 計,transport_management,8021188,thousand JPY
+2022,東京地下鉄,運送費計,transport_expenses_total,197957168,thousand JPY
+2022,東京地下鉄,案内宣伝費 計,publicity,606489,thousand JPY
+2022,東京地下鉄,厚生福利施設費 計,welfare_facilities,4183897,thousand JPY
+2022,東京地下鉄,一般管理費 計,general_administration,13284678,thousand JPY
+2022,東京地下鉄,合計,opex_before_depreciation_and_taxes,216032232,thousand JPY
+2022,東京地下鉄,減価償却費,depreciation,66831635,thousand JPY
+2022,東京地下鉄,諸税,taxes,12988998,thousand JPY
+2022,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,295852865,thousand JPY
+2022,東京地下鉄,差引営業費計,operating_expenses_net,295393050,thousand JPY
+2022,東京都,旅客営業キロ,route_km,109.0,km
+2022,東京都,輸送人員,passengers,818428,thousand
+2022,東京都,旅客列車キロ,train_km,15396,thousand km
+2022,東京都,旅客車両キロ,car_km,124902,thousand km
+2022,東京都,線路延長,track_km,228.1,km
+2022,東京都,車両数,cars,1216,cars
+2022,東京都,駅数,stations,106,stations
+2022,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,64840407,thousand JPY
+2022,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,51029136,thousand JPY
+2022,東京都,旅客運輸収入 計,fare_revenue,115869543,thousand JPY
+2022,東京都,運輸雑収 計,other_revenue,8947185,thousand JPY
+2022,東京都,営業収益計,operating_revenue,124816728,thousand JPY
+2022,東京都,線路保存費 計,track_maintenance,13692881,thousand JPY
+2022,東京都,電路保存費 計,electrical_maintenance,8917908,thousand JPY
+2022,東京都,車両保存費 計,vehicle_maintenance,10484120,thousand JPY
+2022,東京都,運転費 計,train_operation,17313731,thousand JPY
+2022,東京都,運輸費 計,station_and_traffic,30848737,thousand JPY
+2022,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2022,東京都,輸送管理費 計,transport_management,3437531,thousand JPY
+2022,東京都,運送費計,transport_expenses_total,84694908,thousand JPY
+2022,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2022,東京都,厚生福利施設費 計,welfare_facilities,193687,thousand JPY
+2022,東京都,一般管理費 計,general_administration,4123732,thousand JPY
+2022,東京都,合計,opex_before_depreciation_and_taxes,89012327,thousand JPY
+2022,東京都,減価償却費,depreciation,45958068,thousand JPY
+2022,東京都,諸税,taxes,0,thousand JPY
+2022,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,134970395,thousand JPY
+2022,東京都,差引営業費計,operating_expenses_net,134970395,thousand JPY
+2023,東京地下鉄,旅客営業キロ,route_km,195.0,km
+2023,東京地下鉄,輸送人員,passengers,2384732,thousand
+2023,東京地下鉄,旅客列車キロ,train_km,34762,thousand km
+2023,東京地下鉄,旅客車両キロ,car_km,289826,thousand km
+2023,東京地下鉄,線路延長,track_km,411.4,km
+2023,東京地下鉄,車両数,cars,2724,cars
+2023,東京地下鉄,駅数,stations,180,stations
+2023,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,199427504,thousand JPY
+2023,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,124581824,thousand JPY
+2023,東京地下鉄,旅客運輸収入 計,fare_revenue,324009328,thousand JPY
+2023,東京地下鉄,運輸雑収 計,other_revenue,27374995,thousand JPY
+2023,東京地下鉄,営業収益計,operating_revenue,352319768,thousand JPY
+2023,東京地下鉄,線路保存費 計,track_maintenance,24213685,thousand JPY
+2023,東京地下鉄,電路保存費 計,electrical_maintenance,16055728,thousand JPY
+2023,東京地下鉄,車両保存費 計,vehicle_maintenance,18585864,thousand JPY
+2023,東京地下鉄,運転費 計,train_operation,43352779,thousand JPY
+2023,東京地下鉄,運輸費 計,station_and_traffic,66503677,thousand JPY
+2023,東京地下鉄,保守管理費 計,maintenance_management,9998154,thousand JPY
+2023,東京地下鉄,輸送管理費 計,transport_management,8428320,thousand JPY
+2023,東京地下鉄,運送費計,transport_expenses_total,187138207,thousand JPY
+2023,東京地下鉄,案内宣伝費 計,publicity,922571,thousand JPY
+2023,東京地下鉄,厚生福利施設費 計,welfare_facilities,4564630,thousand JPY
+2023,東京地下鉄,一般管理費 計,general_administration,14919810,thousand JPY
+2023,東京地下鉄,合計,opex_before_depreciation_and_taxes,207545218,thousand JPY
+2023,東京地下鉄,減価償却費,depreciation,70055226,thousand JPY
+2023,東京地下鉄,諸税,taxes,13538525,thousand JPY
+2023,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,291138969,thousand JPY
+2023,東京地下鉄,差引営業費計,operating_expenses_net,290657060,thousand JPY
+2023,東京都,旅客営業キロ,route_km,109.0,km
+2023,東京都,輸送人員,passengers,910735,thousand
+2023,東京都,旅客列車キロ,train_km,15422,thousand km
+2023,東京都,旅客車両キロ,car_km,126695,thousand km
+2023,東京都,線路延長,track_km,228.1,km
+2023,東京都,車両数,cars,1216,cars
+2023,東京都,駅数,stations,106,stations
+2023,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,75305544,thousand JPY
+2023,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,54650043,thousand JPY
+2023,東京都,旅客運輸収入 計,fare_revenue,129955587,thousand JPY
+2023,東京都,運輸雑収 計,other_revenue,10019869,thousand JPY
+2023,東京都,営業収益計,operating_revenue,139975456,thousand JPY
+2023,東京都,線路保存費 計,track_maintenance,14036704,thousand JPY
+2023,東京都,電路保存費 計,electrical_maintenance,9630790,thousand JPY
+2023,東京都,車両保存費 計,vehicle_maintenance,9537638,thousand JPY
+2023,東京都,運転費 計,train_operation,17086147,thousand JPY
+2023,東京都,運輸費 計,station_and_traffic,30816010,thousand JPY
+2023,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2023,東京都,輸送管理費 計,transport_management,3848301,thousand JPY
+2023,東京都,運送費計,transport_expenses_total,84955590,thousand JPY
+2023,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2023,東京都,厚生福利施設費 計,welfare_facilities,223882,thousand JPY
+2023,東京都,一般管理費 計,general_administration,4333108,thousand JPY
+2023,東京都,合計,opex_before_depreciation_and_taxes,89512580,thousand JPY
+2023,東京都,減価償却費,depreciation,46444311,thousand JPY
+2023,東京都,諸税,taxes,1,thousand JPY
+2023,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,135956892,thousand JPY
+2023,東京都,差引営業費計,operating_expenses_net,135956892,thousand JPY
+2019,東京地下鉄,旅客営業キロ,route_km,195.0,km
+2019,東京地下鉄,輸送人員,passengers,2765003,thousand
+2019,東京地下鉄,旅客列車キロ,train_km,35685,thousand km
+2019,東京地下鉄,旅客車両キロ,car_km,292574,thousand km
+2019,東京地下鉄,線路延長,track_km,411.5,km
+2019,東京地下鉄,車両数,cars,2716,cars
+2019,東京地下鉄,駅数,stations,179,stations
+2019,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,191354014,thousand JPY
+2019,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,155188749,thousand JPY
+2019,東京地下鉄,旅客運輸収入 計,fare_revenue,346542763,thousand JPY
+2019,東京地下鉄,運輸雑収 計,other_revenue,32715610,thousand JPY
+2019,東京地下鉄,営業収益計,operating_revenue,380480059,thousand JPY
+2019,東京地下鉄,線路保存費 計,track_maintenance,32364808,thousand JPY
+2019,東京地下鉄,電路保存費 計,electrical_maintenance,19608326,thousand JPY
+2019,東京地下鉄,車両保存費 計,vehicle_maintenance,20383628,thousand JPY
+2019,東京地下鉄,運転費 計,train_operation,38525037,thousand JPY
+2019,東京地下鉄,運輸費 計,station_and_traffic,70331678,thousand JPY
+2019,東京地下鉄,保守管理費 計,maintenance_management,9700504,thousand JPY
+2019,東京地下鉄,輸送管理費 計,transport_management,10676598,thousand JPY
+2019,東京地下鉄,運送費計,transport_expenses_total,201590579,thousand JPY
+2019,東京地下鉄,案内宣伝費 計,publicity,977775,thousand JPY
+2019,東京地下鉄,厚生福利施設費 計,welfare_facilities,4157286,thousand JPY
+2019,東京地下鉄,一般管理費 計,general_administration,16826120,thousand JPY
+2019,東京地下鉄,合計,opex_before_depreciation_and_taxes,223551760,thousand JPY
+2019,東京地下鉄,減価償却費,depreciation,78798799,thousand JPY
+2019,東京地下鉄,諸税,taxes,12060554,thousand JPY
+2019,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,314411113,thousand JPY
+2019,東京地下鉄,差引営業費計,operating_expenses_net,313845422,thousand JPY
+2019,東京都,旅客営業キロ,route_km,109.0,km
+2019,東京都,輸送人員,passengers,1036332,thousand
+2019,東京都,旅客列車キロ,train_km,15589,thousand km
+2019,東京都,旅客車両キロ,car_km,123397,thousand km
+2019,東京都,線路延長,track_km,228.1,km
+2019,東京都,車両数,cars,1174,cars
+2019,東京都,駅数,stations,106,stations
+2019,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,73979774,thousand JPY
+2019,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,69445164,thousand JPY
+2019,東京都,旅客運輸収入 計,fare_revenue,143424938,thousand JPY
+2019,東京都,運輸雑収 計,other_revenue,9581510,thousand JPY
+2019,東京都,営業収益計,operating_revenue,153006448,thousand JPY
+2019,東京都,線路保存費 計,track_maintenance,14849154,thousand JPY
+2019,東京都,電路保存費 計,electrical_maintenance,8664044,thousand JPY
+2019,東京都,車両保存費 計,vehicle_maintenance,10879592,thousand JPY
+2019,東京都,運転費 計,train_operation,15644214,thousand JPY
+2019,東京都,運輸費 計,station_and_traffic,30138141,thousand JPY
+2019,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2019,東京都,輸送管理費 計,transport_management,3567480,thousand JPY
+2019,東京都,運送費計,transport_expenses_total,83742625,thousand JPY
+2019,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2019,東京都,厚生福利施設費 計,welfare_facilities,220893,thousand JPY
+2019,東京都,一般管理費 計,general_administration,4175608,thousand JPY
+2019,東京都,合計,opex_before_depreciation_and_taxes,88139126,thousand JPY
+2019,東京都,減価償却費,depreciation,43715172,thousand JPY
+2019,東京都,諸税,taxes,0,thousand JPY
+2019,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,131854298,thousand JPY
+2019,東京都,差引営業費計,operating_expenses_net,131854298,thousand JPY
+2020,東京地下鉄,旅客営業キロ,route_km,195.0,km
+2020,東京地下鉄,輸送人員,passengers,1819488,thousand
+2020,東京地下鉄,旅客列車キロ,train_km,36180,thousand km
+2020,東京地下鉄,旅客車両キロ,car_km,296597,thousand km
+2020,東京地下鉄,線路延長,track_km,411.4,km
+2020,東京地下鉄,車両数,cars,2750,cars
+2020,東京地下鉄,駅数,stations,180,stations
+2020,東京地下鉄,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,116341538,thousand JPY
+2020,東京地下鉄,旅客運輸収入 定期運賃,fare_revenue_commuter,107587120,thousand JPY
+2020,東京地下鉄,旅客運輸収入 計,fare_revenue,223928658,thousand JPY
+2020,東京地下鉄,運輸雑収 計,other_revenue,27362801,thousand JPY
+2020,東京地下鉄,営業収益計,operating_revenue,252540191,thousand JPY
+2020,東京地下鉄,線路保存費 計,track_maintenance,32198582,thousand JPY
+2020,東京地下鉄,電路保存費 計,electrical_maintenance,21926142,thousand JPY
+2020,東京地下鉄,車両保存費 計,vehicle_maintenance,18604121,thousand JPY
+2020,東京地下鉄,運転費 計,train_operation,36941472,thousand JPY
+2020,東京地下鉄,運輸費 計,station_and_traffic,65943170,thousand JPY
+2020,東京地下鉄,保守管理費 計,maintenance_management,9337552,thousand JPY
+2020,東京地下鉄,輸送管理費 計,transport_management,8546186,thousand JPY
+2020,東京地下鉄,運送費計,transport_expenses_total,193497225,thousand JPY
+2020,東京地下鉄,案内宣伝費 計,publicity,1693390,thousand JPY
+2020,東京地下鉄,厚生福利施設費 計,welfare_facilities,4154250,thousand JPY
+2020,東京地下鉄,一般管理費 計,general_administration,13774285,thousand JPY
+2020,東京地下鉄,合計,opex_before_depreciation_and_taxes,213119150,thousand JPY
+2020,東京地下鉄,減価償却費,depreciation,82455707,thousand JPY
+2020,東京地下鉄,諸税,taxes,10888713,thousand JPY
+2020,東京地下鉄,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,306463571,thousand JPY
+2020,東京地下鉄,差引営業費計,operating_expenses_net,305962170,thousand JPY
+2020,東京都,旅客営業キロ,route_km,109.0,km
+2020,東京都,輸送人員,passengers,700207,thousand
+2020,東京都,旅客列車キロ,train_km,15615,thousand km
+2020,東京都,旅客車両キロ,car_km,123562,thousand km
+2020,東京都,線路延長,track_km,228.1,km
+2020,東京都,車両数,cars,1190,cars
+2020,東京都,駅数,stations,106,stations
+2020,東京都,旅客運輸収入 定期外運賃,fare_revenue_non_commuter,45642708,thousand JPY
+2020,東京都,旅客運輸収入 定期運賃,fare_revenue_commuter,49738340,thousand JPY
+2020,東京都,旅客運輸収入 計,fare_revenue,95381048,thousand JPY
+2020,東京都,運輸雑収 計,other_revenue,8847275,thousand JPY
+2020,東京都,営業収益計,operating_revenue,104228323,thousand JPY
+2020,東京都,線路保存費 計,track_maintenance,14699404,thousand JPY
+2020,東京都,電路保存費 計,electrical_maintenance,8248118,thousand JPY
+2020,東京都,車両保存費 計,vehicle_maintenance,10613872,thousand JPY
+2020,東京都,運転費 計,train_operation,14844195,thousand JPY
+2020,東京都,運輸費 計,station_and_traffic,28351828,thousand JPY
+2020,東京都,保守管理費 計,maintenance_management,0,thousand JPY
+2020,東京都,輸送管理費 計,transport_management,3182066,thousand JPY
+2020,東京都,運送費計,transport_expenses_total,79939483,thousand JPY
+2020,東京都,案内宣伝費 計,publicity,0,thousand JPY
+2020,東京都,厚生福利施設費 計,welfare_facilities,191552,thousand JPY
+2020,東京都,一般管理費 計,general_administration,4089414,thousand JPY
+2020,東京都,合計,opex_before_depreciation_and_taxes,84220449,thousand JPY
+2020,東京都,減価償却費,depreciation,43537115,thousand JPY
+2020,東京都,諸税,taxes,0,thousand JPY
+2020,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,127757564,thousand JPY
+2020,東京都,差引営業費計,operating_expenses_net,127757564,thousand JPY

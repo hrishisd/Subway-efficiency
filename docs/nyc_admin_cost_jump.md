@@ -64,6 +64,14 @@ Evidence against simple hiring: MTA's 2023 year-end report shows NYCT's "Adminis
 - For cross-system comparison, treat claims accruals separately. A single year's reserve change can move NYC cost per car-km by about $0.73 (the 2024 casualty rise of $411M over 562M car-km).
 - MTA pension and OPEB accounting (GASB 68 and 75) produced large swings in MTA's own reports in 2023 and 2024, but NTD fringe benefits for the subway were nearly flat from 2023 to 2024 ($1,947M to $1,928M), so they do not explain the NTD administration jump.
 
+## Search of MTA budget documents (2026-11-26)
+
+To test the reclassification idea, the MTA Final Proposed Budgets were read: the 2023 budget, November 2022 plan, Volume 2 (source `mta_budget_2023_final_proposed_v2`), and the 2024 budget, November 2023 plan, Volume 2 (source `mta_budget_2024_final_proposed_v2`). Only the first part of each PDF (to about page II-21) could be read as text. The NYCT headcount-by-function tables are later in the documents and were not reached.
+
+The readable parts name only small staffing changes: a hiring campaign to cut vacancies, a re-organization of station maintenance leadership, three analyst positions, 25 elevator operator positions redeployed to station cleaning, and 12 positions in restructured response teams. None of these is close to the 1,065-person rise in NTD subway administration staff. Nothing found says that positions were moved into general administration.
+
+So the cause of the 2023 rise is still **not known**. Two checks remain: the NYCT headcount tables by function in the same budget documents (or MTA's per-agency budget files), and the NTD Policy Manual change log for report year 2023, which could show a change in how staff are assigned to functions. No NTD manual text was read in this session.
+
 ## Open questions
 
 - Get the NTD function-by-object-class cross tab for 2022 to 2024 (to confirm the casualty assumption and locate the 2023 labor rise).
