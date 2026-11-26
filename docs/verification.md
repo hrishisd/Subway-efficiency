@@ -48,3 +48,43 @@ Rows that pass and come from primary sources are now `verified` (43 factors, 165
 - `nyc_subway_unionization_streetsblog`: Streetsblog writes "Transit Workers Union"; the union's name is Transport Workers Union (as Reason writes it). The row value already uses the right name.
 - The London rows from Travel in London 2024 matched, but the text extraction placed Table 9 on printed p. 26, not p. 25. Not changed, because the extraction's page mapping was uncertain.
 - Four NYC on-time-performance input rows (2023 and 2025 on-time and scheduled trips) were not re-queried; the derived ratios for those years recompute correctly from them.
+
+## Results (pass 2: European and Asian peer data, 2026-11-26)
+
+Pass 2 checked the peer rows from PRs 7 and 8 and re-checked the deflator change from PR 10.
+
+| Data | Rows checked | Matched source | Needed a fix |
+| --- | --- | --- | --- |
+| Hong Kong MTR (ten-year statistics, annual results 2020 and 2025) | 102 | 102 | 0 |
+| Singapore SMRT annual reports | 18 | 18 | 0 |
+| Seoul Metro 2019 settlement report | 16 | 16 values | 4 page locators |
+| Tokyo (MLIT FY2019 and FY2023, Tokyo Metro yuho FY2020, Toei audit FY2023) | 42 | 42 | 0 |
+| London (TfL QPR 2024/25, Travel in London Tables 1, 2 and 9, financial statements 2019/20) | 38 | 38 | 0 (one restatement note) |
+| Paris STRMTG 2019 and 2024; Berlin BVG | 14 | 14 | 0 |
+| Istanbul Sayıştay audit | 7 | 7 | 0 |
+| Madrid (CRTM reports, regional ridership releases, inputs of the cost estimate) | 14 | 14 | 0 |
+| Beijing (Jiemian news, secondary) | 2 | 2 transcriptions match | 0 |
+| Peer derived rows: PPP conversions (value, low, high) | 369 | 369 | 0 |
+| Peer derived rows: unit ratios and other methods | about 400 | all | 0 |
+| US GDP deflator from FRED (`us_gdp_deflator_2000` to `_2025`) | 26 | 26 | 0 |
+| NTD `_real2024` rows on the new deflator | 557 recomputed | 557 | 0 |
+
+Error rate in pass 2: no wrong numbers in about 1,550 checked values. The only fixes were four wrong page numbers in the Seoul locators (업무량 p.15, 직원 현황 p.13, summary p.16, pp.28-31).
+
+After the deflator change, the 88 rows that PR 10 marked `SUPERSEDED` recompute from verified inputs and the re-fetched FRED series, so they are `verified` again.
+
+Estimated rows (289, mostly Madrid, Seoul and Tokyo cost splits) stay `unverified` on purpose: their inputs were checked (`source_value_ok`) but the assumptions are not facts a source can confirm.
+
+### Open points from pass 2
+
+- London 2023 indirect cost: 456 (GBP m) in the cited QPR 2023/24, but the QPR 2024/25 prior-year column restates it as 455. Not changed; the row cites the earlier report correctly.
+- Travel in London table pages: the PDF page and the printed page differ by one. Locators use the PDF page.
+- MLIT `001745001.pdf`: the values match, but the fiscal-year label was not visible in the text extraction.
+- Seoul depreciation is an assumption (300-450 billion won). The report shows only 3.49 billion won of depreciation in selling and admin costs; cost-of-sales depreciation was not found.
+- Beijing 2019 (Jiemian) gives no primary source; stays `unverified`.
+- Hong Kong `employees_fte` values are year-end headcounts, not full-time equivalents.
+- Not re-checked in pass 2: TfL QPRs before 2024/25 (except overlapping columns), MLIT FY2015-2018 and FY2020-2022, CRTM 2016-2022 car-km, Toei FY2018-2022, other yuho years, MTR results 2017, 2018, 2021 and 2023, rolling-stock fact sheets, INSEE, and Alon Levy's blog.
+
+## Overall
+
+Across both passes, about 3,900 values were checked against their sources or recomputed. No wrong number was found. About 10 hand-collected rows (roughly 2%) had a wrong scope, locator, wording or outdated fact. The only material correction is WMATA's automation status (automatic train operation restarted on the Red Line in December 2024).

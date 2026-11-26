@@ -1016,3 +1016,563 @@ price_indices,us_cpi_u_2022,verified,2026-11-26,fact-check thread (Claude),Match
 price_indices,us_cpi_u_2023,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
 price_indices,us_cpi_u_2024,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
 price_indices,us_cpi_u_2025,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+observations,london_underground_2024_fare_revenue_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",TfL QPR Q4 2024/25 p.12 Underground table matches
+observations,london_underground_2024_opex_direct_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",TfL QPR Q4 2024/25 p.12 Underground table matches
+observations,london_underground_2024_opex_indirect_allocated_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",TfL QPR Q4 2024/25 p.12 Underground table matches
+observations,london_underground_2024_unlinked_trips_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",TfL QPR Q4 2024/25 p.12 Underground table matches
+observations,london_underground_2024_employees_fte_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2","TfL QPR Q4 2024/25 headcount 16,432 (read from text extraction summary)"
+observations,london_underground_2023_employees_fte_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2","TfL QPR Q4 2024/25 headcount table, 31 March 2024 column: 16,146"
+observations,london_underground_2023_fare_revenue_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",Also matches prior-year column of TfL QPR Q4 2024/25
+observations,london_underground_2023_opex_direct_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",Also matches prior-year column of TfL QPR Q4 2024/25
+observations,london_underground_2023_opex_indirect_allocated_qpr,note,2026-11-26,"fact-check thread (Claude), pass 2",Cited QPR Q4 2023/24 gives 456; the restated prior-year column in QPR Q4 2024/25 gives 455. 0.2% difference; not changed
+observations,hong_kong_mtr_2016_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2016_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2017_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2018_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2019_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2020_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2021_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2022_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2023_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2024_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_avg_trip_length_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_car_km_mtr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_car_km_mtrael,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_car_km_mtrlr,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_employees_fte_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_opex_per_car_km_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_opex_per_trip_mtrrail,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_unlinked_trips_mtrcb,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,hong_kong_mtr_2025_unlinked_trips_mtrdom,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR Ten-Year Statistics (AR2025 p.59) matches
+observations,singapore_mrt_2021_car_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2021_ebit_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2021_operating_revenue_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2021_passenger_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2021_route_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2021_unlinked_trips_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2022_car_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2022_ebit_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2022_operating_revenue_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2022_passenger_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2022_route_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2022_unlinked_trips_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2023_car_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2023_ebit_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2023_operating_revenue_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2023_passenger_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2023_route_km_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,singapore_mrt_2023_unlinked_trips_smrt,verified,2026-11-26,"fact-check thread (Claude), pass 2",SMRT Group Review 2023/24 pp.35-36 matches
+observations,tokyo_metro_2023_car_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_fare_revenue_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_opex_general_administration_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_opex_incl_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_route_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_stations_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_train_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_metro_2023_unlinked_trips_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_car_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_fare_revenue_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_opex_general_administration_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_opex_incl_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_route_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_stations_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_train_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,tokyo_toei_2023_unlinked_trips_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick FY2023 地下鉄事業者 table matches
+observations,berlin_ubahn_2024_passenger_km_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG Lagebericht 2025 p.23 matches
+observations,berlin_ubahn_2024_train_km_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG Lagebericht 2025 p.23 matches
+observations,berlin_ubahn_2025_cars_fleet_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG in Zahlen 2025 p.1-2 matches (checked in pass 1)
+observations,berlin_ubahn_2025_passenger_km_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG Lagebericht 2025 p.23 matches
+observations,berlin_ubahn_2025_route_km_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG in Zahlen 2025 p.1-2 matches (checked in pass 1)
+observations,berlin_ubahn_2025_stations_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG in Zahlen 2025 p.1-2 matches (checked in pass 1)
+observations,berlin_ubahn_2025_train_km_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG Lagebericht 2025 p.23 matches
+observations,berlin_ubahn_2025_unlinked_trips_bvg,verified,2026-11-26,"fact-check thread (Claude), pass 2",BVG in Zahlen 2025 p.1-2 matches (checked in pass 1)
+observations,paris_metro_2019_route_km_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2019_stations_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2019_train_km_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2019_unlinked_trips_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2024_route_km_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2024_stations_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2024_train_km_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,paris_metro_2024_unlinked_trips_strmtg,verified,2026-11-26,"fact-check thread (Claude), pass 2",STRMTG Tableau 1 Paris RATP row matches
+observations,madrid_metro_2023_car_km_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",CRTM Informe anual 2023 p.20 matches
+observations,madrid_metro_2023_route_km_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",CRTM Informe anual 2023 p.20 matches
+observations,madrid_metro_2023_stations_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",CRTM Informe anual 2023 p.20 matches
+observations,madrid_metro_2015_unlinked_trips_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",Matches (to 0.1 million) CRTM 2023 table 'Evolución de la demanda por operadores'
+observations,madrid_metro_2019_unlinked_trips_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",Matches (to 0.1 million) CRTM 2023 table 'Evolución de la demanda por operadores'
+observations,madrid_metro_2020_unlinked_trips_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",Matches (to 0.1 million) CRTM 2023 table 'Evolución de la demanda por operadores'
+observations,madrid_metro_2021_unlinked_trips_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",Matches (to 0.1 million) CRTM 2023 table 'Evolución de la demanda por operadores'
+observations,madrid_metro_2022_unlinked_trips_crtm,verified,2026-11-26,"fact-check thread (Claude), pass 2",Matches (to 0.1 million) CRTM 2023 table 'Evolución de la demanda por operadores'
+observations,madrid_metro_2023_unlinked_trips_cam,verified,2026-11-26,"fact-check thread (Claude), pass 2",CAM release 2025-01-16 matches; also CRTM 2023 table 662.3m
+observations,madrid_metro_2024_unlinked_trips_cam,verified,2026-11-26,"fact-check thread (Claude), pass 2",CAM release 2025-01-16 matches
+observations,madrid_metro_2024_opex_total_budget,source_value_ok,2026-11-26,"fact-check thread (Claude), pass 2",Estimated row: CAM release 2023-12-31 says 987 million for Metro 2024 (572.8 subsidy + 414.2 fares); input value matches
+observations,madrid_metro_2024_fare_revenue_budget,source_value_ok,2026-11-26,"fact-check thread (Claude), pass 2",Estimated row: 414.2 million matches CAM release
+observations,seoul_metro_2019_employees_fte_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_fare_revenue_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_opex_incl_depreciation_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_opex_other_business_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_route_km_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_stations_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_train_km_smgross,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2019_unlinked_trips_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2","Value matches Seoul Metro 2019 결산서; locator page corrected (업무량 p.15, 직원 현황 p.13, summary p.16, income statement pp.28-31)"
+observations,seoul_metro_2018_route_km_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2",2018 column of p.15 업무량 table matches; locator page corrected to p.15
+observations,seoul_metro_2018_stations_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2",2018 column of p.15 업무량 table matches; locator page corrected to p.15
+observations,seoul_metro_2018_train_km_smgross,corrected,2026-11-26,"fact-check thread (Claude), pass 2",2018 column of p.15 업무량 table matches; locator page corrected to p.15
+observations,seoul_metro_2018_unlinked_trips_sm,corrected,2026-11-26,"fact-check thread (Claude), pass 2",2018 column of p.15 업무량 table matches; locator page corrected to p.15
+observations,seoul_metro_2018_employees_fte_sm,locator_fixed_unchecked,2026-11-26,"fact-check thread (Claude), pass 2",Prior-year column not re-read; locator page corrected only
+observations,seoul_metro_2018_fare_revenue_sm,locator_fixed_unchecked,2026-11-26,"fact-check thread (Claude), pass 2",Prior-year column not re-read; locator page corrected only
+observations,seoul_metro_2018_opex_incl_depreciation_sm,locator_fixed_unchecked,2026-11-26,"fact-check thread (Claude), pass 2",Prior-year column not re-read; locator page corrected only
+observations,seoul_metro_2018_opex_other_business_sm,locator_fixed_unchecked,2026-11-26,"fact-check thread (Claude), pass 2",Prior-year column not re-read; locator page corrected only
+observations,beijing_subway_2019_opex_per_trip_jiemian,transcription_ok_secondary,2026-11-26,"fact-check thread (Claude), pass 2","Matches Jiemian article (news, secondary). 2022 figure is the outlet's own combination of three operators; 2019 figure has no stated source or scope"
+observations,beijing_subway_2022_opex_per_trip_jiemian,transcription_ok_secondary,2026-11-26,"fact-check thread (Claude), pass 2","Matches Jiemian article (news, secondary). 2022 figure is the outlet's own combination of three operators; 2019 figure has no stated source or scope"
+observations,hong_kong_mtr_2024_fare_revenue_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2025 results announcement p.2 matches
+observations,hong_kong_mtr_2024_opex_staff_costs_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2025 results announcement p.2 matches
+observations,hong_kong_mtr_2024_opex_total_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2025 results announcement p.2 matches
+observations,hong_kong_mtr_2025_fare_revenue_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2025 results announcement p.2 matches
+observations,hong_kong_mtr_2025_opex_staff_costs_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2025 results announcement p.2 matches
+observations,hong_kong_mtr_2025_opex_total_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2025 results announcement p.2 matches
+observations,istanbul_metro_2019_operating_revenue_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,istanbul_metro_2019_opex_direct_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,istanbul_metro_2019_opex_indirect_allocated_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,istanbul_metro_2020_employees_fte_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,istanbul_metro_2020_operating_revenue_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,istanbul_metro_2020_opex_direct_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,istanbul_metro_2020_opex_indirect_allocated_sayistay,verified,2026-11-26,"fact-check thread (Claude), pass 2",Sayistay 2020 report p.2-3 matches
+observations,tokyo_toei_2022_employees_fte_toei,verified,2026-11-26,"fact-check thread (Claude), pass 2",Toei FY2023 audit opinion pp.16-17 matches (current and prior-year columns)
+observations,tokyo_toei_2022_operating_subsidy_toei,verified,2026-11-26,"fact-check thread (Claude), pass 2",Toei FY2023 audit opinion pp.16-17 matches (current and prior-year columns)
+observations,tokyo_toei_2023_employees_fte_toei,verified,2026-11-26,"fact-check thread (Claude), pass 2",Toei FY2023 audit opinion pp.16-17 matches (current and prior-year columns)
+observations,tokyo_toei_2023_operating_subsidy_toei,verified,2026-11-26,"fact-check thread (Claude), pass 2",Toei FY2023 audit opinion pp.16-17 matches (current and prior-year columns)
+observations,madrid_metro_2018_opex_total_est,source_value_ok,2026-11-26,"fact-check thread (Claude), pass 2","Estimate inputs match CAM release 2019-05-21 (ingresos 1,046m; resultado operativo 134m before amortisation and financial costs). Cross-check: total gastos 983m, so depreciation is about 62m; consistent"
+observations,madrid_metro_2019_opex_total_est,source_value_ok,2026-11-26,"fact-check thread (Claude), pass 2","Estimate inputs match CAM release 2020-07-22 (ingresos 1,054m; resultado operativo 159m). Total gastos 992m"
+observations,hong_kong_mtr_2019_fare_revenue_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2020 results announcement p.2 matches (2020 and 2019 columns)
+observations,hong_kong_mtr_2019_opex_staff_costs_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2020 results announcement p.2 matches (2020 and 2019 columns)
+observations,hong_kong_mtr_2019_opex_total_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2020 results announcement p.2 matches (2020 and 2019 columns)
+observations,hong_kong_mtr_2020_fare_revenue_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2020 results announcement p.2 matches (2020 and 2019 columns)
+observations,hong_kong_mtr_2020_opex_staff_costs_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2020 results announcement p.2 matches (2020 and 2019 columns)
+observations,hong_kong_mtr_2020_opex_total_mtrall,verified,2026-11-26,"fact-check thread (Claude), pass 2",MTR 2020 results announcement p.2 matches (2020 and 2019 columns)
+observations,tokyo_metro_2019_car_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_employees_fte_yuho,verified,2026-11-26,"fact-check thread (Claude), pass 2",Yuho FY ending March 2020 従業員の状況 matches
+observations,tokyo_metro_2019_employees_headcount_parent_yuho,verified,2026-11-26,"fact-check thread (Claude), pass 2",Yuho FY ending March 2020 従業員の状況 matches
+observations,tokyo_metro_2019_fare_revenue_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_opex_general_administration_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_opex_incl_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_route_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_stations_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_train_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_metro_2019_unlinked_trips_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_car_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_fare_revenue_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_opex_general_administration_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_opex_incl_depreciation_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_route_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_stations_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_train_km_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,tokyo_toei_2019_unlinked_trips_mlit,verified,2026-11-26,"fact-check thread (Claude), pass 2",MLIT yardstick (001745001.pdf) 地下鉄事業者 table matches; the file's year label was not visible in the text extraction
+observations,london_underground_2015_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2015_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2015_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2016_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2016_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2016_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2017_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2017_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2017_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2018_opex_total_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",TfL draft financial statements 2019/20 segment table: Underground gross expenditure matches
+observations,london_underground_2018_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2018_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2018_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2019_opex_total_qpr,verified,2026-11-26,"fact-check thread (Claude), pass 2",TfL draft financial statements 2019/20 segment table: Underground gross expenditure matches
+observations,london_underground_2019_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2019_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2019_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2020_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2020_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2020_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2021_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2021_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2021_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2022_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2022_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2022_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2023_passenger_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,london_underground_2023_train_km_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Table 9 matches (checked in pass 1)
+observations,london_underground_2023_unlinked_trips_til,verified,2026-11-26,"fact-check thread (Claude), pass 2",Travel in London 2024 Tables 1-2 match (the tables sit on PDF pp.7-8; the locator gives printed pp.8-9)
+observations,berlin_ubahn_2025_avg_trip_length_km_bvg,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2016_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2016_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2016_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2017_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2017_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2017_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2018_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2018_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2018_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_fare_revenue_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_farebox_recovery_mtrall,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_opex_staff_costs_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_opex_total_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_fare_revenue_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_farebox_recovery_mtrall,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_opex_staff_costs_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_opex_total_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2021_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2021_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2021_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2022_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2022_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2022_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2023_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2023_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2023_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_fare_revenue_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_farebox_recovery_mtrall,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_opex_staff_costs_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_opex_total_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_fare_revenue_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_farebox_recovery_mtrall,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_opex_per_car_km_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_opex_per_trip_mtrrail_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_opex_staff_costs_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_opex_total_mtrall_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_unlinked_trips_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2019_operating_revenue_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2019_opex_direct_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2019_opex_indirect_allocated_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2019_opex_total_sayistay,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2019_opex_total_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2020_operating_revenue_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2020_opex_direct_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2020_opex_indirect_allocated_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2020_opex_total_sayistay,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,istanbul_metro_2020_opex_total_sayistay_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2015_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2016_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2017_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_per_passenger_km_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_per_passenger_km_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_per_train_km_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_per_train_km_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_per_trip_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_per_trip_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2018_opex_total_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_per_passenger_km_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_per_passenger_km_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_per_train_km_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_per_train_km_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_per_trip_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_per_trip_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2019_opex_total_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2020_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2021_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2022_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2023_avg_trip_length_km_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2023_fare_revenue_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2023_opex_direct_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2023_passenger_km_per_employee_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2023_trips_per_employee_til,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_fare_revenue_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_opex_direct_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_opex_indirect_allocated_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_opex_total_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_opex_total_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_trips_per_employee_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2012_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2013_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2014_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_total_real2024_ntd,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,seoul_metro_2019_fare_revenue_sm_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,seoul_metro_2019_opex_incl_depreciation_sm_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,seoul_metro_2019_opex_other_business_sm_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,seoul_metro_2019_trips_per_employee_sm,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2021_avg_car_load_smrt,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2021_avg_trip_length_km_smrt,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2021_ebit_smrt_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2021_operating_revenue_smrt_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2022_avg_car_load_smrt,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2022_avg_trip_length_km_smrt,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2022_ebit_smrt_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2022_operating_revenue_smrt_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2023_avg_car_load_smrt,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2023_avg_trip_length_km_smrt,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2023_ebit_smrt_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,singapore_mrt_2023_operating_revenue_smrt_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_avg_cars_per_train_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_employees_per_million_car_km_yuho,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_fare_revenue_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_general_administration_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_incl_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_total_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_total_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_trips_per_employee_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_avg_cars_per_train_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_fare_revenue_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_general_administration_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_incl_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_total_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_total_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_avg_cars_per_train_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_fare_revenue_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_general_administration_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_incl_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_total_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_total_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2022_operating_subsidy_toei_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_avg_cars_per_train_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_employees_per_million_car_km_toei,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_fare_revenue_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_operating_subsidy_toei_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_general_administration_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_incl_depreciation_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_total_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_total_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_trips_per_employee_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2016_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2017_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2018_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2021_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2022_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2023_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_passenger_km_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_farebox_recovery_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_opex_per_trip_qpr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,london_underground_2024_opex_per_trip_qpr_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_farebox_recovery_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_per_car_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_per_car_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_per_train_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_per_train_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_per_trip_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2019_opex_per_trip_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_farebox_recovery_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_per_car_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_per_car_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_per_train_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_per_train_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_per_trip_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_metro_2023_opex_per_trip_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_farebox_recovery_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_per_car_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_per_car_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_per_train_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_per_train_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_per_trip_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2019_opex_per_trip_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_farebox_recovery_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_per_car_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_per_car_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_per_train_km_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_per_train_km_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_per_trip_mlit,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,tokyo_toei_2023_opex_per_trip_mlit_ppp24,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2016_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2017_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2018_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2019_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2020_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2021_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2022_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2023_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2024_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+observations,hong_kong_mtr_2025_avg_car_load_mtr,verified_recompute,2026-11-26,"fact-check thread (Claude), pass 2",Recomputed from verified inputs; matches
+ppp_deflator,us_gdp_deflator_2000,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2001,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2002,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2003,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2004,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2005,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2006,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2007,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2008,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2009,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2010,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2011,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2012,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2013,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2014,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2015,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2016,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2017,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2018,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2019,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2020,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2021,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2022,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2023,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2024,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
+ppp_deflator,us_gdp_deflator_2025,verified,2026-11-26,"fact-check thread (Claude), pass 2",Re-fetched FRED fredgraph.csv?id=A191RD3A086NBEA; matches
