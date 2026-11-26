@@ -1,6 +1,6 @@
 # Method: ntd_gdp_deflator_real_2024
 
-**Used for:** money rows of US systems restated in constant 2024 US dollars: `opex_total`, `fare_revenue`, `opex_per_car_km`, `opex_excl_ga_per_car_km`, `opex_per_passenger_km`, `opex_per_trip`, `opex_per_car_hour`. These rows have obs_ids ending `_real2024_ntd` and `price_basis` = `real_USD_2024_GDP_deflator`. Built by `scripts/build_ntd_baseline.py`.
+**Used for:** money rows of US systems restated in constant 2024 US dollars: `opex_total`, `fare_revenue`, `opex_per_car_km`, `opex_excl_ga_per_car_km`, `opex_per_passenger_km`, `opex_per_trip`, `opex_per_car_hour`, `opex_per_train_km`. These rows have obs_ids ending `_real2024_ntd` and `price_basis` = `real_USD_2024_GDP_deflator`. Built by `scripts/build_ntd_baseline.py`.
 
 **Type:** derived
 

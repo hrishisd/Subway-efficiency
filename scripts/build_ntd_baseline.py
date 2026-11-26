@@ -261,6 +261,9 @@ def main():
                 derive(sysid, year, "avg_cars_per_train", g("car_km") / g("train_km"), "cars",
                        [o("car_km"), o("train_km")], "ntd_unit_ratios",
                        notes="Car revenue km (TS2.1) over train revenue km (Breakdowns table)")
+                derive(sysid, year, "opex_per_train_km", opex / g("train_km"), "USD/train-km",
+                       [o("opex_total"), o("train_km")], "ntd_unit_ratios", "USD",
+                       notes="Operating expense (TS2.1) over train revenue km (Breakdowns table)")
             if o("major_mechanical_failures") and g("major_mechanical_failures") > 0:
                 derive(sysid, year, "mdbf", g("car_km") / g("major_mechanical_failures"), "car-km",
                        [o("car_km"), o("major_mechanical_failures")], "ntd_mdbf_major",
@@ -292,7 +295,7 @@ def main():
 
     # ---- derived: constant 2024 dollars (US GDP deflator) ------------------------------
     REAL = ["opex_total", "fare_revenue", "opex_per_car_km", "opex_excl_ga_per_car_km",
-            "opex_per_passenger_km", "opex_per_trip", "opex_per_car_hour"]
+            "opex_per_passenger_km", "opex_per_trip", "opex_per_car_hour", "opex_per_train_km"]
     for oid, r in list(b.rows.items()):
         if r["metric_id"] not in REAL or r["price_basis"] != "nominal":
             continue
