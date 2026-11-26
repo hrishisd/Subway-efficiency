@@ -1,13 +1,13 @@
 {
- "built_from": "0d31f3d604441fdb8b3754313012e87b9223b39e",
+ "built_from": "02a86fafe7b2c322a9614dcbe08a50851ff0804c",
  "repo": "https://github.com/hrishisd/subway-efficiency",
  "report_url": "https://github.com/hrishisd/subway-efficiency/blob/main/report/report.md",
  "tiles": [
   {
-   "value": "+8% to +71%",
+   "value": "3.0×",
    "est": true,
-   "label": "NYC cost per car-km above foreign peers, 2019",
-   "target": "carkm"
+   "label": "NYC cost per passenger-km relative to Tokyo Metro, 2019",
+   "target": "pkm"
   },
   {
    "value": "1.0×",
@@ -16,10 +16,10 @@
    "target": "pkm"
   },
   {
-   "value": "3.0×",
-   "est": true,
-   "label": "NYC cost per passenger-km relative to Tokyo Metro, 2019",
-   "target": "pkm"
+   "value": "2.3×",
+   "est": false,
+   "label": "NYC cost per trip relative to Tokyo Metro, 2019",
+   "target": "trip"
   },
   {
    "value": "24–41×",
@@ -699,7 +699,7 @@
    "axis_x": "Average passengers on board per car (passenger-km ÷ car-km)",
    "axis_y": "2024 US$ per car-km, PPP",
    "takeaway": "Tokyo and Hong Kong are cheap per rider mostly because their cars carry 2.0 to 2.6 times as many people as NYC's, not because their trains are much cheaper to run.",
-   "note": "Cost per passenger-km = cost per car-km ÷ passengers per car.",
+   "note": "Cost per passenger-km = cost per car-km ÷ passengers per car. A car-km is one rail car moving one kilometre.",
    "iso": [
     0.1,
     0.2,
@@ -4190,6 +4190,17 @@
     "tokyo_metro_2019_opex_per_trip_mlit_ppp24"
    ],
    "description": "Fare revenue per trip, Tokyo Metro, 2019, 2024 US$"
+  },
+  {
+   "id": "nyc_over_tokyo_metro_opex_per_trip_2019",
+   "value": 2.3254288425313896,
+   "estimate": false,
+   "formula": "nyc_subway_2019_opex_per_trip_real2024_ntd / tokyo_metro_2019_opex_per_trip_mlit_ppp24",
+   "inputs": [
+    "nyc_subway_2019_opex_per_trip_real2024_ntd",
+    "tokyo_metro_2019_opex_per_trip_mlit_ppp24"
+   ],
+   "description": "NYC 2019 opex_per_trip divided by Tokyo Metro 2019"
   }
  ]
 }
