@@ -1,5 +1,5 @@
 {
- "built_from": "a3267b57f481cd78028fb08dfa9f7ddd47fd92d4",
+ "built_from": "69d6f01c524cf802598eb718ad5d4eee03bf060b",
  "repo": "https://github.com/hrishisd/subway-efficiency",
  "report_url": "https://github.com/hrishisd/subway-efficiency/blob/main/report/report.md",
  "tiles": [
@@ -1169,8 +1169,8 @@
    "title": "Wages and benefits per employee, 2023",
    "unit": "Staff cost per employee of the operator's own staff, 2024 US$ (PPP for non-US systems)",
    "axis": "2024 US$ per employee",
-   "takeaway": "Each NYC subway employee costs about 1.65 times as much as one in Tokyo or Hong Kong, and benefits (70% of NYC wages) are most of the difference. At Tokyo Metro's pay, NYC would cost about 0.93× what Tokyo Metro does per car-km.",
-   "note": "Own staff only: work contracted out (Tokyo Metro contracts most maintenance to subsidiaries) is not included. NYC benefits include pensions and retiree health care as booked. Hong Kong is an ESTIMATE: it covers MTR's whole Hong Kong transport business, and its staff cost may include staff its head count leaves out. Toei and Hong Kong do not split wages and benefits. No London figure yet.",
+   "takeaway": "Each NYC subway employee costs about 1.65 times as much as one in Tokyo or Hong Kong, and benefits (70% of NYC wages) are most of the difference. At Tokyo Metro's pay, NYC would cost about 0.93× what Tokyo Metro does per car-km. But measured against each country's average wage, NYC pays only 1.08× what Tokyo Metro pays: most of the gap is that US labour is expensive, which makes headcount the lever the MTA controls.",
+   "note": "Own staff only: work contracted out (Tokyo Metro contracts most maintenance to subsidiaries) is not included. NYC benefits include pensions and retiree health care as booked. Hong Kong is an ESTIMATE: it covers MTR's whole Hong Kong transport business, and its staff cost may include staff its head count leaves out. Toei and Hong Kong do not split wages and benefits. No London figure yet. National average wages: OECD average annual wages, 2023 (source oecd_avg_annual_wages; rows in data/factors.csv).",
    "series": [
     {
      "key": "wages",
@@ -3112,7 +3112,7 @@
     "ref": {
      "id": "nyc_subway_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 71,
+     "line": 76,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3127,7 +3127,7 @@
     "ref": {
      "id": "nyc_subway_crew_model_tcp",
      "file": "data/factors.csv",
-     "line": 69,
+     "line": 71,
      "source": "tcp_2025_train_operations",
      "sources": [
       "tcp_2025_train_operations"
@@ -3142,7 +3142,7 @@
     "ref": {
      "id": "nyc_subway_overnight_service_levy",
      "file": "data/factors.csv",
-     "line": 72,
+     "line": 77,
      "source": "levy_2019_overnight_transit",
      "sources": [
       "levy_2019_overnight_transit"
@@ -3161,7 +3161,7 @@
     "ref": {
      "id": "london_underground_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 47,
+     "line": 49,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3191,7 +3191,7 @@
     "ref": {
      "id": "london_underground_overnight_service_tfl",
      "file": "data/factors.csv",
-     "line": 48,
+     "line": 50,
      "source": "tfl_2022_night_tube_restored",
      "sources": [
       "tfl_2022_night_tube_restored"
@@ -3210,7 +3210,7 @@
     "ref": {
      "id": "paris_metro_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 84,
+     "line": 89,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3225,7 +3225,7 @@
     "ref": {
      "id": "paris_metro_crew_model_tcp",
      "file": "data/factors.csv",
-     "line": 82,
+     "line": 87,
      "source": "tcp_2025_train_operations",
      "sources": [
       "tcp_2025_train_operations"
@@ -3240,7 +3240,7 @@
     "ref": {
      "id": "paris_metro_overnight_service_levy",
      "file": "data/factors.csv",
-     "line": 85,
+     "line": 90,
      "source": "levy_2019_overnight_transit",
      "sources": [
       "levy_2019_overnight_transit"
@@ -3259,7 +3259,7 @@
     "ref": {
      "id": "madrid_metro_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 56,
+     "line": 58,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3274,7 +3274,7 @@
     "ref": {
      "id": "madrid_metro_crew_model_tcp",
      "file": "data/factors.csv",
-     "line": 52,
+     "line": 54,
      "source": "tcp_2025_train_operations",
      "sources": [
       "tcp_2025_train_operations"
@@ -3289,7 +3289,7 @@
     "ref": {
      "id": "madrid_metro_overnight_service_wikipedia",
      "file": "data/factors.csv",
-     "line": 57,
+     "line": 59,
      "source": "wikipedia_night_service",
      "sources": [
       "wikipedia_night_service"
@@ -3357,7 +3357,7 @@
     "ref": {
      "id": "tokyo_metro_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 117,
+     "line": 124,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3376,7 +3376,7 @@
     "ref": {
      "id": "seoul_metro_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 96,
+     "line": 101,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3391,7 +3391,7 @@
     "ref": {
      "id": "seoul_metro_crew_model_tcp",
      "file": "data/factors.csv",
-     "line": 95,
+     "line": 100,
      "source": "tcp_2025_train_operations",
      "sources": [
       "tcp_2025_train_operations"
@@ -3444,7 +3444,7 @@
     "ref": {
      "id": "singapore_mrt_opened_year_wikipedia",
      "file": "data/factors.csv",
-     "line": 111,
+     "line": 116,
      "source": "wikipedia_list_of_metro_systems",
      "sources": [
       "wikipedia_list_of_metro_systems"
@@ -3459,7 +3459,7 @@
     "ref": {
      "id": "singapore_mrt_crew_model_tcp",
      "file": "data/factors.csv",
-     "line": 110,
+     "line": 115,
      "source": "tcp_2025_train_operations",
      "sources": [
       "tcp_2025_train_operations"
@@ -3475,7 +3475,7 @@
   [
    "Pay and benefits per employee",
    "strong",
-   "Each NYC employee costs about 1.65 times as much as in Tokyo or Hong Kong; at Tokyo pay most of the gap goes."
+   "Each NYC employee costs about 1.65 times as much as in Tokyo or Hong Kong; at Tokyo pay most of the gap goes. Mostly US wage levels: against national average pay, NYC pays about 1.1 times what Tokyo Metro does."
   ],
   [
    "Facility-maintenance staffing",
@@ -3519,7 +3519,7 @@
   "Hong Kong, Seoul, Madrid and Singapore costs are estimates; Seoul 2022–24 is weak.",
   "London car-km and Tokyo passenger-km after 2018 are estimated.",
   "NYC data before 2012 is missing; 2012 and 2016–17 may be series breaks.",
-  "Pay per employee only for Tokyo and Hong Kong (2023), not London; not yet compared with average pay in each country."
+  "Pay per employee only for Tokyo and Hong Kong (2023), not London; national (not city) average wages used as the benchmark."
  ],
  "sources": {
   "cam_press_2019_01_metro_ridership_2018": {
@@ -4112,6 +4112,19 @@
     "tokyo_metro_2023_opex_per_car_km_mlit_ppp24"
    ],
    "description": "NYC 2023 cost per car-km if its own staff were paid Tokyo Metro's cost per employee, over Tokyo Metro's"
+  },
+  {
+   "id": "rel_comp_nyc_over_tokyo_metro_2023",
+   "value": 1.080160062762184,
+   "estimate": false,
+   "formula": "(nyc_subway_2023_staff_cost_per_employee_ntd / nyc_subway_2023_national_avg_annual_wage_oecd) / (tokyo_metro_2023_staff_cost_per_employee_mlit / tokyo_metro_2023_national_avg_annual_wage_oecd)",
+   "inputs": [
+    "nyc_subway_2023_staff_cost_per_employee_ntd",
+    "tokyo_metro_2023_staff_cost_per_employee_mlit",
+    "nyc_subway_2023_national_avg_annual_wage_oecd",
+    "tokyo_metro_2023_national_avg_annual_wage_oecd"
+   ],
+   "description": "NYC pay relative to the US average wage, over Tokyo Metro pay relative to Japan's (OECD), 2023"
   },
   {
    "id": "nyc_subway_employees_vehicle_operations_per_m_train_km_2024",
