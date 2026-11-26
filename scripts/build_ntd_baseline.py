@@ -307,7 +307,14 @@ def main():
 
     # ---- merge with other rows and write ------------------------------------
     with open(OBS, newline="", encoding="utf-8") as f:
-        keep = [r for r in csv.DictReader(f) if not r["obs_id"].endswith("_ntd")]
+        old = list(csv.DictReader(f))
+    keep = [r for r in old if not r["obs_id"].endswith("_ntd")]
+    # Keep a `verified` mark when the rebuilt row has the same value as before.
+    prev = {r["obs_id"]: r for r in old if r["obs_id"].endswith("_ntd")}
+    for oid, r in b.rows.items():
+        o = prev.get(oid)
+        if o and all(o[k] == r[k] for k in ("value", "value_low", "value_high")):
+            r["verification"] = o["verification"]
     allrows = keep + list(b.rows.values())
     allrows.sort(key=lambda r: (r["system_id"], int(r["year"]), r["metric_id"], r["obs_id"]))
     with open(OBS, "w", newline="", encoding="utf-8") as f:
