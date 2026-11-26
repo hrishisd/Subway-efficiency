@@ -35,7 +35,9 @@ NAMES = {
 FOREIGN = ["london_underground", "madrid_metro", "tokyo_metro", "tokyo_toei", "hong_kong_mtr", "seoul_metro",
            "singapore_mrt", "beijing_subway"]
 USPEERS = ["path", "wmata_metrorail", "mbta_subway", "septa_subway", "chicago_l", "bart"]
-ALL = ["nyc_subway"] + FOREIGN + USPEERS
+# Main charts compare NYC with foreign metros only. US systems appear only in the one chart
+# for which no foreign data exists (staff by job), in a separate, clearly secondary section.
+ALL = ["nyc_subway"] + FOREIGN
 
 
 # ------------------------------------------------------------------ provenance helpers
@@ -183,8 +185,8 @@ chart(id="trainkm", section="service", kind="hbar", fmt="usd0",
                f"{xs([t for t in tk if t[2] == 'tokyo_metro'][0][0])} Tokyo Metro's cost per train-km, "
                f"partly because NYC trains are longer.",
       note="NYC trains average about 9 cars, Tokyo about 8, London about 7. "
-           "Washington, Boston and PATH figures swing a lot between years.",
-      items=items(2023, "opex_per_train_km", ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei"] + USPEERS))
+           "Only these four systems report train-km.",
+      items=items(2023, "opex_per_train_km", ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei"]))
 
 # ------------------------------------------------------------------ 3. per passenger-km 2019
 pk = ratio_range(2019, "opex_per_passenger_km", ["london_underground", "tokyo_metro", "tokyo_toei", "hong_kong_mtr"])
@@ -205,15 +207,15 @@ chart(id="trip", section="rider", kind="hbar", fmt="usd2",
       title="Cost per trip, 2019",
       unit="Operating cost per trip, 2024 US$ (PPP for non-US systems)",
       axis="2024 US$ per trip, PPP",
-      takeaway="Per trip, NYC is cheaper than most US systems and London, because NYC trips are short and every "
-               "transfer counts as a new trip; Tokyo, Hong Kong and Seoul still cost about half as much.",
+      takeaway="Per trip, Tokyo, Hong Kong and Seoul cost about half as much as NYC. NYC looks cheaper than London "
+               "only because NYC trips are short and every transfer counts as a new trip.",
       note="Trip-counting rules differ: the US counts every boarding; London, Madrid and Tokyo count entries. "
            "Beijing is a news-report figure with unstated definitions.",
       items=items(2019, "opex_per_trip", ALL))
 
 # ------------------------------------------------------------------ 5. scatter cost per car-km vs load
 pts = []
-for s in ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei", "hong_kong_mtr"] + USPEERS:
+for s in ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei", "hong_kong_mtr"]:
     c, ld = pick(s, 2019, "opex_per_car_km"), pick(s, 2019, "avg_car_load")
     if c and ld:
         pts.append({"label": NAMES[s], "system": s, "group": "nyc" if s == "nyc_subway" else ("us" if s in US else "foreign"),
@@ -262,7 +264,7 @@ chart(id="split", section="rider", kind="split",
 
 # ------------------------------------------------------------------ 7. staff per million car-km
 st_items = items(2023, "employees_per_million_car_km", ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei",
-                                                       "hong_kong_mtr"] + USPEERS)
+                                                       "hong_kong_mtr"])
 for s, y in (("seoul_metro", 2019), ("madrid_metro", 2018)):
     v = pick(s, y, "employees_per_million_car_km")
     if v:
@@ -294,13 +296,14 @@ for s in ["nyc_subway"] + USPEERS:
     rows.append({"label": NAMES[s], "system": s, "group": "nyc" if s == "nyc_subway" else "us", "segs": segs})
 fm = {r["system"]: r["segs"][2]["value"] for r in rows}
 others = [v for s, v in fm.items() if s not in ("nyc_subway", "path")]
-chart(id="functions", section="labor", kind="stack", fmt="n0",
-      title="US systems: staff by job, per million train-km, 2024",
+chart(id="functions", section="us", kind="stack", fmt="n0",
+      title="Where NYC's staff work, against US systems, 2024",
       unit="Operating employees per million train-km, by function (US National Transit Database)",
       axis="Employees per million train-km",
       takeaway=f"NYC's extra staff are in facility maintenance ({fm['nyc_subway']:.0f} per million train-km, against "
                f"{min(others):.0f} to {max(others):.0f} at most US peers), not on the trains.",
-      note="No foreign system publishes a comparable split by function.",
+      note="Shown only because no foreign metro publishes staff by job. US systems are not peers of NYC; "
+           "this chart is context, not a ranking.",
       series=[{"key": k, "label": lab} for k, lab in FUNCS], rows=rows)
 
 # ------------------------------------------------------------------ 9. NYC trend
@@ -326,7 +329,7 @@ chart(id="trend", section="time", kind="line", fmt="usd2",
 
 # ------------------------------------------------------------------ 10. farebox
 fb = items(2019, "farebox_recovery", ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei", "seoul_metro"]
-           + USPEERS)
+)
 hk = pick("hong_kong_mtr", 2019, "farebox_recovery")
 fb.append(point("Hong Kong (all MTR)", hk, "hong_kong_mtr", 2019))
 fare = {}
