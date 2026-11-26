@@ -2,7 +2,7 @@
 
 *Literature review, 26 November 2026. Scope: operating cost only (running trains, maintenance, administration). Construction and capital costs are out of scope.*
 
-> **How to read this document.** Each claim cites a source by its `source_id` in [`sources/sources.csv`](../sources/sources.csv). The documents were read through a web tool that converts pages and PDFs to text. Quotes and page numbers come from that reading. Items marked ✔ were opened a second time and the quote and page were confirmed; the rest stay **unverified** under rule 2 of [`AGENTS.md`](../AGENTS.md) until someone checks them. No number from this document has been added to `data/observations.csv`. "Our data" means the findings in [`report/report.md`](../report/report.md).
+> **How to read this document.** Each claim cites a source by its `source_id` in [`sources/sources.csv`](../sources/sources.csv). The documents were read through a web tool that converts pages and PDFs to text. Quotes and page numbers come from that reading. Items marked ✔ were opened a second time and the quote and page were confirmed; the rest stay **unverified** under rule 2 of [`AGENTS.md`](../AGENTS.md) until someone checks them. No number from this document has been added to `data/observations.csv`. Section 4.1 computes new ratios from existing rows and from figures transcribed in Appendix A; they are **derived** values that are not yet in the dataset. "Our data" means the findings in [`report/report.md`](../report/report.md).
 
 ---
 
@@ -11,7 +11,7 @@
 1. **Nobody runs a "Transit Costs Project for operations".** The Transit Costs Project at NYU studies construction. It has one operations paper, on train crew size. The serious work on NYC operating cost comes from four places: the econometric studies of the Imperial College metro benchmarking group (CoMET), the Citizens Budget Commission (CBC), the New York State Comptroller, and the MTA's own benchmarking reports. Alon Levy's blog is the main source of international comparison with named cities.
 2. **The experts agree on the main point, and so does our data: maintenance of track, stations, signals and structures is where NYC is out of line.** The MTA's own 2019 report says that without maintenance NYC's cost per car-mile is about average, and that only one CoMET metro spends more on maintenance. CBC says matching the US peer median for subway facility maintenance would save about $981M and 6,185 jobs a year. Our data finds 46% of NYC operating staff in facility maintenance.
 3. **The main explanations offered are poor track access, too many staff, high benefit costs, and two-person crews.** Track work stops every time a train passes, because the system runs 24 hours a day and flagging rules are strict. Two-person crews are real but small: every estimate ($221M to $442M a year) is a minority of the gap.
-4. **The main conflict is with the MTA itself.** Its 2023 report says NYC wages are 51% above the international average and that, adjusted for labour prices, NYC is 16% *cheaper* per mile than its peers. That implies the problem is pay, not headcount. Our data points the other way: at purchasing power parity (PPP), NYC uses 1.3 to 1.7 times as many staff per car-km as Tokyo, London and Hong Kong, and its total cost per employee is about the same as theirs. Both analyses use PPP, so currency conversion does not explain the conflict. It is not resolved; section 4 lists the likely reasons.
+4. **The MTA's "labour price" view and our "headcount" view are both right (updated 26 November 2026).** The MTA's 2023 report says NYC wages are 51% above the international average and non-wage labour costs 91% above, and that at international labour prices NYC would be 16% *cheaper* per mile than its peers. Our data shows NYC uses 1.35 to 1.7 times as many of its own staff per car-km as Tokyo and Hong Kong. A total-compensation comparison (section 4.1) shows both hold at once. Each NYC subway employee costs about **$181,000** a year in wages and benefits, against about **$108,000 to $110,000** at Tokyo Metro, Toei and Hong Kong's MTR at PPP: **1.65 to 1.7 times as much**. Benefits are the biggest part of the difference: NYC's fringe benefits equal 70% of wages, against about 30% at Tokyo Metro. So NYC's labour cost per car-km is 2.5 to 2.8 times the peers'. NYC's total cost gap is smaller (1.3 to 1.8 times) because the peers spend about twice as much per car-km on everything else, much of it contracted-out maintenance labour that does not appear in their staff counts. **If NYC paid its own staff Tokyo-level compensation, it would cost about the same per car-km as Tokyo Metro and Toei, and about 20% more than Hong Kong.** Pay and benefits, not headcount, explain most of the gap with Tokyo. This revises the report's §5 and §11.5 statement that the problem is "mainly about how many people it takes ... not about how much each is paid".
 5. **Two expert findings go beyond our data.** First, the Imperial econometrics find that the age of a metro has almost no effect on cost once other factors are controlled, but frequent train failures and in-house (not contracted) maintenance do raise cost. Second, overtime and claims costs are growing much faster than inflation.
 
 ---
@@ -118,12 +118,54 @@ In order of how many independent sources make them:
 | 24/7 service is the cause (MTA) | Consistent with maintenance-heavy staffing; PATH also runs 24/7 and is more expensive (report §11.2) | **Agrees in direction, not tested.** Levy's Boston point and our PATH point both say 24/7 service alone is not enough. The flagging rule (CBC) is a more specific cause that our data cannot see. |
 | Two-person crews cost $221M–$442M (CBC) | $442M is 24% to 28% of the gap with London and Tokyo (report §11.1) | **Agrees.** We now have the primary CBC source for $442M. Since $442M is CBC's figure for *all* conductor spending, our "at most about a quarter" is the right reading: it is an upper bound. |
 | Too many staff (Levy, CBC) | 1.3× to 1.7× the staff per car-km of Tokyo, London and Hong Kong (report §5) | **Agrees**, and our data adds the international comparison that CBC lacks (CBC uses US peers only). |
-| Labour *price* explains the gap; adjusted for wages NYC is 16% cheaper per mile (MTA 2023) ✔ | At PPP, NYC's cost-per-car-km ratio to each peer is about the same as its staff ratio: Tokyo Metro 1.34× cost and 1.35× staff; London 1.42× and 1.62×; Hong Kong 1.76× and 1.71×; Toei 1.45× and 1.72× (2023; `report/numbers.csv`, `nyc_over_*_carkm_2023` and `nyc_over_*_staff_2023`). So total cost per employee is about 0.85× to 1.03× the peers'. | **Conflicts, unresolved.** The MTA's own numbers imply that NYC uses *fewer* labour hours per mile than the average peer: it is only 23% more expensive per mile while paying 51% more in wages and 91% more in non-wage labour cost. Our data says NYC uses *more* staff per car-km than each named peer. Both use PPP (the MTA report says so on p. 6 ✔). Likely reasons: (1) the MTA compares with the average of about 38 anonymous CoMET metros, and we compare with a few lean, named ones; (2) cost per employee includes non-labour cost and contractors, and peers that contract out more (Tokyo, London) look more expensive per employee; (3) head counts differ in definition (report §5). The MTA report also gives two figures for the same wage gap (51% and "about 62%", p. 6 ✔). Settling this needs foreign wage data at PPP. |
+| Labour *price* explains the gap; adjusted for wages NYC is 16% cheaper per mile (MTA 2023) ✔ | Total compensation per employee is 1.65× to 1.7× the peers' at PPP; at peer compensation NYC's cost per car-km would be 0.92× Tokyo Metro, 1.00× Toei and 1.22× Hong Kong (section 4.1) | **Agrees, after a total-compensation check.** The first version of this document called this a conflict, because NYC's *total cost* per employee is about the same as the peers'. That turns out to hide two offsetting differences: NYC pays each employee about 1.7 times as much, and spends about half as much per car-km on non-labour items, mainly because the peers contract out work. See section 4.1. |
 | Density drives cost per unit (Imperial) | Most of NYC's per-passenger-km gap with Tokyo (about 86% EST) comes from fuller cars (report §4) | **Agrees**, and our decomposition puts a number on it for named systems. |
 | Asset age has little effect; failures do (Imperial) | Age is a weak explanation on its own (report §11.4); NYC trains fail 24 to 41 times as often per car-km as Hong Kong and Singapore (report §10) | **Agrees.** The Imperial result is the econometric version of our §11.4 verdict, and gives a mechanism linking our reliability and cost findings. |
 | Claims costs tripled (Comptroller) | Casualty and liability cost rose from $167M to $578M in 2024 and drove the jump in general administration (report §8) | **Agrees.** Different scope: the Comptroller's figure is MTA-wide accrued claims; ours is NYC subway only from the NTD. |
 | Overtime is a large and growing cost (Morrison & Foerster, Comptroller, Empire Center) | Not measured | **Goes beyond our data.** |
 | Funding mix and hard budgets | Weak as an explanation (report §11.7) | None of the sources reviewed makes this argument for operating cost. |
+
+### 4.1 Pay versus headcount: a total-compensation comparison (added 26 November 2026)
+
+**The question.** Hrishi asked whether the MTA's wage finding reflects total compensation (benefits, pensions, retiree health) rather than base pay, and whether our cost-per-employee figures miss it. This section rebuilds the comparison with labour cost split out.
+
+**What the MTA measures.** The MTA report gives indices, not dollar values ("absolute values for these metrics are not reported", p. 6 ✔). It compares wages and non-wage labour costs separately: "NYCT wages are 51% higher than the international average" and "Non-wage labor costs—such as healthcare, pensions, and social security—are 91% higher than international benchmarks"; "Nearly one-third of NYCT's labor costs fall into this non-wage category, with healthcare being the largest driver" (p. 6 ✔). Chart 2 is titled "Labor cost per hour by cost type", so the comparison is probably per hour worked, but the text does not say so. Matching international wages would cut NYC's 2023 operating cost by about 19% and matching non-wage costs by about 13%; together about 32%, which puts NYC 16% below the international average per mile (pp. 6, 9). The report gives no measure of labour quantity (hours or staff per mile). It notes only that "Labor productivity explains some of the apparent NYCT cost premium", naming two-person crews (p. 8). So the MTA's adjustment holds NYC's own labour hours fixed and reprices them. Our check of that arithmetic, using NYC's NTD cost shares, gives 16% + 15% = 31%, close to the MTA's 32%.
+
+**What our NYC figures already include.** NTD operating expense includes fringe benefits. In 2023 the NYC subway spent $2.80B on wages and paid absences and $1.95B on fringe benefits (`nyc_subway_2023_opex_type_*_ntd`), so fringe benefits equal 70% of wages, and labour is 78% of operating cost. The audited NYC Transit statements (subway and buses together) book pensions and retiree health (OPEB) on an accrual basis under GASB 68 and 75, and give the same ratio: benefits are 68% of wages in 2023. Of that, active-employee health and welfare is 24% of wages, pensions 20% and retiree health 24% (`nycta_fs_2023`, statement of revenues, expenses and changes in net position, p. 26: salaries and wages $4,484M, health and welfare $1,096M, pensions $881M, OPEB $1,087M). **So lifetime benefit costs are in our cost data, on an accrual basis.** What the report did not do was compare the *price* of labour across systems.
+
+**Peer compensation.**
+
+- *Tokyo Metro and Toei.* MLIT's FY2023 yardstick table splits each cost category into personnel cost (人件費) and other expense (経費) (Appendix A). Personnel cost is ¥94.6B for Tokyo Metro and ¥36.0B for Toei, 43% and 40% of the operating cost we use. Tokyo Metro's average salary was ¥7.62M for 9,551 parent-company employees (`tokyometro_yuho_fye2024`, 第1【企業の概況】5【従業員の状況】(2)). Personnel cost per employee (¥9.91M) is 1.30 times salary, so on-costs (employer social insurance, retirement benefits, welfare) add about 30%. Tokyo Metro contracts rolling-stock, track, electrical and station-facility maintenance to four group subsidiaries (same section, 4【関係会社の状況】); that labour is in "other expense", not personnel cost.
+- *Hong Kong.* MTR reports "Staff costs and related expenses" of HK$6.92B for its Hong Kong transport operations in 2023, 49% of their operating expense, for 11,728 staff (`hong_kong_mtr_2023_opex_staff_costs_mtrall`, `hong_kong_mtr_2023_employees_fte_mtrall`). The staff count excludes corporate-support staff that the cost may include, so cost per employee may be slightly overstated.
+- *London.* TfL's staff-cost note could not be read. London Underground staff are in a final-salary pension scheme with an employer rate of 27.3% of pensionable pay (`tfl_pension_fund_review_2023`, p. 12), on top of employer National Insurance. No per-employee figure is computed.
+
+**Results, 2023, 2024 US dollars at PPP.** All values are **derived** from the rows named. NYC: NTD, 26,884 operating employees, 553.3M car-km. Peers: inputs above; PPP conversion as for the existing rows.
+
+| | NYC subway | Tokyo Metro | Toei | Hong Kong MTR |
+| --- | --- | --- | --- | --- |
+| Wages and benefits per employee | $180,900 | $108,300 | $109,700 | $109,400 |
+| NYC ÷ peer | | 1.67× | 1.65× | 1.65× |
+| Labour share of operating cost | 78% | 43% | 40% | 49% |
+| Total operating cost per employee | $230,700 | $253,000 | $272,800 | $224,100 |
+| Labour cost per car-km | $8.79 | $3.57 | $3.11 | $3.10 EST |
+| Non-labour cost per car-km | $2.42 | $4.77 | $4.62 | $3.26 EST |
+| Own staff per million car-km | 48.6 | 33.0 | 28.3 | 28.4 EST |
+| Total cost per car-km | $11.21 | $8.34 | $7.72 | $6.36 EST |
+| **NYC cost per car-km at this peer's compensation** | | **$7.68 (0.92×)** | **$7.75 (1.00×)** | **$7.73 (1.22×) EST** |
+
+EST: Hong Kong's per-car-km values use the existing estimated heavy-rail cost (`hong_kong_mtr_2023_opex_per_car_km_est`) and apply the whole-business labour share to it. Tokyo Metro uses the 9,551 parent-company employees that match the salary disclosure; with the 10,435 transport-segment employees used in the report, compensation per employee is $99,100 and the NYC ratio 1.83×.
+
+Formulas: compensation per employee = labour cost ÷ employees. NYC labour cost = wages + paid absences + fringe benefits (NTD object classes). NYC at peer compensation = NYC labour cost per car-km ÷ (NYC ÷ peer compensation ratio) + NYC non-labour cost per car-km. This holds NYC's own staff numbers fixed, as the MTA's adjustment does.
+
+**What this shows.**
+
+1. **Both views hold.** NYC has more of its own staff per car-km (1.5× Tokyo Metro, 1.7× Toei and Hong Kong) *and* pays each of them about 1.65 to 1.7 times as much. Its labour cost per car-km is therefore 2.5 to 2.8 times the peers'.
+2. **Peers buy labour that does not show in their staff counts.** NYC spends about half as much as Tokyo per car-km on non-labour items. Tokyo Metro contracts out most maintenance to its subsidiaries. The report's staff-per-car-km comparison therefore overstates NYC's *labour-quantity* gap against Tokyo, and the earlier "cost per employee is the same" check was hiding the pay gap.
+3. **Compensation explains all of the gap with Tokyo, and about 70% of the gap with Hong Kong.** At Tokyo-level pay, NYC's cost per car-km would be about equal to Tokyo Metro's and Toei's. This agrees with the MTA's adjustment, and Hrishi's view that the MTA report should carry weight is supported.
+4. **Benefits are the bigger part.** NYC's fringe benefits are 70% of wages; Tokyo Metro's on-costs are about 30%. Per employee, NYC wages (including paid absences) are $106,600 against Tokyo Metro's average salary of $83,300 at PPP (1.28×), and NYC benefits are $74,300 against about $25,000 (about 3×). Of the $72,600 compensation gap per employee with Tokyo Metro, about $49,000 (two-thirds) is benefits. The MTA names active-employee health care as the largest non-wage item. Retiree health care (24% of wages) has no counterpart at Tokyo, where health care is funded through social insurance, which is inside the 30%.
+5. **High compensation is not all an MTA choice.** Some of the gap reflects the US labour market and the US system of employer-paid health care, which any US employer faces. The MTA says its wages "align with other U.S. transit agencies" (p. 6). Separating MTA-specific generosity from US-wide price levels needs a comparison with average local pay, which this document does not yet have.
+
+**Limits.** NYC is calendar 2023; Tokyo is April 2023 to March 2024. Tokyo Metro's 人件費 is assumed to include bonuses, retirement-benefit cost and statutory welfare; no document defining it was opened. NYC staff are NTD head counts of operating employees (full- and part-time). The Tokyo personnel-cost lines were read once through a text-extraction tool; they add up exactly to the category totals already in `data/raw/asia/mlit_yardstick_tokyo.csv`, which is a strong check, but they remain unverified.
 
 **Two numbers to reconcile.**
 
@@ -135,7 +177,7 @@ In order of how many independent sources make them:
 ## 5. Gaps our data could fill
 
 1. **Foreign cost by function.** Every expert analysis of the maintenance problem compares NYC with US systems, or with anonymous CoMET peers. A named split of foreign metro cost or staff into operations, vehicle maintenance and facility maintenance would test the central claim internationally. Candidates: Tokyo Metro and Toei financial statements (by expense type), TfL's London Underground segment accounts, MTR's annual report.
-2. **Wages and benefits at PPP.** This is the test of the MTA's "labour price" argument against our "headcount" finding. Candidates: average salary in Tokyo Metro's securities report (有価証券報告書), TfL pay disclosures, MTA payroll data (SeeThroughNY).
+2. **Wages and benefits at PPP.** Section 4.1 does this for Tokyo Metro, Toei and Hong Kong. Still open: London (TfL's staff-cost note), a 2019 comparison, adding the personnel-cost rows to `data/observations.csv`, and a comparison of each system's pay with average pay in its own country, which would separate MTA-specific generosity from US-wide labour costs.
 3. **Track access hours.** A sourced table of nightly closure hours and planned weekend closures per peer would let us test the 24/7 argument directly, and Boston (nightly closures, high maintenance cost) is a useful US control.
 4. **Driver productivity.** Revenue hours per driver per year (Levy's 550 vs 900) can be computed from NTD train-hours and operator counts for NYC; peers publish driver counts.
 5. **Overtime as a share of NYC labour cost**, as a time series from MTA financial plans and the Comptroller's reports. The NTD does not report overtime separately.
@@ -149,3 +191,25 @@ In order of how many independent sources make them:
 - `osc_2025_audit_mta_transformation` was read from its landing page, not the PDF. `osc_2025_subway_delays` was read from the press release.
 - Union and advocacy sources are included to show the other side, not as evidence.
 - Several sources (CBC, Manhattan Institute) argue for cost cuts. Their numbers are transparent and cite NTD, but the framing is not neutral.
+
+---
+
+## Appendix A. Tokyo personnel cost by category, FY2023
+
+Source: `mlit_yardstick_fy2023`, table 地下鉄事業者, columns 東京地下鉄 (Tokyo Metro) and 東京都 (Toei); ¥ thousand; 人件費 = personnel cost, 経費 = other expense. Each row's personnel cost plus other expense equals the category total, and the totals match `data/raw/asia/mlit_yardstick_tokyo.csv` (Tokyo Metro 207,545,218; Toei 89,512,580). Unverified (read once).
+
+| Category | Tokyo Metro 人件費 | Tokyo Metro 経費 | Toei 人件費 | Toei 経費 |
+| --- | --- | --- | --- | --- |
+| 線路保存費 (track maintenance) | 3,317,454 | 20,896,231 | 3,581,543 | 10,455,161 |
+| 電路保存費 (electrical maintenance) | 6,281,957 | 9,773,771 | 4,043,197 | 5,587,593 |
+| 車両保存費 (vehicle maintenance) | 8,682,449 | 9,903,415 | 3,420,731 | 6,116,907 |
+| 運転費 (train operation) | 30,035,023 | 13,317,756 | 10,777,070 | 6,309,077 |
+| 運輸費 (stations and traffic) | 31,242,908 | 35,260,769 | 11,420,771 | 19,395,239 |
+| 保守管理費 (maintenance management) | 3,760,897 | 6,237,257 | 0 | 0 |
+| 輸送管理費 (transport management) | 3,305,959 | 5,122,361 | 930,037 | 2,918,264 |
+| 案内宣伝費 (publicity) | 0 | 922,571 | 0 | 0 |
+| 厚生福利施設費 (welfare facilities) | 961,716 | 3,602,914 | 192,540 | 31,342 |
+| 一般管理費 (general administration) | 7,029,017 | 7,890,793 | 1,643,696 | 2,689,412 |
+| **Total** | **94,617,380** | **112,927,838** | **36,009,585** | **53,502,995** |
+
+Track maintenance is the clearest case of contracting: at Tokyo Metro only 14% of its cost is personnel cost.
