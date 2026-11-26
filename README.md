@@ -4,6 +4,10 @@ How much does the New York City subway cost to run, per unit of service, compare
 
 This repository holds the dataset, the sources behind every number, and the analysis. **Capital and expansion costs are out of scope.** Only operating cost, operating efficiency, and reliability are covered.
 
+## Report
+
+The research report is [`report/report.md`](report/report.md), built from the data by `scripts/build_report.py`.
+
 ## Status
 
 Phase 1 (scoping) is done. See [`docs/scoping.md`](docs/scoping.md). Phase 2 (NYC baseline from the National Transit Database, 2015 to 2025, with six US peers) is in [`docs/ntd_baseline.md`](docs/ntd_baseline.md). Years 2000 to 2014 are still open.

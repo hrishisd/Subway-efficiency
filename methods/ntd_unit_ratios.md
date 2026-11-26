@@ -1,6 +1,6 @@
 # Method: ntd_unit_ratios
 
-**Used for:** all ratio metrics built from the National Transit Database (NTD) for US heavy-rail systems: `opex_per_car_km`, `opex_excl_ga_per_car_km`, `opex_per_car_hour`, `opex_per_passenger_km`, `opex_per_trip`, `farebox_recovery`, `avg_trip_length_km`, `avg_car_load`, `avg_cars_per_train`, `employees_per_million_car_km`, `passenger_km_per_employee`, `trips_per_employee`, `opex_per_employee_hour`.
+**Used for:** all ratio metrics built from the National Transit Database (NTD) for US heavy-rail systems: `opex_per_car_km`, `opex_excl_ga_per_car_km`, `opex_per_car_hour`, `opex_per_passenger_km`, `opex_per_trip`, `farebox_recovery`, `avg_trip_length_km`, `avg_car_load`, `avg_cars_per_train`, `employees_per_million_car_km`, `passenger_km_per_employee`, `trips_per_employee`, `opex_per_employee_hour`, `opex_per_train_km` (2022 onward, where NTD train revenue miles exist).
 
 **Type:** derived
 
@@ -21,6 +21,7 @@ Each row lists its input `obs_id`s in `inputs`. All inputs are the same system, 
 | avg_trip_length_km | passenger_km / unlinked_trips |
 | avg_car_load | passenger_km / car_km |
 | avg_cars_per_train | car_km / train_km |
+| opex_per_train_km | opex_total / train_km |
 | employees_per_million_car_km | employees_operating / (car_km / 1,000,000) |
 | passenger_km_per_employee | passenger_km / employees_operating |
 | trips_per_employee | unlinked_trips / employees_operating |
