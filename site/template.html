@@ -140,7 +140,6 @@ footer { margin-top: 30px; font-size: 13px; color: var(--ink2); }
   <span class="key" aria-label="Colour key">
     <span><i class="sw" style="background:var(--nyc)"></i>New York</span>
     <span><i class="sw" style="background:var(--foreign)"></i>Foreign metros</span>
-    <span><i class="sw" style="background:var(--us)"></i>Other US systems</span>
     <span><svg width="16" height="11" aria-hidden="true"><rect x="0.75" y="0.75" width="14.5" height="9.5" rx="2" fill="url(#hatch-foreign)" style="stroke:var(--foreign)" stroke-width="1.5"/></svg>Estimate</span>
   </span>
 </div>
@@ -504,13 +503,13 @@ function scatter(c, box, W) {
   const pw = W - m.l - m.r, ph = Math.min(380, Math.max(300, pw * 0.62));
   const H = ph + m.t + m.b;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": c.title }, box);
-  const X = 85, Y = 30, sx = v => pw * v / X, sy = v => ph - ph * v / Y;
+  const X = 85, Y = 15, sx = v => pw * v / X, sy = v => ph - ph * v / Y;
   const g = el("g", { transform: `translate(${m.l},${m.t})` }, svg);
   for (const t of [0, 20, 40, 60, 80]) {
     el("line", { x1: sx(t), x2: sx(t), y1: 0, y2: ph, class: "grid" }, g);
     el("text", { x: sx(t), y: ph + 14, "text-anchor": "middle", class: "t-ink2", "font-size": fs - 1 }, g, t);
   }
-  for (const t of [0, 10, 20, 30]) {
+  for (const t of [0, 5, 10, 15]) {
     el("line", { x1: 0, x2: pw, y1: sy(t), y2: sy(t), class: "grid" }, g);
     el("text", { x: -6, y: sy(t) + 4, "text-anchor": "end", class: "t-ink2", "font-size": fs - 1 }, g, "$" + t);
   }
@@ -664,10 +663,11 @@ function table(c, wrap) {
 const SECTIONS = [
   ["service", "Per unit of service: NYC is the most expensive"],
   ["rider", "Per rider: equal to London, far behind Asia"],
-  ["labor", "Staff: more people per train, mostly in maintenance"],
+  ["labor", "Staff: more people per unit of service"],
   ["time", "Over time"],
   ["money", "Who pays"],
   ["reliability", "Reliability"],
+  ["us", "US-only context: no foreign data exists for this"],
 ];
 const RENDER = { hbar, stack, split, scatter, line };
 const built = [];
