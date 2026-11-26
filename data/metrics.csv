@@ -1,0 +1,15 @@
+metric_id,name,unit,definition
+opex_total,Operating expense,currency,Total operating expense for the system in the stated scope. Excludes debt service and depreciation.
+car_km,Vehicle (car) revenue kilometers,km,Kilometers run by individual cars in revenue service.
+train_hours,Train revenue hours,hours,Hours run by trains in revenue service.
+unlinked_trips,Trips (boardings),trips,Passenger boardings. Note whether transfers inside the system count as new trips.
+passenger_km,Passenger kilometers,km,Sum of distances traveled by all passengers.
+employees_fte,Employees (full-time equivalent),FTE,Staff working on the system in the stated scope. Note whether contractors are included.
+fare_revenue,Fare revenue,currency,Passenger fare revenue in the stated scope.
+mdbf,Mean distance between failures,km,Car-km run per mechanical failure that caused a delay or removal from service. Definitions differ by agency; note the definition.
+route_km,Route length,km,Length of routes in service (not track length).
+stations,Stations,count,Number of stations. Note how transfer complexes are counted.
+opex_per_car_km,Operating expense per car-km,currency/km,opex_total divided by car_km.
+opex_per_passenger_km,Operating expense per passenger-km,currency/km,opex_total divided by passenger_km.
+opex_per_trip,Operating expense per trip,currency/trip,opex_total divided by unlinked_trips.
+farebox_recovery,Farebox recovery ratio,ratio,fare_revenue divided by opex_total.

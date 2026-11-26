@@ -1,0 +1,30 @@
+system_id,name,city,country,tier,operator,in_scope_note
+nyc_subway,New York City Subway,New York,United States,subject,MTA New York City Transit,The system under study
+london_underground,London Underground,London,United Kingdom,1,Transport for London,
+paris_metro,Paris Métro,Paris,France,1,RATP (for Île-de-France Mobilités),Métro only; RER excluded unless stated
+tokyo_metro,Tokyo Metro,Tokyo,Japan,1,Tokyo Metro Co.,Reported separately from Toei
+tokyo_toei,Toei Subway,Tokyo,Japan,1,Tokyo Metropolitan Bureau of Transportation,Subway lines only
+seoul_metro,Seoul Metro (lines 1-8),Seoul,South Korea,1,Seoul Metro,
+hong_kong_mtr,MTR heavy rail,Hong Kong,China,1,MTR Corporation,Domestic heavy rail; light rail and intercity excluded
+singapore_mrt,Singapore MRT,Singapore,Singapore,1,SMRT Trains and SBS Transit (assets owned by LTA),
+madrid_metro,Metro de Madrid,Madrid,Spain,1,Metro de Madrid S.A.,
+moscow_metro,Moscow Metro,Moscow,Russia,2,Moscow Metro,
+istanbul_metro,Metro Istanbul,Istanbul,Turkey,2,Metro Istanbul,Metro lines only
+mexico_city_metro,Mexico City Metro,Mexico City,Mexico,2,Sistema de Transporte Colectivo,
+beijing_subway,Beijing Subway,Beijing,China,2,Beijing Subway and others,
+shanghai_metro,Shanghai Metro,Shanghai,China,2,Shanghai Shentong Metro,
+berlin_ubahn,Berlin U-Bahn,Berlin,Germany,3,BVG,
+hamburg_ubahn,Hamburg U-Bahn,Hamburg,Germany,3,Hamburger Hochbahn,
+stockholm_metro,Stockholm Metro,Stockholm,Sweden,3,Region Stockholm (contracted operator),
+barcelona_metro,Barcelona Metro,Barcelona,Spain,3,TMB,
+milan_metro,Milan Metro,Milan,Italy,3,ATM,
+copenhagen_metro,Copenhagen Metro,Copenhagen,Denmark,3,Metroselskabet (contracted operator),Driverless; runs 24/7
+vancouver_skytrain,SkyTrain,Vancouver,Canada,3,TransLink,Driverless
+toronto_subway,Toronto subway,Toronto,Canada,3,TTC,
+montreal_metro,Montreal Metro,Montreal,Canada,3,STM,
+chicago_l,Chicago L,Chicago,United States,4,CTA,Heavy rail mode in NTD
+wmata_metrorail,Washington Metrorail,Washington,United States,4,WMATA,Heavy rail mode in NTD
+mbta_subway,Boston subway,Boston,United States,4,MBTA,Heavy rail mode in NTD
+septa_subway,Philadelphia subway and elevated,Philadelphia,United States,4,SEPTA,Heavy rail mode in NTD
+bart,BART,San Francisco Bay Area,United States,4,BART,Heavy rail mode in NTD
+path,PATH,New York and New Jersey,United States,4,Port Authority Trans-Hudson,Same city and labor market as NYC; runs 24/7
