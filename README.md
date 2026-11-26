@@ -29,6 +29,7 @@ Phase 1 (scoping) is done. See [`docs/scoping.md`](docs/scoping.md). Phase 2 (NY
 | [`scripts/validate.py`](scripts/validate.py) | Checks that every number has a valid source and method |
 | [`scripts/build_ntd_baseline.py`](scripts/build_ntd_baseline.py) | Rebuilds the NTD rows from the raw extracts in [`data/raw/ntd/`](data/raw/ntd/) |
 | [`docs/ntd_baseline.md`](docs/ntd_baseline.md) | Phase 2 summary: NYC and US peers from NTD |
+| [`docs/expert_explanations.md`](docs/expert_explanations.md) | What other analysts (CBC, State Comptroller, MTA, Imperial College, Transit Costs Project, Alon Levy) say explains NYC's operating cost, and how it fits our data |
 
 ## Core rule
 
