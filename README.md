@@ -10,7 +10,7 @@ The research report is [`report/report.md`](report/report.md), built from the da
 
 ## Website
 
-A chart-first summary of the findings is published at https://hrishisd.github.io/subway-efficiency/ . It is [`site/index.html`](site/index.html), **generated** from the CSVs by `python3 scripts/build_site.py` (edit [`site/template.html`](site/template.html) and the script, not `index.html`). Every chart value links to its row in the data and to its sources; [`site/data.json`](site/data.json) lists every value and computed ratio with its input rows. The GitHub Actions workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml) rebuilds and publishes the site on every push to `main`.
+A chart-first summary of the findings is published at https://hrishisd.github.io/Subway-efficiency/ . It is [`site/index.html`](site/index.html), **generated** from the CSVs by `python3 scripts/build_site.py` (edit [`site/template.html`](site/template.html) and the script, not `index.html`). Every chart value links to its row in the data and to its sources; [`site/data.json`](site/data.json) lists every value and computed ratio with its input rows. The GitHub Actions workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml) rebuilds and publishes the site on every push to `main`.
 
 ## Status
 
