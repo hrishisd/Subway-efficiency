@@ -1,6 +1,6 @@
 # Method: seoul_opex_excl_depreciation
 
-**Used for:** `opex_total` of `seoul_metro`, 2018 and 2019 (obs_ids `seoul_metro_<year>_opex_total_est`). **These rows are estimates**, and so is every ratio built on them.
+**Used for:** `opex_total` of `seoul_metro`, 2018 and 2019 (the rows for 2022-2024 use `seoul_opex_from_revenue_operating_loss`) (obs_ids `seoul_metro_<year>_opex_total_est`). **These rows are estimates**, and so is every ratio built on them.
 
 **Type:** estimated
 
