@@ -94,3 +94,8 @@ opex_staff_costs,Operating expense: staff costs,currency,"Staff costs and relate
 opex_other_business,Operating expense of businesses outside the metro,currency,Costs the source reports for activities that are not running the metro (for example construction or operation done under contract for others). Used to remove them from a whole-agency total.
 operating_revenue,Operating revenue,currency,"All operating revenue of the stated scope (fares, other transport income and, where stated, government payments for services)."
 ebit,Earnings before interest and tax,currency,Operating profit as the source reports it.
+opex_staff_wages,Operating expense: wages and salaries,currency,"Wages, salaries, overtime and paid absences inside opex_total, without employer benefit costs."
+staff_cost_per_employee,Staff cost per employee,currency/employee,"opex_staff_costs divided by the employees whose cost it covers: wages plus benefits (pensions, health, retiree health, employer social insurance as the source books them). Contracted-out labor is not included; it sits in non-labor cost."
+staff_wages_per_employee,Wages per employee,currency/employee,"Wages and salaries (including bonus, overtime and paid absences where the source includes them) per employee, without employer benefit costs."
+staff_benefits_per_employee,Benefit cost per employee,currency/employee,"Employer benefit costs per employee: staff_cost_per_employee minus staff_wages_per_employee, or the source's fringe-benefit line divided by employees."
+staff_cost_share_of_opex,Staff cost as a share of operating expense,ratio,opex_staff_costs divided by opex_total for the same scope.

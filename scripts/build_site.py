@@ -274,10 +274,65 @@ chart(id="staff", section="labor", kind="hbar", fmt="n0",
       title="Staff per million car-km, 2023",
       unit="Operating employees per million car-km of service (head counts; London is full-time equivalents)",
       axis="Employees per million car-km",
-      takeaway=f"NYC uses {pct(min(sr)[0])} to {pct(max(sr)[0])} more staff per unit of service than Tokyo, London and "
-               f"Hong Kong, about the same size as its cost gap.",
+      takeaway=f"NYC uses {pct(min(sr)[0])} to {pct(max(sr)[0])} more of its own staff per unit of service than Tokyo, "
+               f"London and Hong Kong. That is only half the staffing story: each NYC employee also costs much more "
+               f"(next chart).",
       note="Seoul counts every employee of the corporation. Systems that contract out more work look leaner here.",
       items=st_items)
+
+# ------------------------------------------------------------------ 7b. wages and benefits per employee
+PAY = [("nyc_subway", "New York"), ("tokyo_metro", "Tokyo Metro"), ("tokyo_toei", "Toei (Tokyo)"),
+       ("hong_kong_mtr", "Hong Kong (all HK transport)")]
+nyc_c = pick("nyc_subway", 2023, "staff_cost_per_employee")
+pay_rows, pay_r = [], []
+
+
+def seg(v):
+    if v is None:
+        return None
+    d = {"value": v.value, "est": v.est, "ref": ref("obs", v.oid, v.row)}
+    if v.est and v.low is not None:
+        d["low"], d["high"] = v.low, v.high
+    return d
+
+
+for s_, lab in PAY:
+    w_, b_ = pick(s_, 2023, "staff_wages_per_employee"), pick(s_, 2023, "staff_benefits_per_employee")
+    c_ = pick(s_, 2023, "staff_cost_per_employee")
+    segs = [seg(w_), seg(b_), None] if (w_ and b_) else [None, None, seg(c_)]
+    pay_rows.append({"label": lab, "system": s_, "group": "nyc" if s_ == "nyc_subway" else "foreign", "segs": segs,
+                     "est": bool(c_.est)})
+    if s_ != "nyc_subway":
+        pay_r.append(calc(f"nyc_over_{s_}_staff_cost_per_employee_2023", nyc_c.value / c_.value,
+                          f"{nyc_c.oid} / {c_.oid}", [nyc_c.oid, c_.oid],
+                          f"NYC 2023 wages and benefits per employee divided by {NAMES[s_]}")[0])
+nyc_w, nyc_b = pick("nyc_subway", 2023, "staff_wages_per_employee"), pick("nyc_subway", 2023, "staff_benefits_per_employee")
+nyc_share = pick("nyc_subway", 2023, "staff_cost_share_of_opex")
+tm_ck, nyc_ck = pick("tokyo_metro", 2023, "opex_per_car_km"), pick("nyc_subway", 2023, "opex_per_car_km")
+tm_sc, tm_ot = pick("tokyo_metro", 2023, "opex_staff_costs"), pick("tokyo_metro", 2023, "opex_total")
+tm_c = pick("tokyo_metro", 2023, "staff_cost_per_employee")
+cf, _ = calc("nyc_carkm_at_tokyo_metro_pay_over_tokyo_metro_2023",
+             (nyc_share.value * nyc_ck.value / (nyc_c.value / tm_c.value) + (1 - nyc_share.value) * nyc_ck.value) / tm_ck.value,
+             f"({nyc_share.oid} * {nyc_ck.oid} / ({nyc_c.oid} / {tm_c.oid}) + (1 - {nyc_share.oid}) * {nyc_ck.oid}) / {tm_ck.oid}",
+             [nyc_share.oid, nyc_ck.oid, nyc_c.oid, tm_c.oid, tm_ck.oid],
+             "NYC 2023 cost per car-km if its own staff were paid Tokyo Metro's cost per employee, over Tokyo Metro's")
+chart(id="pay", section="labor", kind="stack", fmt="usd0", year="2023", tip_unit="per employee a year",
+      num_label="Row", label_w=190,
+      title="Wages and benefits per employee, 2023",
+      unit="Staff cost per employee of the operator's own staff, 2024 US$ (PPP for non-US systems)",
+      axis="2024 US$ per employee",
+      takeaway=f"Each NYC subway employee costs "
+               f"{('about %.2f' % min(pay_r)) if round(min(pay_r), 2) == round(max(pay_r), 2) else ('%.2f to %.2f' % (min(pay_r), max(pay_r)))}"
+               f" times as much as one in Tokyo or Hong "
+               f"Kong, and benefits ({nyc_b.value / nyc_w.value * 100:.0f}% of NYC wages) are most of the difference. "
+               f"At Tokyo Metro's pay, NYC would cost about {cf:.2f}× what Tokyo Metro does per car-km.",
+      note="Own staff only: work contracted out (Tokyo Metro contracts most maintenance to subsidiaries) is not included. "
+           "NYC benefits include pensions and retiree health care as booked. Hong Kong is an ESTIMATE: it covers MTR's "
+           "whole Hong Kong transport business, and its staff cost may include staff its head count leaves out. "
+           "Toei and Hong Kong do not split wages and benefits. No London figure yet.",
+      series=[{"key": "wages", "label": "Wages"}, {"key": "benefits", "label": "Benefits"},
+              {"key": "total", "label": "Wages and benefits (not split)"}],
+      rows=pay_rows)
 
 # ------------------------------------------------------------------ 8. US staff by function
 FUNCS = [("employees_vehicle_operations", "Vehicle operations (train crews, dispatch)"),
@@ -398,6 +453,7 @@ for s in ["nyc_subway", "london_underground", "paris_metro", "madrid_metro", "be
     fgrid.append(row)
 
 FACTOR_VERDICTS = [
+    ("Pay and benefits per employee", "strong", "Each NYC employee costs about 1.65 times as much as in Tokyo or Hong Kong; at Tokyo pay most of the gap goes."),
     ("Facility-maintenance staffing", "strong", "Most direct evidence: NYC's extra staff are in track, station and signal upkeep."),
     ("24/7 service", "plausible", "Fits the maintenance-heavy staffing; cannot be tested separately with this data."),
     ("Administration and injury claims", "growing", "Admin rose from 13% of cost (2019) to 23% (2024)."),
@@ -428,7 +484,7 @@ GAPS = [
     "Hong Kong, Seoul, Madrid and Singapore costs are estimates; Seoul 2022–24 is weak.",
     "London car-km and Tokyo passenger-km after 2018 are estimated.",
     "NYC data before 2012 is missing; 2012 and 2016–17 may be series breaks.",
-    "No foreign wage data, so \"too many staff\" and \"staff paid too much\" cannot be fully separated.",
+    "Pay per employee only for Tokyo and Hong Kong (2023), not London; not yet compared with average pay in each country.",
 ]
 
 sources = {sid: {"title": SOURCES[sid]["title"], "publisher": SOURCES[sid]["publisher"], "url": SOURCES[sid]["url"],

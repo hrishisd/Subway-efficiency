@@ -385,39 +385,47 @@ function hbar(c, box, W) {
   el("line", { x1: 0, x2: 0, y1: 0, y2: rowH * items.length, class: "axis" }, g);
 }
 
-// stacked horizontal bars
+// stacked horizontal bars. A row's segs line up with c.series; a null seg is skipped.
 function stack(c, box, W, legend) {
   const cls = ["f-s1", "f-s2", "f-s3", "f-s4"];
+  const f = c.fmt || "n0";
   legend.replaceChildren();
   c.series.forEach((s, i) => {
     const sp = h("span", null, legend);
     h("i", { class: "sw", style: `background:var(--s${i + 1})` }, sp);
     sp.append(s.label);
   });
+  if (c.rows.some(r => r.segs.some(s => s && s.est))) {
+    const sp = h("span", null, legend); h("span", { class: "est-badge" }, sp, "EST"); sp.append(" hatched = estimate");
+  }
   box.appendChild(legend);
-  const rows = c.rows.slice().sort((a, b) => b.segs.reduce((s, x) => s + x.value, 0) - a.segs.reduce((s, x) => s + x.value, 0));
+  const tot = r => r.segs.reduce((a, x) => a + (x ? x.value : 0), 0);
+  const rows = c.rows.filter(r => SHOW_EST || !r.est).slice().sort((a, b) => tot(b) - tot(a));
   const fs = W < 480 ? 11.5 : 12.5;
-  const labelW = Math.min(120, Math.max(...rows.map(d => textW(d.label, fs))) + 10);
-  const valW = 44, rowH = 30, barH = 18, axisH = 40;
+  const labelW = Math.min(c.label_w || 120, Math.max(...rows.map(d => textW(d.label, fs))) + 10);
+  const valW = Math.max(44, ...rows.map(r => textW(fmt(tot(r), f), fs) + (r.segs.some(s => s && s.est) ? 34 : 0) + 12));
+  const rowH = 30, barH = 18, axisH = 40;
   const pw = W - labelW - valW;
   const H = rowH * rows.length + axisH;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": c.title }, box);
-  const maxV = Math.max(...rows.map(r => r.segs.reduce((s, x) => s + x.value, 0)));
+  const maxV = Math.max(...rows.map(r => Math.max(tot(r), ...r.segs.map(s => (s && s.high) || 0))));
   const ticks = niceTicks(maxV, W < 480 ? 3 : 5), dom = ticks[ticks.length - 1], sx = v => pw * v / dom;
   const g = el("g", { transform: `translate(${labelW},0)` }, svg);
   for (const t of ticks) {
     el("line", { x1: sx(t), x2: sx(t), y1: 0, y2: rowH * rows.length, class: "grid" }, g);
-    el("text", { x: sx(t), y: rowH * rows.length + 14, "text-anchor": "middle", class: "t-ink2", "font-size": fs - 1 }, g, fmt(t, "n0"));
+    el("text", { x: sx(t), y: rowH * rows.length + 14, "text-anchor": "middle", class: "t-ink2", "font-size": fs - 1 }, g, fmt(t, f));
   }
   el("text", { x: pw / 2, y: rowH * rows.length + 32, "text-anchor": "middle", class: "t-ink2", "font-size": fs - 0.5 }, g, c.axis);
   rows.forEach((d, i) => {
     const y = i * rowH + (rowH - barH) / 2;
     el("text", { x: -8, y: y + barH / 2 + 4, "text-anchor": "end", class: "t-ink", "font-size": fs,
       "font-weight": d.group === "nyc" ? 700 : 400 }, g, d.label);
-    let x = 0;
-    d.segs.forEach((s, k) => {
+    let x = 0, xEnd = 0;
+    const segs = d.segs.map((s, k) => s ? { ...s, k } : null).filter(Boolean);
+    segs.forEach((s, j) => {
+      const k = s.k;
       const w = sx(s.value);
-      const last = k === d.segs.length - 1;
+      const last = j === segs.length - 1;
       const gap = last ? 0 : 2;
       const ww = Math.max(0.5, w - gap);
       let mark;
@@ -425,18 +433,34 @@ function stack(c, box, W, legend) {
         const r = Math.min(4, ww / 2);
         mark = el("path", { d: `M${x},${y} H${x + ww - r} Q${x + ww},${y} ${x + ww},${y + r} V${y + barH - r} Q${x + ww},${y + barH} ${x + ww - r},${y + barH} H${x} Z`, class: "mark " + cls[k] }, g);
       } else mark = el("rect", { x, y, width: ww, height: barH, class: "mark " + cls[k] }, g);
+      if (s.est) {
+        mark.setAttribute("class", "mark s-" + (d.group || "foreign"));
+        mark.setAttribute("fill", `url(#hatch-${d.group || "foreign"})`);
+        mark.setAttribute("stroke-width", 1.5);
+      }
+      xEnd = x + w;
+      if (s.est && s.low != null) {
+        const a = sx(s.low + x / pw * dom - (j ? 0 : 0)), b = sx(s.high + x / pw * dom), cy = y + barH / 2;
+        el("line", { x1: a, x2: b, y1: cy, y2: cy, style: "stroke:var(--ink)", "stroke-width": 1.2 }, g);
+        el("line", { x1: a, x2: a, y1: cy - 4, y2: cy + 4, style: "stroke:var(--ink)", "stroke-width": 1.2 }, g);
+        el("line", { x1: b, x2: b, y1: cy - 4, y2: cy + 4, style: "stroke:var(--ink)", "stroke-width": 1.2 }, g);
+        xEnd = Math.max(xEnd, b);
+      }
       const hit = el("rect", { x, y: i * rowH, width: Math.max(w, 6), height: rowH, class: "hit",
-        "aria-label": `${d.label}, ${c.series[k].label}: ${fmt(s.value, "n0")}` }, g);
+        "aria-label": `${d.label}, ${c.series[k].label}: ${fmt(s.value, f)}${s.est ? " (estimate)" : ""}` }, g);
       g.insertBefore(hit, mark);
       bindHit(hit, body => {
-        h("div", { class: "tv" }, body, fmt(s.value, "n0") + " per million train-km");
-        h("div", { class: "tl" }, body, d.label + ", 2024 · " + c.series[k].label);
-        refLines(body, s.ref, "Staff");
-        refLines(body, s.den, "Train-km");
+        const v = h("div", { class: "tv" }, body, fmt(s.value, f) + " " + (c.tip_unit || "per million train-km") + " ");
+        if (s.est) h("span", { class: "est-badge" }, v, "EST");
+        h("div", { class: "tl" }, body, d.label + ", " + (c.year || "2024") + " · " + c.series[k].label);
+        if (s.est && s.low != null) h("div", { class: "tr" }, body, `Estimate range: ${fmt(s.low, f)} to ${fmt(s.high, f)}`);
+        refLines(body, s.ref, c.num_label || "Staff");
+        if (s.den) refLines(body, s.den, c.den_label || "Train-km");
       }, mark);
       x += w;
     });
-    el("text", { x: x + 6, y: y + barH / 2 + 4, class: "t-ink", "font-size": fs, "font-weight": d.group === "nyc" ? 700 : 400 }, g, fmt(x / pw * dom, "n0"));
+    const tx = el("text", { x: xEnd + 6, y: y + barH / 2 + 4, class: "t-ink", "font-size": fs, "font-weight": d.group === "nyc" ? 700 : 400 }, g, fmt(tot(d), f));
+    if (segs.some(s => s.est)) el("tspan", { class: "estlbl", dx: 4 }, tx, "EST");
   });
   el("line", { x1: 0, x2: 0, y1: 0, y2: rowH * rows.length, class: "axis" }, g);
 }
@@ -645,8 +669,8 @@ function table(c, wrap) {
       [null, null, td => { srcCell(td, p.yref); td.append(" ; "); srcCell(td, p.xref); }]]));
   } else if (c.kind === "stack") {
     ["System", ...c.series.map(s => s.label), "Sources"].forEach(x => h("th", null, hd, x));
-    c.rows.forEach(r => add([[r.label], ...r.segs.map(s => [fmt(s.value, "n0"), "n"]),
-      [null, null, td => r.segs.forEach((s, i) => { if (i) td.append(" ; "); srcCell(td, s.ref); })]]));
+    c.rows.forEach(r => add([[r.label], ...r.segs.map(s => [s ? fmt(s.value, c.fmt || "n0") + (s.est ? " EST" : "") : "–", "n"]),
+      [null, null, td => r.segs.filter(Boolean).forEach((s, i) => { if (i) td.append(" ; "); srcCell(td, s.ref); })]]));
   } else if (c.kind === "split") {
     ["Peer", ...c.parts.map(p => p.label), "NYC ÷ peer, cost per passenger-km", "Inputs"].forEach(x => h("th", null, hd, x));
     c.rows.forEach(r => add([[r.label + (r.est ? " EST" : "")], ...c.parts.map(p => [fmt(r[p.key], "pct"), "n"]), [r.gap.toFixed(2) + "×", "n"],
@@ -663,7 +687,7 @@ function table(c, wrap) {
 const SECTIONS = [
   ["rider", "Per rider: equal to London, far behind Asia"],
   ["service", "Other unit costs: per car-km and per train-km"],
-  ["labor", "Staff: more people per unit of service"],
+  ["labor", "Staff: more people per unit of service, each paid more"],
   ["time", "Over time"],
   ["money", "Who pays"],
   ["reliability", "Reliability"],

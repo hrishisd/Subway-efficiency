@@ -515,3 +515,43 @@ fiscal_year,operator,item_ja,item_en,value,unit
 2020,東京都,諸税,taxes,0,thousand JPY
 2020,東京都,営業費計（厚生福利施設収入控除前）,operating_expenses_gross,127757564,thousand JPY
 2020,東京都,差引営業費計,operating_expenses_net,127757564,thousand JPY
+2023,東京地下鉄,線路保存費 人件費,personnel_track_maintenance,3317454,thousand JPY
+2023,東京地下鉄,線路保存費 経費,other_expense_track_maintenance,20896231,thousand JPY
+2023,東京地下鉄,電路保存費 人件費,personnel_electrical_maintenance,6281957,thousand JPY
+2023,東京地下鉄,電路保存費 経費,other_expense_electrical_maintenance,9773771,thousand JPY
+2023,東京地下鉄,車両保存費 人件費,personnel_vehicle_maintenance,8682449,thousand JPY
+2023,東京地下鉄,車両保存費 経費,other_expense_vehicle_maintenance,9903415,thousand JPY
+2023,東京地下鉄,運転費 人件費,personnel_train_operation,30035023,thousand JPY
+2023,東京地下鉄,運転費 経費,other_expense_train_operation,13317756,thousand JPY
+2023,東京地下鉄,運輸費 人件費,personnel_station_and_traffic,31242908,thousand JPY
+2023,東京地下鉄,運輸費 経費,other_expense_station_and_traffic,35260769,thousand JPY
+2023,東京地下鉄,保守管理費 人件費,personnel_maintenance_management,3760897,thousand JPY
+2023,東京地下鉄,保守管理費 経費,other_expense_maintenance_management,6237257,thousand JPY
+2023,東京地下鉄,輸送管理費 人件費,personnel_transport_management,3305959,thousand JPY
+2023,東京地下鉄,輸送管理費 経費,other_expense_transport_management,5122361,thousand JPY
+2023,東京地下鉄,案内宣伝費 人件費,personnel_publicity,0,thousand JPY
+2023,東京地下鉄,案内宣伝費 経費,other_expense_publicity,922571,thousand JPY
+2023,東京地下鉄,厚生福利施設費 人件費,personnel_welfare_facilities,961716,thousand JPY
+2023,東京地下鉄,厚生福利施設費 経費,other_expense_welfare_facilities,3602914,thousand JPY
+2023,東京地下鉄,一般管理費 人件費,personnel_general_administration,7029017,thousand JPY
+2023,東京地下鉄,一般管理費 経費,other_expense_general_administration,7890793,thousand JPY
+2023,東京都,線路保存費 人件費,personnel_track_maintenance,3581543,thousand JPY
+2023,東京都,線路保存費 経費,other_expense_track_maintenance,10455161,thousand JPY
+2023,東京都,電路保存費 人件費,personnel_electrical_maintenance,4043197,thousand JPY
+2023,東京都,電路保存費 経費,other_expense_electrical_maintenance,5587593,thousand JPY
+2023,東京都,車両保存費 人件費,personnel_vehicle_maintenance,3420731,thousand JPY
+2023,東京都,車両保存費 経費,other_expense_vehicle_maintenance,6116907,thousand JPY
+2023,東京都,運転費 人件費,personnel_train_operation,10777070,thousand JPY
+2023,東京都,運転費 経費,other_expense_train_operation,6309077,thousand JPY
+2023,東京都,運輸費 人件費,personnel_station_and_traffic,11420771,thousand JPY
+2023,東京都,運輸費 経費,other_expense_station_and_traffic,19395239,thousand JPY
+2023,東京都,保守管理費 人件費,personnel_maintenance_management,0,thousand JPY
+2023,東京都,保守管理費 経費,other_expense_maintenance_management,0,thousand JPY
+2023,東京都,輸送管理費 人件費,personnel_transport_management,930037,thousand JPY
+2023,東京都,輸送管理費 経費,other_expense_transport_management,2918264,thousand JPY
+2023,東京都,案内宣伝費 人件費,personnel_publicity,0,thousand JPY
+2023,東京都,案内宣伝費 経費,other_expense_publicity,0,thousand JPY
+2023,東京都,厚生福利施設費 人件費,personnel_welfare_facilities,192540,thousand JPY
+2023,東京都,厚生福利施設費 経費,other_expense_welfare_facilities,31342,thousand JPY
+2023,東京都,一般管理費 人件費,personnel_general_administration,1643696,thousand JPY
+2023,東京都,一般管理費 経費,other_expense_general_administration,2689412,thousand JPY
