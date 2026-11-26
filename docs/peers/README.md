@@ -13,7 +13,7 @@ Input rows live in `data/peers/<system_id>.csv`. `scripts/build_peers.py` adds r
 | London Underground | reported | yes | yes | **estimated** | yes | yes | 2015-2024 (cost 2017-2024) |
 | Madrid Metro | **estimated** (2018, 2019, 2024) | yes | no | yes | no | 2018, 2024 | 2015-2024 |
 | Paris Métro | none | 2018, 2019, 2024 | no | no | 2019, 2024 | no | |
-| Berlin U-Bahn | none | 2025 | 2024, 2025 | no | 2024, 2025 | no | |
+| Berlin U-Bahn | 2017 cost per trip only | 2025 | 2024, 2025 | no | 2024, 2025 | no | |
 | Istanbul (Metro İstanbul) | 2019, 2020, company-wide incl. tram | no | no | no | no | 2020 | |
 
 ## First read: 2019, in 2024 US dollars at PPP
@@ -37,7 +37,7 @@ What this suggests, to be tested in phase 4:
 
 ## Open questions and gaps
 
-- Paris and Berlin: no cost data found. Istanbul: no ridership or service data found. See each note.
+- Paris: no metro-only cost exists in published sources (second search 2026-11-26; the Cour des comptes says RATP does not track cost by line). Berlin: only a 2017 cost per trip (€0.93, about $1.57 at 2024 PPP, against NYC's $2.32 in 2019). Istanbul: no ridership or service data found. See each note.
 - Madrid: audited accounts, staff FTE and passenger-km.
 - London: 2015/16 and 2016/17 cost; 2019/20 to 2021/22 staff; 2024/25 passenger-km and train-km.
 - Several source sites block automated access (metro.istanbul, metromadrid.es, board.tfl.gov.uk, web.archive.org, older bvg.de files). A person with a normal browser can download the missing documents.
