@@ -46,13 +46,15 @@ Even allowing for different definitions, NYC trains fail roughly 25 to 40 times 
 
 Service delivered (share of scheduled train-km run), as compiled by Singapore's LTA: Hong Kong 99.9%, Singapore 99.8%, Berlin 95.7%, NYC 94.2%, London 91.8%. Berlin's own figure is 94.3% for 2025. These use each system's own measure, so treat them as rough.
 
+London's own series (Travel in London 2024 Table 9 and 2025 Table 4) shows scheduled train-km operated of 96.6% to 97.6% from 2013/14 to 2018/19, then 94.0% in 2019/20, a low of 87.2% in 2020/21, and a slow recovery to 91.0% in 2024/25. TfL blames train operator availability, lack of rolling stock and asset condition on the Central and Bakerloo lines.
+
 NYC terminal on-time performance (pooled by us, all lines and days): 63% to 70% in 2015-2018, then 81% to 89% from 2019. The jump in 2019 is probably a change in the MTA's on-time standard, not a real improvement. Use within-period trends only.
 
 Japan: Tokyo Metro had 12 transport disruptions (cancellation or delay of 30 minutes or more) in FY2024. Per million train-km (LTA compilation), Tokyo Metro had 0.26 and Toei 0.06 such delays in 2024.
 
 ## Gaps (not found or not readable)
 
-- **London reliability series.** The LU Performance Data Almanac (xlsx) holds lost customer hours, excess journey time and percentage of schedule operated since 2002, but this environment cannot read it. Only one 2018 period and the recent demand-weighted journey time are in the data. Next step: download the file on a machine with normal internet access.
+- **London lost customer hours, excess journey time and fleet failure rates.** Scheduled km operated (2013/14 to 2024/25) and the journey time metric are now in the data. The other measures are only in the LU Performance Data Almanac (xlsx), which this environment cannot download: the proxy blocks data.london.gov.uk and web.archive.org, and the fetch tool returns spreadsheets as unreadable binary. TfL board papers that may hold them refuse automated access. Next step: download the almanac on a machine with normal internet access.
 - **Paris network-wide figure and full-year 2024.** Only January-September 2024 per-line contract punctuality is in the data. The IDFM bulletin index page refused automated access.
 - **Madrid reliability, staff, hours and signaling.** The CRTM report has network size and funding only. The Metro de Madrid financial document was blocked.
 - **Seoul, Shanghai, Beijing, Istanbul** primary reliability data. Only LTA's compiled punctuality figures are available.
