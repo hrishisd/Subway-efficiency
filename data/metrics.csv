@@ -31,8 +31,8 @@ train_km,Train revenue kilometers,km,train_revenue_miles converted to km.
 avg_trip_length_km,Average trip length,km,passenger_km divided by unlinked_trips.
 avg_car_load,Average passengers per car,passengers,passenger_km divided by car_km: the average number of passengers on board a car in revenue service.
 avg_cars_per_train,Average cars per train,cars,car_km divided by train_km.
-major_mechanical_failures,Major mechanical failures,failures,NTD Breakdowns table, column major_mechanical_failures. Exact definition: NTD Policy Manual; not yet checked. See method ntd_mdbf_major.
-other_mechanical_failures,Other mechanical failures,failures,NTD Breakdowns table, column other_mechanical_failures. Reporting practice varies widely between agencies and years (see method ntd_mdbf_major).
+major_mechanical_failures,Major mechanical failures,failures,"NTD Breakdowns table, column major_mechanical_failures. Exact definition: NTD Policy Manual; not yet checked. See method ntd_mdbf_major."
+other_mechanical_failures,Other mechanical failures,failures,"NTD Breakdowns table, column other_mechanical_failures. Reporting practice varies widely between agencies and years (see method ntd_mdbf_major)."
 total_mechanical_failures,Total mechanical failures,failures,Sum of major and other mechanical failures.
 employees_operating,Operating employees,employees,NTD employee count (full-time plus part-time) in the four operating functions; capital labor excluded. Part-time staff count as one each.
 employee_hours_operating,Operating labor hours,hours,NTD employee work hours (full-time plus part-time) in the four operating functions; capital labor excluded.
@@ -40,9 +40,9 @@ employees_vehicle_operations,Employees: vehicle operations,employees,Full-time p
 employees_vehicle_maintenance,Employees: vehicle maintenance,employees,Full-time plus part-time NTD employee count in vehicle maintenance.
 employees_facility_maintenance,Employees: facility maintenance,employees,Full-time plus part-time NTD employee count in facility maintenance.
 employees_general_administration,Employees: general administration,employees,Full-time plus part-time NTD employee count in general administration.
-employees_per_million_car_km,Operating employees per million car-km,employees/million km,employees_operating divided by car_km in millions. Main labor-productivity measure.
-passenger_km_per_employee,Passenger-km per operating employee,km/employee,passenger_km divided by employees_operating.
-trips_per_employee,Trips per operating employee,trips/employee,unlinked_trips divided by employees_operating.
+employees_per_million_car_km,Employees per million car-km,employees/million km,"Staff divided by car_km in millions. US systems use employees_operating; other systems use employees_fte. Main labor-productivity measure."
+passenger_km_per_employee,Passenger-km per employee,km/employee,"passenger_km divided by staff (employees_operating for US systems, employees_fte for other systems)."
+trips_per_employee,Trips per employee,trips/employee,"unlinked_trips divided by staff (employees_operating for US systems, employees_fte for other systems)."
 employee_count_vehicle_operations_ft,"NTD employee count, vehicle operations, full-time",employees,"As published in the NTD Employees table (column vehicle_operations_count, full-time rows). Some agencies report fractional values."
 employee_hours_vehicle_operations_ft,"NTD employee work hours, vehicle operations, full-time",hours,"As published in the NTD Employees table (column vehicle_operations_hours, full-time rows)."
 employee_count_vehicle_operations_pt,"NTD employee count, vehicle operations, part-time",employees,"As published in the NTD Employees table (column vehicle_operations_count, part-time rows). Some agencies report fractional values."
@@ -67,3 +67,4 @@ employee_count_total_ft,"NTD employee count, total, full-time",employees,"As pub
 employee_hours_total_ft,"NTD employee work hours, total, full-time",hours,"As published in the NTD Employees table (column total_hours, full-time rows)."
 employee_count_total_pt,"NTD employee count, total, part-time",employees,"As published in the NTD Employees table (column total_employee_count, part-time rows). Some agencies report fractional values."
 employee_hours_total_pt,"NTD employee work hours, total, part-time",hours,"As published in the NTD Employees table (column total_hours, part-time rows)."
+opex_per_train_km,Operating expense per train-km,currency/km,opex_total divided by train_km.

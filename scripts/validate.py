@@ -34,6 +34,17 @@ def main():
         if not s["accessed_on"].strip():
             errors.append(f"sources.csv: {sid} has no accessed_on date")
 
+    factors = read("data/raw/ppp/ppp_deflator.csv")
+    factor_ids = set()
+    for fct in factors:
+        if fct["factor_id"] in factor_ids:
+            errors.append(f"ppp_deflator.csv: duplicate factor_id {fct['factor_id']}")
+        factor_ids.add(fct["factor_id"])
+        if fct["source_id"] not in source_ids:
+            errors.append(f"ppp_deflator.csv: {fct['factor_id']}: source_id not in sources.csv")
+        if not fct["source_locator"].strip():
+            errors.append(f"ppp_deflator.csv: {fct['factor_id']}: source_locator is empty")
+
     obs = read("data/observations.csv")
     obs_ids = {o["obs_id"] for o in obs}
     seen = set()
@@ -66,8 +77,8 @@ def main():
             if not o["method_id"].strip():
                 errors.append(f"{where}: derived value needs method_id")
             for i in filter(None, o["inputs"].split(";")):
-                if i.strip() not in obs_ids:
-                    errors.append(f"{where}: input {i!r} is not an obs_id")
+                if i.strip() not in obs_ids and i.strip() not in factor_ids:
+                    errors.append(f"{where}: input {i!r} is not an obs_id or price factor_id")
         if o["value_type"] == "estimated":
             # Estimates taken from a secondary source may lack our own method;
             # they must stay unverified until replaced or given a method.
@@ -75,6 +86,9 @@ def main():
                 errors.append(f"{where}: verified estimate needs method_id")
             if o["method_id"].strip() and not (o["value_low"] and o["value_high"]):
                 errors.append(f"{where}: estimate needs value_low and value_high")
+            for i in filter(None, o["inputs"].split(";")):
+                if i.strip() not in obs_ids and i.strip() not in factor_ids:
+                    errors.append(f"{where}: input {i!r} is not an obs_id or price factor_id")
 
     for e in errors:
         print(e)
