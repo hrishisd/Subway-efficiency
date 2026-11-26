@@ -23,3 +23,5 @@ pension_benefit_share,Pension and benefit cost share,numeric,share,,"Fringe bene
 funding_mix,Funding mix,text,,,"Shares of operating funding from fares, government subsidy, and other income (property, advertising, retail), as stated by the source."
 operating_subsidy,Operating subsidy,categorical,,none;partial;majority,"Whether the operator needs public money to cover operating costs. none = fares and other income cover operating cost."
 governance,Governance,text,,,"Who owns and who operates the system (state agency, municipal company, listed company), and who sets fares."
+national_avg_annual_wage,National average annual wage,numeric,local currency per year,,"OECD average annual wage per full-time-equivalent dependent employee in the system's country (national accounts basis, includes bonuses), current prices. Used to compare a system's pay with its own labour market."
+employer_benefit_share_benchmark,"Benefit share of compensation, employer benchmark",text,,,"Benefits as a share of total employee compensation for a comparison group of employers in the system's country, as stated by the source."

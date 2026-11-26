@@ -412,6 +412,38 @@ calc("benefit_share_of_comp_gap_tokyo_metro_2023", (nyc_ben.value - tm_b.value) 
      f"({nyc_ben.oid} - {tm_b.oid}) / ({nyc_comp.oid} - {tm_c.oid})", [nyc_ben.oid, tm_b.oid, nyc_comp.oid, tm_c.oid],
      "Share of the NYC-Tokyo Metro gap in staff cost per employee that is benefits, 2023", "pct")
 
+# ---- pay relative to each country's average wage (OECD), 2023, local currency
+PPPF = {r["factor_id"]: float(r["value"]) for r in csv.DictReader(open(os.path.join(ROOT, "data/raw/ppp/ppp_deflator.csv"), encoding="utf-8"))}
+
+
+def natwage(system, year):
+    f = [x for x in FACTORS if x["system_id"] == system and x["factor_id"] == "national_avg_annual_wage" and x["as_of"] == str(year)][0]
+    return float(f["value"]), f["fact_id"]
+
+
+REL_PAY = {}
+for s_, wid, cid in (("nyc_subway", "nyc_subway_2023_staff_wages_per_employee_ntd", "nyc_subway_2023_staff_cost_per_employee_ntd"),
+                     ("tokyo_metro", "tokyo_metro_2023_staff_wages_per_employee_yuho", "tokyo_metro_2023_staff_cost_per_employee_mlit"),
+                     ("tokyo_toei", None, "tokyo_toei_2023_staff_cost_per_employee_mlit")):
+    nw, nfid = natwage(s_, 2023)
+    if wid:
+        calc(f"rel_wage_{s_}_2023", obs(wid).value / nw, f"{wid} / factors.csv {nfid}", [wid, nfid],
+             f"{s_} wages per employee divided by the national average annual wage, 2023", "x2")
+    REL_PAY[s_] = calc(f"rel_comp_{s_}_2023", obs(cid).value / nw, f"{cid} / factors.csv {nfid}", [cid, nfid],
+                       f"{s_} wages plus benefits per employee divided by the national average annual wage, 2023", "x2")
+for s_ in ("tokyo_metro", "tokyo_toei"):
+    calc(f"rel_comp_nyc_over_{s_}_2023", REL_PAY["nyc_subway"] / REL_PAY[s_],
+         f"rel_comp_nyc_subway_2023 / rel_comp_{s_}_2023",
+         ["nyc_subway_2023_staff_cost_per_employee_ntd", obs(f"{s_}_2023_staff_cost_per_employee_mlit").oid],
+         f"NYC pay relative to the US average wage, over {s_} pay relative to the Japanese average wage", "x2")
+us_w, us_f = natwage("nyc_subway", 2023)
+jp_w, jp_f = natwage("tokyo_metro", 2023)
+us_real = us_w * PPPF["us_gdp_deflator_2024"] / PPPF["us_gdp_deflator_2023"]
+jp_ppp = jp_w * PPPF["us_gdp_deflator_2024"] / PPPF["us_gdp_deflator_2023"] / PPPF["ppp_jpn_2023"]
+calc("us_over_japan_avg_wage_ppp_2023", us_real / jp_ppp,
+     f"{us_f} (2024 $) / ({jp_f} at ppp_jpn_2023, 2024 $)", [us_f, jp_f, "ppp_jpn_2023", "us_gdp_deflator_2023", "us_gdp_deflator_2024"],
+     "US average annual wage over Japan's, at PPP, 2023", "x2")
+
 sc_rows = [["**New York**", vstr(nyc_comp, "usd0"), vstr(nyc_wage, "usd0"), vstr(nyc_ben, "usd0"), "–",
             fmt(nyc_share.value, "pct"), fmt(nyc_lab_ck, "usd2"), fmt(nyc_nl_ck, "usd2"), "–"]]
 for s in COMP_PEERS:

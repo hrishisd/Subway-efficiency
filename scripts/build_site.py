@@ -316,6 +316,13 @@ cf, _ = calc("nyc_carkm_at_tokyo_metro_pay_over_tokyo_metro_2023",
              f"({nyc_share.oid} * {nyc_ck.oid} / ({nyc_c.oid} / {tm_c.oid}) + (1 - {nyc_share.oid}) * {nyc_ck.oid}) / {tm_ck.oid}",
              [nyc_share.oid, nyc_ck.oid, nyc_c.oid, tm_c.oid, tm_ck.oid],
              "NYC 2023 cost per car-km if its own staff were paid Tokyo Metro's cost per employee, over Tokyo Metro's")
+_nat = {f["system_id"]: f for f in FACTORS if f["factor_id"] == "national_avg_annual_wage" and f["as_of"] == "2023"}
+_nc, _tc = OBS["nyc_subway_2023_staff_cost_per_employee_ntd"], OBS["tokyo_metro_2023_staff_cost_per_employee_mlit"]
+relc, _ = calc("rel_comp_nyc_over_tokyo_metro_2023",
+               (float(_nc["value"]) / float(_nat["nyc_subway"]["value"])) / (float(_tc["value"]) / float(_nat["tokyo_metro"]["value"])),
+               f"({_nc['obs_id']} / {_nat['nyc_subway']['fact_id']}) / ({_tc['obs_id']} / {_nat['tokyo_metro']['fact_id']})",
+               [_nc["obs_id"], _tc["obs_id"], _nat["nyc_subway"]["fact_id"], _nat["tokyo_metro"]["fact_id"]],
+               "NYC pay relative to the US average wage, over Tokyo Metro pay relative to Japan's (OECD), 2023")
 chart(id="pay", section="labor", kind="stack", fmt="usd0", year="2023", tip_unit="per employee a year",
       num_label="Row", label_w=190,
       title="Wages and benefits per employee, 2023",
@@ -325,11 +332,14 @@ chart(id="pay", section="labor", kind="stack", fmt="usd0", year="2023", tip_unit
                f"{('about %.2f' % min(pay_r)) if round(min(pay_r), 2) == round(max(pay_r), 2) else ('%.2f to %.2f' % (min(pay_r), max(pay_r)))}"
                f" times as much as one in Tokyo or Hong "
                f"Kong, and benefits ({nyc_b.value / nyc_w.value * 100:.0f}% of NYC wages) are most of the difference. "
-               f"At Tokyo Metro's pay, NYC would cost about {cf:.2f}× what Tokyo Metro does per car-km.",
+               f"At Tokyo Metro's pay, NYC would cost about {cf:.2f}× what Tokyo Metro does per car-km. But measured "
+               f"against each country's average wage, NYC pays only {relc:.2f}× what Tokyo Metro pays: most of the gap "
+               f"is that US labour is expensive, which makes headcount the lever the MTA controls.",
       note="Own staff only: work contracted out (Tokyo Metro contracts most maintenance to subsidiaries) is not included. "
            "NYC benefits include pensions and retiree health care as booked. Hong Kong is an ESTIMATE: it covers MTR's "
            "whole Hong Kong transport business, and its staff cost may include staff its head count leaves out. "
-           "Toei and Hong Kong do not split wages and benefits. No London figure yet.",
+           "Toei and Hong Kong do not split wages and benefits. No London figure yet. National average wages: OECD "
+           "average annual wages, 2023 (source oecd_avg_annual_wages; rows in data/factors.csv).",
       series=[{"key": "wages", "label": "Wages"}, {"key": "benefits", "label": "Benefits"},
               {"key": "total", "label": "Wages and benefits (not split)"}],
       rows=pay_rows)
@@ -453,7 +463,7 @@ for s in ["nyc_subway", "london_underground", "paris_metro", "madrid_metro", "be
     fgrid.append(row)
 
 FACTOR_VERDICTS = [
-    ("Pay and benefits per employee", "strong", "Each NYC employee costs about 1.65 times as much as in Tokyo or Hong Kong; at Tokyo pay most of the gap goes."),
+    ("Pay and benefits per employee", "strong", "Each NYC employee costs about 1.65 times as much as in Tokyo or Hong Kong; at Tokyo pay most of the gap goes. Mostly US wage levels: against national average pay, NYC pays about 1.1 times what Tokyo Metro does."),
     ("Facility-maintenance staffing", "strong", "Most direct evidence: NYC's extra staff are in track, station and signal upkeep."),
     ("24/7 service", "plausible", "Fits the maintenance-heavy staffing; cannot be tested separately with this data."),
     ("Administration and injury claims", "growing", "Admin rose from 13% of cost (2019) to 23% (2024)."),
@@ -484,7 +494,7 @@ GAPS = [
     "Hong Kong, Seoul, Madrid and Singapore costs are estimates; Seoul 2022–24 is weak.",
     "London car-km and Tokyo passenger-km after 2018 are estimated.",
     "NYC data before 2012 is missing; 2012 and 2016–17 may be series breaks.",
-    "Pay per employee only for Tokyo and Hong Kong (2023), not London; not yet compared with average pay in each country.",
+    "Pay per employee only for Tokyo and Hong Kong (2023), not London; national (not city) average wages used as the benchmark.",
 ]
 
 sources = {sid: {"title": SOURCES[sid]["title"], "publisher": SOURCES[sid]["publisher"], "url": SOURCES[sid]["url"],
