@@ -16,7 +16,7 @@ Input rows live in `data/peers/<system_id>.csv`. `scripts/build_peers.py` adds r
 
 ## First read: 2019, in 2024 US dollars at PPP
 
-NYC values are NTD values (nominal US dollars, rows `*_ntd`) restated in 2024 dollars here with the US GDP deflator (×1.206 for 2019, ×1.025 for 2023). That restatement is computed for this table only; it is not yet a row. **EST** marks values that depend on an estimate (range in brackets).
+NYC values are NTD values (nominal US dollars, rows `*_ntd`) restated in 2024 dollars here with the US GDP deflator (×1.206 for 2019, ×1.025 for 2023), the same deflator that method `ppp_usd_2024` uses for the peers. **Note:** the NYC `*_real2024_ntd` rows added in PR 4 use CPI-U instead (×1.227 for 2019), so they are about 2% higher than the figures here. The two series should be put on one deflator before the report. **EST** marks values that depend on an estimate (range in brackets).
 
 | System | Cost per passenger-km | Cost per trip | Cost per car-km | Cost per train-km | Farebox recovery | Avg trip (km) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |

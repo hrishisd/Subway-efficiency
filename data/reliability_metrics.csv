@@ -18,3 +18,5 @@ car_miles_mdbf_basis,Car-miles used for MDBF,mi,no,"Car-miles in the numerator o
 failures_mdbf_basis,Failures used for MDBF,failures,no,"Failure count in the denominator of an agency's MDBF figure. Input row for derived MDBF values."
 on_time_trips,On-time trips,trips,no,"Trips counted as on time in an agency's on-time performance figure. Input row for derived OTP values."
 scheduled_trips,Scheduled trips,trips,no,"Scheduled trips in the denominator of an agency's on-time performance figure. Input row for derived OTP values."
+train_km_scheduled,Scheduled train-km,km,no,"Train-km in the timetable. Input for service_delivered."
+train_km_operated,Operated train-km,km,no,"Train-km actually run. Input for service_delivered."
