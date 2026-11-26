@@ -8,6 +8,10 @@ This repository holds the dataset, the sources behind every number, and the anal
 
 The research report is [`report/report.md`](report/report.md), built from the data by `scripts/build_report.py`.
 
+## Website
+
+A chart-first summary of the findings is published at https://hrishisd.github.io/subway-efficiency/ . It is [`site/index.html`](site/index.html), **generated** from the CSVs by `python3 scripts/build_site.py` (edit [`site/template.html`](site/template.html) and the script, not `index.html`). Every chart value links to its row in the data and to its sources; [`site/data.json`](site/data.json) lists every value and computed ratio with its input rows. The GitHub Actions workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml) rebuilds and publishes the site on every push to `main`.
+
 ## Status
 
 Phase 1 (scoping) is done. See [`docs/scoping.md`](docs/scoping.md). Phase 2 (NYC baseline from the National Transit Database, 2015 to 2025, with six US peers) is in [`docs/ntd_baseline.md`](docs/ntd_baseline.md). Years 2000 to 2014 are still open.
