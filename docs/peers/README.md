@@ -2,6 +2,8 @@
 
 Per-city notes: [London](london_underground.md), [Madrid](madrid_metro.md), [Paris](paris_metro.md), [Berlin](berlin_ubahn.md), [Istanbul](istanbul_metro.md).
 
+Asian peer systems (Tokyo Metro, Toei, Hong Kong MTR, Seoul Metro, Singapore SMRT, Beijing) are in [asia.md](asia.md).
+
 Input rows live in `data/peers/<system_id>.csv`. `scripts/build_peers.py` adds ratio rows (method `peer_unit_ratios`) and 2024 PPP-dollar rows (method `ppp_usd_2024`) to `data/observations.csv`.
 
 ## Coverage
