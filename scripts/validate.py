@@ -13,9 +13,16 @@ VALUE_TYPES = {"reported", "derived", "estimated"}
 VERIFICATION = {"unverified", "verified"}
 
 
+BAD_ROWS = []
+
+
 def read(path):
     with open(ROOT / path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+    for i, r in enumerate(rows, start=2):
+        if None in r:  # more fields than the header: usually an unquoted comma
+            BAD_ROWS.append(f"{path}: line {i} has more fields than the header")
+    return rows
 
 
 def main():
@@ -92,6 +99,15 @@ def main():
 
     n_fact, n_rel = check_factors_and_reliability(errors, systems, source_ids)
 
+    price_path = ROOT / "data" / "price_indices.csv"
+    if price_path.exists():
+        for p in read("data/price_indices.csv"):
+            if p["source_id"] not in source_ids:
+                errors.append(f"price_indices.csv: {p['index_id']} {p['year']}: unknown source_id")
+            if not p["source_locator"].strip():
+                errors.append(f"price_indices.csv: {p['index_id']} {p['year']}: source_locator is empty")
+
+    errors = BAD_ROWS + errors
     for e in errors:
         print(e)
     print(f"{len(obs)} observations, {n_fact} factors, {n_rel} reliability rows, "

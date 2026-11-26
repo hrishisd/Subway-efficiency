@@ -13,8 +13,8 @@ opex_per_car_km,Operating expense per car-km,currency/km,opex_total divided by c
 opex_per_passenger_km,Operating expense per passenger-km,currency/km,opex_total divided by passenger_km.
 opex_per_trip,Operating expense per trip,currency/trip,opex_total divided by unlinked_trips.
 farebox_recovery,Farebox recovery ratio,ratio,fare_revenue divided by opex_total.
-opex_vehicle_operations,Operating expense: vehicle operations,currency,"NTD function 'Vehicle Operations' (running revenue service). Exact definition: NTD Policy Manual; not yet checked."
-opex_vehicle_maintenance,Operating expense: vehicle maintenance,currency,"NTD function 'Vehicle Maintenance' (maintaining the car fleet). Exact definition: NTD Policy Manual; not yet checked."
+opex_vehicle_operations,Operating expense: vehicle operations,currency,NTD function 'Vehicle Operations' (running revenue service). Exact definition: NTD Policy Manual; not yet checked.
+opex_vehicle_maintenance,Operating expense: vehicle maintenance,currency,NTD function 'Vehicle Maintenance' (maintaining the car fleet). Exact definition: NTD Policy Manual; not yet checked.
 opex_facility_maintenance,Operating expense: facility maintenance,currency,"NTD function 'Facility Maintenance' (fixed assets such as track, signals and stations). Exact definition: NTD Policy Manual; not yet checked."
 opex_general_administration,Operating expense: general administration,currency,"NTD function 'General Administration', including administrative and overhead costs the reporter allocates to the mode."
 opex_excl_ga_per_car_km,Operating expense excluding general administration per car-km,currency/km,"(opex_total minus opex_general_administration) divided by car_km. Shows cost without overhead, per the scoping rule."
@@ -68,3 +68,17 @@ employee_hours_total_ft,"NTD employee work hours, total, full-time",hours,"As pu
 employee_count_total_pt,"NTD employee count, total, part-time",employees,"As published in the NTD Employees table (column total_employee_count, part-time rows). Some agencies report fractional values."
 employee_hours_total_pt,"NTD employee work hours, total, part-time",hours,"As published in the NTD Employees table (column total_hours, part-time rows)."
 opex_per_train_km,Operating expense per train-km,currency/km,opex_total divided by train_km.
+opex_type_operators_wages,Operating expense by object class: operators' wages,currency,"NTD Operating Expenses by Type, column operators_wages. Object classes sum to opex_total."
+opex_type_other_salaries_wages,Operating expense by object class: other salaries and wages,currency,"NTD Operating Expenses by Type, column other_salaries_wages. Object classes sum to opex_total."
+opex_type_operator_paid_absences,Operating expense by object class: operators' paid absences,currency,"NTD Operating Expenses by Type, column operator_paid_absences. Object classes sum to opex_total."
+opex_type_other_paid_absences,Operating expense by object class: other paid absences,currency,"NTD Operating Expenses by Type, column other_paid_absences. Object classes sum to opex_total."
+opex_type_fringe_benefits,Operating expense by object class: fringe benefits,currency,"NTD Operating Expenses by Type, column fringe_benefits. Object classes sum to opex_total."
+opex_type_services,Operating expense by object class: services,currency,"NTD Operating Expenses by Type, column services. Object classes sum to opex_total."
+opex_type_fuel_and_lube,Operating expense by object class: fuel and lubricants,currency,"NTD Operating Expenses by Type, column fuel_and_lube. Object classes sum to opex_total."
+opex_type_tires,Operating expense by object class: tires,currency,"NTD Operating Expenses by Type, column tires. Object classes sum to opex_total."
+opex_type_other_materials_supplies,Operating expense by object class: other materials and supplies,currency,"NTD Operating Expenses by Type, column other_materials_supplies. Object classes sum to opex_total."
+opex_type_utilities,Operating expense by object class: utilities,currency,"NTD Operating Expenses by Type, column utilities. Object classes sum to opex_total."
+opex_type_casualty_and_liability,Operating expense by object class: casualty and liability,currency,"NTD Operating Expenses by Type, column casualty_and_liability. Object classes sum to opex_total."
+opex_type_taxes,Operating expense by object class: taxes,currency,"NTD Operating Expenses by Type, column taxes. Object classes sum to opex_total."
+opex_type_purchased_transportation,Operating expense by object class: purchased transportation,currency,"NTD Operating Expenses by Type, column purchased_transportation. Object classes sum to opex_total."
+opex_type_miscellaneous,Operating expense by object class: miscellaneous,currency,"NTD Operating Expenses by Type, column miscellaneous. Object classes sum to opex_total."
