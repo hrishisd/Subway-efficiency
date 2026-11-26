@@ -98,7 +98,8 @@ Operating employees are full-time plus part-time staff in vehicle operations, ve
 
 ## Not yet done
 
-- **2000 to 2011 for NYC, and 2000 to 2014 for the peers.** The portal copy of NTD TS2.1 starts in 2015, and the archive workbook for 1991 to 2014 could not be downloaded. NYC 2012 to 2014 were taken from NTD agency profiles instead. Profiles for 2000 to 2011 exist (for example "Thirty Largest Agencies, 2000 Report Year" at https://rosap.ntl.bts.gov/view/dot/370) but their NYC pages could not be read as text in this session.
+- **2000 to 2011 for NYC, and 2000 to 2014 for the peers.** The portal copy of NTD TS2.1 starts in 2015, and the archive workbook for 1991 to 2014 could not be downloaded. NYC 2012 to 2014 were taken from NTD agency profiles instead. A second attempt (2026-11-26) also failed: the TS2.1 workbook on transit.dot.gov and its Wayback Machine copies cannot be reached from this environment's shell, and the web-fetch tool does not save spreadsheet files. The NTD summary-reports page lists yearly profiles only for 2012 to 2021. Older profiles exist (for example "Thirty Largest Agencies, 2000 Report Year" at https://rosap.ntl.bts.gov/view/dot/370), but their NYC pages lie beyond the part of the PDF that can be read as text. A session with normal internet access can fill this gap by parsing the TS2.1 archive workbook with openpyxl.
+- **Check on 2013.** The NYC 2013 heavy-rail values were confirmed against a second NTD document, "Transit Profiles: Top 50 Agencies", 2013 report year (source `ntd_profiles_top50_2013`, NYCT on printed page 10). All values match the single-agency profile.
 - **Employees and failures before 2022.** In older yearly NTD tables.
 - **Train hours.** Not in the NTD tables used here.
 - **PPP adjustment** for international comparison (phase 3).
