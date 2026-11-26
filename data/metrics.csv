@@ -68,3 +68,7 @@ employee_hours_total_ft,"NTD employee work hours, total, full-time",hours,"As pu
 employee_count_total_pt,"NTD employee count, total, part-time",employees,"As published in the NTD Employees table (column total_employee_count, part-time rows). Some agencies report fractional values."
 employee_hours_total_pt,"NTD employee work hours, total, part-time",hours,"As published in the NTD Employees table (column total_hours, part-time rows)."
 opex_per_train_km,Operating expense per train-km,currency/km,opex_total divided by train_km.
+opex_direct,Operating expense: direct,currency,"Operating cost the agency books directly to the metro business (operations, maintenance, stations), before allocated central overhead. Excludes depreciation, capital renewals and interest unless stated."
+opex_indirect_allocated,Operating expense: allocated indirect cost,currency,"Central or indirect operating cost the agency allocates to the metro business (similar in role to NTD general administration)."
+cars_fleet,Cars in fleet,cars,"Number of passenger cars owned (fleet size), not cars in service."
+operating_revenue,Operating revenue,currency,"Total revenue from operations (net sales) in the stated scope, including any payments from government for service if the source does not separate them."
