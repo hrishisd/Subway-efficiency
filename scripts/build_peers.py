@@ -191,6 +191,12 @@ def main():
     for d in dropped:
         print(f"  removed row no longer in a peer file: {d}", file=sys.stderr)
     kept = [r for r in old if r["system_id"] not in managed]
+    # Keep a `verified` mark when the rebuilt row has the same value as before.
+    prev = {r["obs_id"]: r for r in old if r["system_id"] in managed}
+    for r in new_rows:
+        o = prev.get(r["obs_id"])
+        if o and all(o[k] == r.get(k, "") for k in ("value", "value_low", "value_high")):
+            r["verification"] = o["verification"]
     out = kept + [{k: r.get(k, "") for k in FIELDNAMES} for r in new_rows]
     out.sort(key=lambda r: (r["system_id"], int(r["year"]), r["metric_id"], r["obs_id"]))
     with open(OBS, "w", newline="", encoding="utf-8") as f:

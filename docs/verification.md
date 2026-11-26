@@ -28,6 +28,8 @@ Error rate in pass 1: no wrong numbers were found in about 2,350 checked values.
 
 Rows that pass and come from primary sources are now `verified` (43 factors, 165 reliability rows, 546 observations). Rows from secondary sources stay `unverified` with a note, as AGENTS.md requires.
 
+**Update 2026-11-26 (after pass 1): one US deflator.** All 2024-dollar rows now use the BEA GDP implicit price deflator from FRED (source `fred_gdp_deflator`, factors `us_gdp_deflator_2000` to `_2025` in `data/raw/ppp/ppp_deflator.csv`). This replaced the World Bank copy of the US deflator (checked in pass 1) for PPP rows, and CPI-U for the NYC and US `_real2024_ntd` rows. Values moved by 0.1% (PPP rows) to about 2% (US real rows). The 88 verified rows whose value changed, and the 11 old deflator factors, are marked `SUPERSEDED` in the log and are `unverified` until checked again. Rows whose value did not change keep their `verified` mark. The CPI-U series in `data/price_indices.csv` is kept but no row uses it.
+
 ## Corrections made in pass 1
 
 | Row | Problem | Fix |
