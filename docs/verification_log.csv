@@ -312,3 +312,707 @@ reliability,tokyo_toei_2021_delays_30min_per_million_train_km_lta,transcription_
 reliability,tokyo_toei_2022_delays_30min_per_million_train_km_lta,transcription_ok_secondary,2026-11-26,fact-check thread (Claude),"Matches LTA compilation; LTA is secondary for this system, so row stays unverified"
 reliability,tokyo_toei_2023_delays_30min_per_million_train_km_lta,transcription_ok_secondary,2026-11-26,fact-check thread (Claude),"Matches LTA compilation; LTA is secondary for this system, so row stays unverified"
 reliability,tokyo_toei_2024_delays_30min_per_million_train_km_lta,transcription_ok_secondary,2026-11-26,fact-check thread (Claude),"Matches LTA compilation; LTA is secondary for this system, so row stays unverified"
+observations,chicago_l_2022_employee_count_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_capital_labor_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_vehicle_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_count_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_capital_labor_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2022_employee_hours_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_vehicle_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employee_hours_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2022_employees_facility_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2022_employees_general_administration_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2022_employees_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2022_employees_vehicle_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2022_employees_vehicle_operations_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2023_employee_count_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_capital_labor_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_vehicle_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_count_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_capital_labor_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2023_employee_hours_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_vehicle_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employee_hours_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2023_employees_facility_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2023_employees_general_administration_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2023_employees_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2023_employees_vehicle_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2023_employees_vehicle_operations_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2024_employee_count_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_count_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2024_employee_hours_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_vehicle_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employee_hours_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2024_employees_facility_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2024_employees_general_administration_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2024_employees_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2024_employees_vehicle_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2024_employees_vehicle_operations_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2025_employee_count_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_count_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_capital_labor_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_facility_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_facility_maintenance_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_general_administration_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_general_administration_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2025_employee_hours_total_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_total_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_vehicle_maintenance_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_vehicle_operations_ft_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employee_hours_vehicle_operations_pt_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,chicago_l_2025_employees_facility_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2025_employees_general_administration_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2025_employees_operating_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2025_employees_vehicle_maintenance_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,chicago_l_2025_employees_vehicle_operations_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2012_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2012_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2013_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2013_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2014_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2014_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2015_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2015_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2016_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2016_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2017_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2017_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2018_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2018_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2019_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2019_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2020_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2020_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2021_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2021_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2022_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2022_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2023_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2023_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_opex_type_casualty_and_liability_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_fringe_benefits_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_fuel_and_lube_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_miscellaneous_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_operator_paid_absences_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_operators_wages_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_other_materials_supplies_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_other_paid_absences_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_other_salaries_wages_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_services_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_tires_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_type_utilities_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2024_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2024_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_avg_car_load_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_avg_trip_length_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_car_revenue_hours_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_car_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_cars_max_service_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_directional_route_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_directional_route_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_fare_revenue_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_fare_revenue_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_farebox_recovery_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_excl_ga_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_excl_ga_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_facility_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_opex_general_administration_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_opex_per_car_hour_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_car_hour_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_car_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_car_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_passenger_km_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_trip_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_per_trip_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_total_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_opex_total_real2024_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_opex_vehicle_maintenance_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_opex_vehicle_operations_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_passenger_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,nyc_subway_2025_passenger_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,nyc_subway_2025_unlinked_trips_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2022_major_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2022_other_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2022_total_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2022_train_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,wmata_metrorail_2022_train_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2023_major_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2023_other_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2023_total_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2023_train_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,wmata_metrorail_2023_train_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2024_major_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2024_other_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2024_total_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2024_train_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,wmata_metrorail_2024_train_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2025_major_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2025_other_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2025_total_mechanical_failures_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+observations,wmata_metrorail_2025_train_km_ntd,verified_recompute,2026-11-26,fact-check thread (Claude),Recomputed from verified inputs; matches
+observations,wmata_metrorail_2025_train_revenue_miles_ntd,verified,2026-11-26,fact-check thread (Claude),Input re-fetched from the NTD source and matched; scripts/build_ntd_baseline.py rebuilds observations.csv identically from data/raw/ntd
+raw_ppp_deflator,us_gdp_deflator_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,us_gdp_deflator_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_chn_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_deu_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_esp_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_fra_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_gbr_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_hkg_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_jpn_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_kor_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_sgp_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_tur_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2015,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2016,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2017,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2018,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2019,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2020,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2021,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2022,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2023,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2024,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+raw_ppp_deflator,ppp_usa_2025,verified,2026-11-26,fact-check thread (Claude),Matches World Bank API (lastupdated 2026-11-11) to full precision
+price_indices,us_cpi_u_2000,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2001,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2002,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2003,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2004,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2005,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2006,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2007,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2008,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2009,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2010,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2011,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2012,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2013,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2014,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2015,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2016,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2017,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2018,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2019,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2020,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2021,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2022,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2023,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2024,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average
+price_indices,us_cpi_u_2025,verified,2026-11-26,fact-check thread (Claude),Matches FRED CPIAUCNS annual average

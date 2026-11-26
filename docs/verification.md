@@ -12,7 +12,21 @@ This file records the independent fact-check of rows that other threads collecte
 
 ## Results (pass 1: factors, reliability and NTD, 2026-11-26)
 
-See the summary table at the end of this file once all passes are done.
+| Data | Rows checked | Matched source | Needed a fix | Not checked |
+| --- | --- | --- | --- | --- |
+| `factors.csv`, primary sources | 43 | 42 | 1 (scope) | 0 |
+| `factors.csv`, secondary sources (Wikipedia, blogs, news) | 88 | 87 transcriptions match | 1 outdated fact (WMATA), plus 1 unsupported phrase in a primary-source row | 0 |
+| `reliability.csv` (incl. London series from PR 5) | 188 | 184 | 0 value errors; 2 locator or wording issues | 4 NYC trip-count inputs |
+| `observations.csv`, NTD reported rows | 272 re-fetched of 1,718 (16%) | 272 | 0 | rest covered by rebuild check |
+| `observations.csv`, derived rows | all 1,798 recomputed | 1,798 | 0 | 0 |
+| PPP factors and US deflator (`data/raw/ppp/ppp_deflator.csv`) | 121 | 121 | 0 | 0 |
+| CPI-U (`data/price_indices.csv`) | 26 | 26 | 0 | 0 |
+
+Rebuild check: `scripts/build_ntd_baseline.py` rebuilds `observations.csv` byte for byte from `data/raw/ntd/`. The raw files were checked against the NTD API for NYCT (all TS2.1 fields 2015-2025), CTA employees, WMATA breakdowns, and NYCT and BART operating expense by type. The NYCT 2012-2014 profile rows match the three FTA profile PDFs and their printed cost ratios.
+
+Error rate in pass 1: no wrong numbers were found in about 2,350 checked values. Six rows had a wrong scope, locator, wording or stale fact (about 2% of the 320 hand-collected rows). One of these is material: WMATA's automation status.
+
+Rows that pass and come from primary sources are now `verified` (43 factors, 165 reliability rows, 546 observations). Rows from secondary sources stay `unverified` with a note, as AGENTS.md requires.
 
 ## Corrections made in pass 1
 
