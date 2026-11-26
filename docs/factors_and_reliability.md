@@ -28,7 +28,7 @@ NYC runs 24/7 and works around trains by using express tracks. Paris closes abou
 
 ### Signaling
 
-About 85% of the NYC system still uses fixed-block signals (Wikipedia, 2025). CBTC runs on the L (2009) and the 7 (2019); four more projects are delayed to late 2027 or 2028. Most peers already run automatic train operation (GoA2) on most lines, and Paris, Singapore, Istanbul, Hong Kong, Shanghai and Beijing have fully automatic (GoA4) lines.
+About 85% of the NYC system still uses fixed-block signals (Wikipedia, 2025). CBTC runs on the L (2009) and the 7 (2019); three more projects are delayed to late 2027 or 2028 (Streetsblog, 2026-11-16). Most peers already run automatic train operation (GoA2) on most lines, and Paris, Singapore, Istanbul, Hong Kong, Shanghai and Beijing have fully automatic (GoA4) lines.
 
 ### Benefits share (US systems only)
 
