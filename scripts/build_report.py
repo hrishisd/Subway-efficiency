@@ -75,6 +75,8 @@ def fmt(x, f):
         return f"{(x - 1) * 100:+.0f}%"
     if f == "x1":
         return f"{x:.1f}×"
+    if f == "x2":
+        return f"{x:.2f}×"
     if f == "n0":
         return f"{x:,.0f}"
     if f == "n1":
@@ -353,6 +355,83 @@ for s in USPEERS:
 TABLES["staff_2023"] = table(st, ["System (2023 unless shown)", "Staff per million car-km", "Passenger-km per staff",
                                   "Trips per staff"])
 
+# ---- Staff cost per employee and pay-versus-headcount split, 2023
+COMP_PEERS = ["tokyo_metro", "tokyo_toei", "hong_kong_mtr"]
+nyc_comp = V("nyc_subway", 2023, "staff_cost_per_employee")
+nyc_wage = V("nyc_subway", 2023, "staff_wages_per_employee")
+nyc_ben = V("nyc_subway", 2023, "staff_benefits_per_employee")
+nyc_share = V("nyc_subway", 2023, "staff_cost_share_of_opex")
+nyc_ck = nyc23["opex_per_car_km"]
+calc("nyc_share_staff_cost_2023", nyc_share.value, nyc_share.oid, [nyc_share.oid],
+     "NYC staff cost as a share of operating cost, 2023", "pct")
+calc("nyc_benefits_over_wages_2023", nyc_ben.value / nyc_wage.value, f"{nyc_ben.oid} / {nyc_wage.oid}",
+     [nyc_ben.oid, nyc_wage.oid], "NYC fringe benefits as a share of wages, 2023", "pct")
+nyc_lab_ck = calc("nyc_labor_per_car_km_2023", nyc_share.value * nyc_ck.value, f"{nyc_share.oid} * {nyc_ck.oid}",
+                  [nyc_share.oid, nyc_ck.oid], "NYC staff cost per car-km, 2023 (2024 $)", "usd2")
+nyc_nl_ck = calc("nyc_nonlabor_per_car_km_2023", (1 - nyc_share.value) * nyc_ck.value,
+                 f"(1 - {nyc_share.oid}) * {nyc_ck.oid}", [nyc_share.oid, nyc_ck.oid],
+                 "NYC non-staff operating cost per car-km, 2023 (2024 $)", "usd2")
+SHARE = {}
+for s in COMP_PEERS:
+    comp = V(s, 2023, "staff_cost_per_employee")
+    ratio(f"nyc_over_{s}_comp_2023", nyc_comp, comp, f"NYC 2023 staff cost per employee over {s} (PPP)", "x2")
+    scope = "hk_transport_operations_all" if s == "hong_kong_mtr" else None
+    sc, ot = V(s, 2023, "opex_staff_costs", scope), V(s, 2023, "opex_total", scope)
+    sh = calc(f"staff_share_{s}_2023", sc.value / ot.value, f"{sc.oid} / {ot.oid}", [sc.oid, ot.oid],
+              f"{s} staff cost as a share of operating cost, 2023", "pct")
+    ck = V(s, 2023, "opex_per_car_km")
+    lab = calc(f"labor_per_car_km_{s}_2023", sh * ck.value, f"staff_share_{s}_2023 * {ck.oid}",
+               [sc.oid, ot.oid, ck.oid], f"{s} staff cost per car-km, 2023 (2024 $ PPP)", "usd2")
+    calc(f"nonlabor_per_car_km_{s}_2023", (1 - sh) * ck.value, f"(1 - staff_share_{s}_2023) * {ck.oid}",
+         [sc.oid, ot.oid, ck.oid], f"{s} non-staff cost per car-km, 2023 (2024 $ PPP)", "usd2")
+    r_ = nyc_comp.value / comp.value
+    cf = calc(f"nyc_carkm_at_{s}_pay_2023", nyc_lab_ck / r_ + nyc_nl_ck,
+              f"nyc_labor_per_car_km_2023 / nyc_over_{s}_comp_2023 + nyc_nonlabor_per_car_km_2023",
+              [nyc_share.oid, nyc_ck.oid, nyc_comp.oid, comp.oid],
+              f"NYC 2023 cost per car-km if its own staff were paid {s}'s staff cost per employee (2024 $)", "usd2")
+    calc(f"nyc_at_{s}_pay_over_{s}_2023", cf / ck.value, f"nyc_carkm_at_{s}_pay_2023 / {ck.oid}",
+         [nyc_share.oid, nyc_ck.oid, nyc_comp.oid, comp.oid, ck.oid],
+         f"NYC cost per car-km at {s} pay, divided by {s} cost per car-km", "x2")
+    calc(f"pay_share_of_gap_{s}_2023", (nyc_ck.value - cf) / (nyc_ck.value - ck.value),
+         f"({nyc_ck.oid} - nyc_carkm_at_{s}_pay_2023) / ({nyc_ck.oid} - {ck.oid})",
+         [nyc_share.oid, nyc_ck.oid, nyc_comp.oid, comp.oid, ck.oid],
+         f"Share of the NYC-{s} gap in cost per car-km that pay per employee accounts for, 2023", "pct")
+    calc(f"nyc_over_{s}_labor_carkm_2023", nyc_lab_ck / lab, f"nyc_labor_per_car_km_2023 / labor_per_car_km_{s}_2023",
+         [nyc_share.oid, nyc_ck.oid, sc.oid, ot.oid, ck.oid], f"NYC staff cost per car-km over {s}, 2023", "x1")
+    calc(f"nyc_over_{s}_nonlabor_carkm_2023", nyc_nl_ck / ((1 - sh) * ck.value),
+         f"nyc_nonlabor_per_car_km_2023 / nonlabor_per_car_km_{s}_2023",
+         [nyc_share.oid, nyc_ck.oid, sc.oid, ot.oid, ck.oid], f"NYC non-staff cost per car-km over {s}, 2023", "x1")
+    SHARE[s] = sh
+tm_w, tm_b = V("tokyo_metro", 2023, "staff_wages_per_employee"), V("tokyo_metro", 2023, "staff_benefits_per_employee")
+ratio("nyc_over_tokyo_metro_wages_2023", nyc_wage, tm_w, "NYC wages per employee over Tokyo Metro average salary, 2023")
+ratio("nyc_over_tokyo_metro_benefits_2023", nyc_ben, tm_b, "NYC benefits per employee over Tokyo Metro (estimated), 2023")
+calc("tokyo_metro_benefits_over_wages_2023", tm_b.value / tm_w.value, f"{tm_b.oid} / {tm_w.oid}", [tm_b.oid, tm_w.oid],
+     "Tokyo Metro benefit cost as a share of average salary, 2023", "pct")
+tm_c = V("tokyo_metro", 2023, "staff_cost_per_employee")
+calc("benefit_share_of_comp_gap_tokyo_metro_2023", (nyc_ben.value - tm_b.value) / (nyc_comp.value - tm_c.value),
+     f"({nyc_ben.oid} - {tm_b.oid}) / ({nyc_comp.oid} - {tm_c.oid})", [nyc_ben.oid, tm_b.oid, nyc_comp.oid, tm_c.oid],
+     "Share of the NYC-Tokyo Metro gap in staff cost per employee that is benefits, 2023", "pct")
+
+sc_rows = [["**New York**", vstr(nyc_comp, "usd0"), vstr(nyc_wage, "usd0"), vstr(nyc_ben, "usd0"), "–",
+            fmt(nyc_share.value, "pct"), fmt(nyc_lab_ck, "usd2"), fmt(nyc_nl_ck, "usd2"), "–"]]
+for s in COMP_PEERS:
+    comp = V(s, 2023, "staff_cost_per_employee")
+    w_ = V(s, 2023, "staff_wages_per_employee")
+    b_ = V(s, 2023, "staff_benefits_per_employee")
+    e = " EST" if CALCS[f"labor_per_car_km_{s}_2023"]["estimate"] else ""
+    lab_ = NAMES[s] + (" (all Hong Kong transport)" if s == "hong_kong_mtr" else "")
+    sc_rows.append([lab_, vstr(comp, "usd0"), vstr(w_, "usd0"), vstr(b_, "usd0"),
+                    fmt(CALCS[f"nyc_over_{s}_comp_2023"]["value"], "x2") + (" EST" if comp.est else ""),
+                    fmt(SHARE[s], "pct"), fmt(CALCS[f"labor_per_car_km_{s}_2023"]["value"], "usd2") + e,
+                    fmt(CALCS[f"nonlabor_per_car_km_{s}_2023"]["value"], "usd2") + e,
+                    fmt(CALCS[f"nyc_carkm_at_{s}_pay_2023"]["value"], "usd2") + " (" +
+                    fmt(CALCS[f"nyc_at_{s}_pay_over_{s}_2023"]["value"], "x2") + ")" +
+                    (" EST" if CALCS[f"nyc_at_{s}_pay_over_{s}_2023"]["estimate"] else "")])
+TABLES["staff_cost_2023"] = table(sc_rows, ["System (2023)", "Wages + benefits per employee", "of which wages",
+                                            "of which benefits", "NYC ÷ system", "Staff cost share of operating cost",
+                                            "Staff cost per car-km", "Other cost per car-km",
+                                            "NYC cost per car-km at this system's pay"])
+
 # US function table 2024
 ft = []
 for s in ["nyc_subway"] + USPEERS:
@@ -542,6 +621,52 @@ hbar("passenger_km_per_staff_2023.png", "Passenger-km per employee, 2023",
      "Passenger-kilometres carried per operating employee (thousands)",
      items_for(2023, "passenger_km_per_employee", ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei",
                                                    "hong_kong_mtr"] + USPEERS), "k", "Passenger-km per employee")
+
+# Staff cost per employee, wages and benefits stacked
+fig, ax = plt.subplots(figsize=(7.2, 2.9))
+rows_ = [("New York", nyc_wage, nyc_ben, nyc_comp, True),
+         ("Tokyo Metro", V("tokyo_metro", 2023, "staff_wages_per_employee"),
+          V("tokyo_metro", 2023, "staff_benefits_per_employee"), V("tokyo_metro", 2023, "staff_cost_per_employee"), False),
+         ("Toei (Tokyo)", None, None, V("tokyo_toei", 2023, "staff_cost_per_employee"), False),
+         ("Hong Kong (all transport)", None, None, V("hong_kong_mtr", 2023, "staff_cost_per_employee"), False)]
+rows_ = rows_[::-1]
+LIGHT = {True: "#9cc4f0", False: "#c9c9c9"}
+for y, (lab, w_, b_, tot, nyc) in enumerate(rows_):
+    col = NYC_C if nyc else PEER_C
+    if w_ is not None:
+        ax.barh(y, w_.value, height=0.62, color=col)
+        if b_.est:
+            ax.barh(y, b_.value, left=w_.value, height=0.62, color="white", edgecolor=col, hatch="////", lw=1.2)
+        else:
+            ax.barh(y, b_.value, left=w_.value, height=0.62, color=LIGHT[nyc])
+        ax.text(w_.value / 2, y, "wages", ha="center", va="center", fontsize=8, color="white")
+        if not b_.est:
+            ax.text(w_.value + b_.value / 2, y, "benefits", ha="center", va="center", fontsize=8, color="#191919")
+    elif tot.est:
+        ax.barh(y, tot.value, height=0.62, color="white", edgecolor=col, hatch="////", lw=1.2)
+        ax.plot([tot.low, tot.high], [y, y], color="#191919", lw=1.2)
+        for xx in (tot.low, tot.high):
+            ax.plot([xx, xx], [y - 0.15, y + 0.15], color="#191919", lw=1.2)
+    else:
+        ax.barh(y, tot.value, height=0.62, color=col)
+    extra = "  ESTIMATE" if tot.est else ("  (hatched benefits = ESTIMATE)" if b_ is not None and b_.est else "")
+    ax.text(tot.value + 3000, y, f"${tot.value / 1000:,.0f}k" + extra, va="center",
+            fontsize=9, fontweight="bold" if (nyc or tot.est) else "normal")
+ax.set_yticks(range(len(rows_)))
+ax.set_yticklabels([r[0] for r in rows_])
+ax.get_yticklabels()[-1].set_fontweight("bold")
+ax.set_xlim(0, nyc_comp.value * 1.35)
+ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda x, _: f"${x / 1000:,.0f}k"))
+ax.grid(axis="y", visible=False)
+ax.set_xlabel("Wages and benefits per employee, 2024 US dollars at PPP")
+fig.suptitle("Each NYC subway worker costs about 1.65 times as much", x=0.02, ha="left", fontsize=12.5,
+             fontweight="bold", y=1.04)
+ax.set_title("2023. Own staff only; contracted-out work is not included. Toei and Hong Kong do not split wages and benefits.",
+             loc="left", fontsize=9, color=TEXT2)
+fig.text(0.02, -0.12, "Hatched = ESTIMATE (whisker = low–high range). Hong Kong covers MTR's whole Hong Kong transport "
+         "business, and its staff cost may include staff its head count leaves out. NYC benefits include pensions and "
+         "retiree health care as booked (accrual).", fontsize=7.5, color=TEXT2, ha="left", va="top", wrap=True)
+save(fig, "staff_cost_per_employee_2023.png")
 
 # Farebox
 fb_items = items_for(2019, "farebox_recovery", ["nyc_subway", "london_underground", "tokyo_metro", "tokyo_toei",

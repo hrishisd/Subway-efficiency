@@ -292,10 +292,33 @@ def main():
                 derive(sysid, year, "opex_per_employee_hour", opex / hours, "USD/hour",
                        [o("opex_total"), o("employee_hours_operating")], "ntd_unit_ratios", "USD",
                        notes="All operating expense (not only labor) per operating labor hour")
+                # labor cost (object classes; NYC only, 2022 onward) per operating employee
+                wage_cols = [o(f"opex_type_{c}") for c in ("operators_wages", "other_salaries_wages",
+                                                           "operator_paid_absences", "other_paid_absences")]
+                fr = o("opex_type_fringe_benefits")
+                if fr and all(wage_cols):
+                    wages = sum(float(b.rows[i]["value"]) for i in wage_cols)
+                    fringe = g("opex_type_fringe_benefits")
+                    derive(sysid, year, "opex_staff_wages", wages, "USD", wage_cols, "sum_of_components", "USD",
+                           notes="Operators' and other wages and salaries plus paid absences (NTD object classes)")
+                    derive(sysid, year, "opex_staff_costs", wages + fringe, "USD", wage_cols + [fr],
+                           "sum_of_components", "USD",
+                           notes="Wages, salaries and paid absences plus fringe benefits (pensions, health, "
+                                 "retiree health and payroll taxes as booked)")
+                    derive(sysid, year, "staff_wages_per_employee", wages / staff, "USD/employee",
+                           [o("opex_staff_wages"), eo], "staff_cost_per_employee", "USD")
+                    derive(sysid, year, "staff_benefits_per_employee", fringe / staff, "USD/employee",
+                           [fr, eo], "staff_cost_per_employee", "USD")
+                    derive(sysid, year, "staff_cost_per_employee", (wages + fringe) / staff, "USD/employee",
+                           [o("opex_staff_costs"), eo], "staff_cost_per_employee", "USD")
+                    derive(sysid, year, "staff_cost_share_of_opex", (wages + fringe) / opex, "ratio",
+                           [o("opex_staff_costs"), o("opex_total")], "staff_cost_per_employee")
 
     # ---- derived: constant 2024 dollars (US GDP deflator) ------------------------------
     REAL = ["opex_total", "fare_revenue", "opex_per_car_km", "opex_excl_ga_per_car_km",
-            "opex_per_passenger_km", "opex_per_trip", "opex_per_car_hour", "opex_per_train_km"]
+            "opex_per_passenger_km", "opex_per_trip", "opex_per_car_hour", "opex_per_train_km",
+            "opex_staff_costs", "staff_cost_per_employee", "staff_wages_per_employee",
+            "staff_benefits_per_employee"]
     for oid, r in list(b.rows.items()):
         if r["metric_id"] not in REAL or r["price_basis"] != "nominal":
             continue

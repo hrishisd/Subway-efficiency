@@ -69,6 +69,16 @@ def main():
         rep("employees_fte", t["staff_hk_transport_operations"], "employees", ALL, "mtrall", TEN,
             TEN_LOC.format(row="Staff: Hong Kong - Transport Operations", y=y),
             note="Head count at year end of Hong Kong transport operations staff. Excludes corporate support, station commercial, capital works and property staff. Not FTE.")
+        per = staff_cost * 1e6 / t["staff_hk_transport_operations"]
+        out.append(row(obs_id=f"{SID}_{y}_staff_cost_per_employee_est", year=y, metric_id="staff_cost_per_employee",
+                       value=fmt(per), value_low=fmt(per * 0.85), value_high=fmt(per), unit="HKD/employee",
+                       currency="HKD", price_basis="nominal", scope=ALL, value_type="estimated", source_id=src,
+                       source_locator="Computed from the input rows listed in inputs",
+                       method_id="staff_cost_per_employee",
+                       inputs=f"{ids[('opex_staff_costs', ALL)]};{ids[('employees_fte', ALL)]}",
+                       notes="ESTIMATE. All Hong Kong transport operations (not metro only). Staff costs may cover "
+                             "corporate-support staff that the head count excludes, so the value is an upper bound; "
+                             "low assumes 15% of staff cost is for uncounted staff."))
         # --- MTR's own unit costs, rail excluding high-speed rail
         rep("opex_per_car_km", t["opex_per_car_km_hk_rail_excl_hsr"], "HKD/car-km", RAIL, "mtrrail", TEN,
             TEN_LOC.format(row="Hong Kong Transport Operations (excludes High Speed Rail): per car-km operated, operating costs (HK$)", y=y), "HKD",

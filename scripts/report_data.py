@@ -16,7 +16,8 @@ SYSTEMS = {r["system_id"]: r for r in csv.DictReader(open(os.path.join(ROOT, "da
 
 US = {"nyc_subway", "path", "wmata_metrorail", "mbta_subway", "septa_subway", "chicago_l", "bart"}
 MONEY = {"opex_per_car_km", "opex_per_passenger_km", "opex_per_trip", "opex_per_train_km",
-         "opex_excl_ga_per_car_km", "opex_total", "fare_revenue", "opex_per_car_hour"}
+         "opex_excl_ga_per_car_km", "opex_total", "fare_revenue", "opex_per_car_hour",
+         "opex_staff_costs", "staff_cost_per_employee", "staff_wages_per_employee", "staff_benefits_per_employee"}
 SCOPE_ORDER = ["metro_only", "metro_with_allocated_overhead", "metro_with_allocated_infrastructure",
                "whole_agency", "smrt_trains_heavy_rail", "beijing_three_operators", "hk_transport_operations_all"]
 

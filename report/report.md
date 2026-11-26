@@ -9,17 +9,18 @@
 
 ## Executive summary
 
-**The short answer.** Per unit of service, the NYC subway is the most expensive large metro in this study. Per rider, it is about as expensive as London, cheaper than most US systems, and three to four times as expensive as Tokyo and Hong Kong. Most of the per-rider gap with Asia comes from how full the trains are, not from how much a train costs to run. But NYC also has a real production-cost gap: it spent about 10% (Madrid) to 70% (Hong Kong) more per car-km than its foreign peers in 2019, and 35% to 75% more in 2023, and its staffing is concentrated in maintenance of track, stations and other facilities.
+**The short answer.** Per unit of service, the NYC subway is the most expensive large metro in this study. Per rider, it is about as expensive as London, cheaper than most US systems, and three to four times as expensive as Tokyo and Hong Kong. Most of the per-rider gap with Asia comes from how full the trains are, not from how much a train costs to run. But NYC also has a real production-cost gap: it spent about 10% (Madrid) to 70% (Hong Kong) more per car-km than its foreign peers in 2019, and 35% to 75% more in 2023, and its staffing is concentrated in maintenance of track, stations and other facilities. That gap has two parts: NYC employs more of its own staff per car-km, and it pays each of them, in wages plus benefits, about 1.65× as much as Tokyo's subways. Pay explains most of the gap with Tokyo.
 
 1. **Cost per passenger-km (2019, before the pandemic):** NYC $0.37. London $0.36. Tokyo Metro $0.12 (2018, the last year with reported passenger-km). Toei $0.14 (2018). Hong Kong $0.11 EST. US heavy-rail peers ranged from $0.28 (BART) to $0.77 (PATH).
 2. **Cost per trip (2019):** NYC $2.32, London $3.13, Madrid $2.64 EST, Tokyo Metro $1.00, Toei $1.00, Hong Kong $1.16 EST, Seoul $1.12 EST. NYC trips are short, which helps it on this measure.
 3. **Cost per car-km (2019):** NYC $11.02, higher than every foreign peer with data: Madrid $10.16 EST, Tokyo Metro $9.42, Seoul $8.84 EST, Toei $8.36, London $7.40 EST, Hong Kong $6.44 EST. Per train-km (2023), NYC is 1.5× Tokyo Metro and 1.9× London.
 4. **The key tension.** NYC is cheap per rider among US systems because its cars are fuller (30 people on board per car on average in 2019, against 15 to 25 for US peers other than PATH). But Tokyo and Hong Kong cars carried two to two and a half times as many people. Against Tokyo Metro, about 86% EST of NYC's higher cost per passenger-km is explained by fuller cars and the rest by higher cost per car-km.
 5. **Staffing.** NYC had 49 operating staff per million car-km in 2023, against 36 at Tokyo Metro, 28 at Toei, 30 EST in London and 28 EST in Hong Kong. Among US systems, NYC's extra staff are in **facility maintenance** (track, structures, stations, signals, power): 46% of its operating staff in 2024, and 16.1 facility-maintenance workers per directional route-km against 1.9 to 8.0 for US peers.
+   **Pay.** Each NYC subway employee cost $180,906 in wages and benefits in 2023, against $109,659 at Tokyo Metro, $109,728 at Toei and $109,359 EST in Hong Kong. About two-thirds of the difference with Tokyo Metro is benefits: NYC's benefits equal 70% of wages. Had NYC paid its own staff Tokyo Metro's rate, its cost per car-km would have been 0.93× Tokyo Metro's and 1.22× EST Hong Kong's (at Hong Kong's rate). See section 5.1.
 6. **Farebox recovery.** NYC fares covered 70% of operating cost in 2019 and 44% in 2024. Tokyo Metro covered 147% and London 117% in 2019. NYC's fare revenue per trip ($1.62) was about the same as Tokyo's ($1.47 to $1.62). The difference in cost recovery is a cost-per-trip difference, not a fare difference.
 7. **Reliability.** NYC trains run about 198,000 car-km between delay-causing failures (2025). Hong Kong and Singapore run 4.8 to 8.1 million. Definitions differ, but a gap of 24 to 41 times is too large to be a definition artifact. On the share of scheduled service actually run, NYC (94%) is close to London and Berlin and well behind Hong Kong and Singapore.
 8. **Trend.** In real terms NYC's cost per car-km has been roughly flat for a decade (-4% from 2015 to 2024). Without general administration the change was -12%. General administration more than doubled after 2022: the 2024 step is mostly injury-claim reserves; the 2023 step is still unexplained.
-9. **What explains the gap.** The evidence is strongest for (a) maintenance-heavy staffing, which fits the 24/7 service pattern, old fixed-block signals and a large, old network, and (b) high overhead and claims costs. Two-person crews matter but explain at most about a quarter of the gap. System age and funding mix are weak explanations on their own. None of these links is proven causal: the sample is small and the systems differ in many ways at once.
+9. **What explains the gap.** The evidence is strongest for (a) **pay and especially benefits per employee**, which account for about all of the per-car-km gap with Tokyo and about 72% EST of the gap with Hong Kong; (b) maintenance-heavy staffing, which fits the 24/7 service pattern, old fixed-block signals and a large, old network; and (c) high overhead and claims costs. Two-person crews matter but explain at most about a quarter of the gap. System age and funding mix are weak explanations on their own. None of these links is proven causal: the sample is small and the systems differ in many ways at once.
 
 ---
 
@@ -174,11 +175,37 @@ NYC used 1.3× as many staff per car-km as Tokyo Metro in 2023, 1.7× as many as
 
 Per passenger-km, each NYC employee carried about a quarter of what an employee in Tokyo or Hong Kong carried. That is the staff-side version of section 4: fewer staff per unit of service *and* fuller cars.
 
-The staff gap per car-km (about 30% to 70%) is similar in size to the cost gap per car-km. This is consistent with the working hypothesis in the scoping notes: **NYC's cost problem is mainly about how many people it takes to run the system, not about how much each is paid.** But the dataset has no wage figures for foreign peers, so this is a consistency check, not a test. One US figure points the same way: NYC's fringe benefits were 40.6% of labor cost in 2024, high but below PATH's 48.8% (NTD; `nyc_subway_pension_benefit_share_ntd`, `path_pension_benefit_share_ntd` in `data/factors.csv`).
+The staff gap per car-km (about 30% to 70%) is similar in size to the cost gap per car-km. An earlier version of this report read that as support for the hypothesis that **NYC's cost problem is mainly about how many people it takes, not how much each is paid**. The pay comparison in section 5.1 shows that reading was wrong: NYC both employs more of its own staff *and* pays each of them much more, while the Asian peers spend more on contracted work that does not appear in their staff counts.
 
 *Caveats.* Head counts and full-time equivalents are mixed: NYC and US peers are NTD head counts in operating functions (capital staff excluded); London is FTE at year end including agency staff; Tokyo and Toei are year-end head counts excluding contractors; Hong Kong's split of staff between heavy rail and other businesses is an estimate ([`hk_metro_staff_share`](../methods/hk_metro_staff_share.md)). Systems that contract out more work look more productive per employee than they are. Contracting models are not yet recorded in the dataset.
 
 *Sources:* rows `*_employees_per_million_car_km*`, `*_passenger_km_per_employee*`, `*_trips_per_employee*`. NYC and US: `ntd_employees_by_mode`. London: TfL quarterly reports (headcount tables). Tokyo: `tokyometro_yuho_*`, `tokyo_audit_toei_subway_*`. Hong Kong: `mtr_ar2025_ten_year_stats`. Seoul: `seoul_metro_settlement_2019`. Madrid: `cam_press_*`.
+
+### 5.1 Pay per employee: the other half of the staffing story
+
+![Stacked bar chart of wages and benefits per employee, 2023](figures/staff_cost_per_employee_2023.png)
+
+| System (2023) | Wages + benefits per employee | of which wages | of which benefits | NYC ÷ system | Staff cost share of operating cost | Staff cost per car-km | Other cost per car-km | NYC cost per car-km at this system's pay |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **New York** | $180,906 | $106,629 | $74,278 | – | 78% | $8.79 | $2.42 | – |
+| Tokyo Metro | $109,659 | $83,293 | **$26,366 EST** ($24,988–$27,744) | 1.65× | 43% | $3.57 | $4.77 | $7.75 (0.93×) |
+| Toei (Tokyo) | $109,728 | – | – | 1.65× | 40% | $3.11 | $4.62 | $7.75 (1.00×) |
+| Hong Kong (all Hong Kong transport) | **$109,359 EST** ($92,955–$109,359) | – | – | 1.65× EST | 49% | $3.10 EST | $3.26 EST | $7.73 (1.22×) EST |
+
+Each NYC subway employee cost $180,906 in 2023: $106,629 in wages, overtime and paid absences, and $74,278 in benefits (pensions, active and retiree health care and payroll taxes, booked on an accrual basis). At purchasing power parity that is 1.65× Tokyo Metro, 1.65× Toei and 1.65× EST Hong Kong.
+
+- **Benefits are most of the difference.** NYC's benefits equal 70% of its wages; Tokyo Metro's equal about 32% EST. NYC's wages are 1.3× Tokyo Metro's average salary, but its benefits are 2.8× EST as large. About 67% EST of the per-employee gap with Tokyo Metro is benefits.
+- **More staff and higher pay compound.** NYC's staff cost per car-km is 2.5× Tokyo Metro's and 2.8× Toei's.
+- **The peers spend more on everything else.** NYC's other costs per car-km are only 0.5× Tokyo Metro's. Staff are 78% of NYC's operating cost but 43% of Tokyo Metro's, largely because Tokyo Metro contracts track, electrical, rolling-stock and station maintenance to group subsidiaries. That work is paid through "other costs", and the subsidiaries' staff are not in the parent's personnel cost.
+- **At peer pay, most of the gap disappears.** Holding NYC's own staff numbers fixed, paying them Tokyo Metro's rate would bring NYC's cost per car-km to $7.75, 0.93× Tokyo Metro's. At Hong Kong's rate NYC would still be 1.22× EST Hong Kong's.
+
+This agrees with the MTA's own benchmarking against about 38 metros in the CoMET group, which found NYC's wages 51% and non-wage labour costs 91% above the international average, and NYC 16% *below* average per mile after adjusting for both (`mta_2025_performance_metrics_cy2023`, pp. 6 and 9). See [`docs/expert_explanations.md`](../docs/expert_explanations.md), section 4.1.
+
+**What this does not say.** High pay is not all an MTA choice. Some of it is the US labour market, and some is the US system of employer-paid health care, which every US employer faces; Japan and Hong Kong fund more health care through social insurance or taxes. The MTA reports that its wages are in line with other US transit agencies. The dataset does not yet compare each system's pay with average pay in its own country, which would separate the two.
+
+*Caveats.* Hong Kong covers MTR's whole Hong Kong transport business and its staff cost may include corporate staff its head count leaves out, so it is an ESTIMATE ([`staff_cost_per_employee`](../methods/staff_cost_per_employee.md)). Tokyo's personnel cost (人件費) is assumed to include bonuses, retirement-benefit cost and social insurance. Tokyo Metro's benefit split assumes railway staff earn the company-average salary. NYC is calendar 2023; Tokyo is April 2023 to March 2024. No London figure: TfL's staff-cost note could not be read.
+
+*Sources:* rows `*_2023_staff_cost_per_employee*`, `*_staff_wages_per_employee*`, `*_staff_benefits_per_employee*`, `*_opex_staff_costs*` (NYC: `ntd_opex_by_type`; Tokyo: `mlit_yardstick_fy2023` personnel-cost column, `tokyometro_yuho_fye2024`; Hong Kong: `mtr_results_2023`, `mtr_ar2025_ten_year_stats`). Ratios: `report/numbers.csv`, ids `*_comp_2023`, `*_pay_*`, `staff_share_*`, `*labor_per_car_km*`.
 
 ---
 
@@ -364,13 +391,13 @@ The dataset supports a structured comparison, not a regression: there are about 
 
 **Verdict.** Weak on its own. Age probably matters through specific channels (signals, station structures, state of repair) rather than directly.
 
-### 11.5 Staffing levels
+### 11.5 Staffing levels and pay
 
-**For.** This is the factor with the most direct evidence. NYC uses 30% to 70% more staff per car-km than Tokyo, London and Hong Kong (section 5), and the extra staff are concentrated in facility maintenance (section 7). The staff gap is about the size of the cost gap.
+**For.** This is the factor with the most direct evidence. NYC uses 30% to 70% more staff per car-km than Tokyo, London and Hong Kong (section 5), and the extra staff are concentrated in facility maintenance (section 7). Each NYC employee also costs about 1.65× as much in wages and benefits as a Tokyo or Hong Kong employee (section 5.1), so NYC's staff cost per car-km is 2.5 to 2.8 times theirs.
 
-**Against.** Staff counts are not fully comparable (head counts against FTE; contracting differs). Without wage data for the peers, a part of the cost gap could still be wages and benefits.
+**Against.** The peers contract out more work, so their own staff counts and staff costs understate the labour they use; that work shows up in their higher non-staff costs. Staff counts are not fully comparable (head counts against FTE).
 
-**Verdict.** The most likely proximate explanation of the production-cost gap. It is a description, though, not a cause: the question is *why* NYC needs more maintenance staff, which points back to 11.2–11.4 and to work rules.
+**Verdict.** The most likely proximate explanation of the production-cost gap, and **pay matters at least as much as headcount**. At Tokyo-level pay NYC would cost about what Tokyo does per car-km. Benefits (health care, retiree health care and pensions) are the largest part of the pay gap. Some of this reflects US-wide labour costs rather than MTA-specific choices. The headcount side still raises the question of *why* NYC needs more maintenance staff, which points back to 11.2–11.4 and to work rules.
 
 ### 11.6 Administration and injury claims
 
@@ -405,13 +432,13 @@ What the data shows with reasonable confidence:
 
 1. NYC's cost per unit of service is higher than every foreign peer with data, by roughly 10% to 70% per car-km in 2019 and 35% to 75% in 2023, and by more per train-km. This holds with estimates left out.
 2. NYC's cost per rider is equal to London's and three to four times Tokyo's and Hong Kong's; most of the Asian gap is crowding.
-3. NYC uses more staff per unit of service, and among US systems its extra staff are in facility maintenance.
+3. NYC uses more staff per unit of service, and among US systems its extra staff are in facility maintenance. It also pays each employee about 1.6 to 1.7 times as much in wages and benefits as Tokyo and Hong Kong at PPP; at their pay levels most of the per-car-km gap disappears.
 4. NYC's trains fail far more often than Hong Kong's or Singapore's.
 
 What it does not show:
 
 - **Which factor causes the gap.** With about a dozen systems that differ at once in hours, crews, signals, age, density, wages and accounting, no statistical method can separate the factors. The verdicts in section 11 are judgments from patterns, not estimates of effects.
-- **Wages.** No wage or benefit data for foreign systems is in the dataset, so "too many people" and "people paid too much" cannot be fully separated.
+- **Pay relative to local norms.** The dataset now has pay per employee for Tokyo and Hong Kong (section 5.1), but not for London, and not relative to average pay in each country. So it cannot yet say how much of NYC's higher pay is an MTA choice and how much is the US labour market and health-care system.
 - **Long-run trend.** NYC data before 2012 is missing.
 
 The most convincing future test would be within-system: what happened to cost and reliability on NYC lines that moved to CBTC (the L, the 7) or to one-person operation, against lines that did not.
@@ -430,7 +457,7 @@ The most convincing future test would be within-system: what happened to cost an
 - **London:** car-km estimated from train-km; no cost split by function.
 - **Tokyo:** passenger-km after 2018 estimated from trip length.
 - **NYC:** no data before 2012; possible series breaks in 2012 and 2016–2017; the 2023 doubling of administration staff is unexplained.
-- **All systems:** wages, contracting models, crew models of US peers, car dimensions and seat-km are not yet in the dataset.
+- **All systems:** pay is in the dataset only for NYC, Tokyo and Hong Kong (2023). Contracting models, crew models of US peers, car dimensions and seat-km are not yet in the dataset.
 
 Verification status: an independent fact-check re-read about 3,900 values against their sources and found no wrong numbers; about 2% of hand-collected rows needed locator or wording fixes ([`docs/verification.md`](../docs/verification.md)). Estimated rows stay `unverified` by design, because their assumptions are not facts a source can confirm. Secondary-source rows (Wikipedia, blogs, news) also stay `unverified`.
 
@@ -440,7 +467,7 @@ Verification status: an independent fact-check re-read about 3,900 values agains
 2. Cost by function for at least one foreign peer (London's or Tokyo's maintenance split) to test the facility-maintenance finding outside the US.
 3. Seoul Metro's own 2020–2025 financial statements, and Paris and Berlin mode-level costs if they ever exist.
 4. Line-level NYC data before and after CBTC and one-person operation.
-5. Wage and benefit levels for the peers, relative to local wages.
+5. Pay for London and other peers, and every system's pay relative to average pay in its own country.
 
 ---
 

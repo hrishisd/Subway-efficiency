@@ -80,8 +80,21 @@ TOEI_SUBSIDY = {
 }
 
 
+CATS = ("track_maintenance", "electrical_maintenance", "vehicle_maintenance", "train_operation",
+        "station_and_traffic", "maintenance_management", "transport_management", "publicity",
+        "welfare_facilities", "general_administration")
+
+# Tokyo Metro 平均年間給与 (average annual salary incl. bonus and overtime; excludes employer
+# social insurance and retirement cost), parent company, all segments.
+# year -> (yen, parent employees it covers, source_id)
+TM_SALARY = {2023: (7620379, 9551, "tokyometro_yuho_fye2024")}
+
+
 def sum_checks(d):
     for (y, op), v in sorted(d.items()):
+        if "personnel_track_maintenance" in v:
+            for c in CATS:
+                assert v[f"personnel_{c}"] + v[f"other_expense_{c}"] == v[c], (y, op, c, "personnel split")
         s = sum(v[k] for k in ("track_maintenance", "electrical_maintenance", "vehicle_maintenance",
                                "train_operation", "station_and_traffic", "maintenance_management",
                                "transport_management"))
@@ -140,6 +153,18 @@ def main():
             method_id="mlit_opex_excl_depreciation",
             inputs=f"{ids['opex_incl_depreciation']};{ids['depreciation']}",
             notes="Railway operating expense excluding depreciation, to match the NTD definition. Includes taxes and leases."))
+        # personnel cost (人件費 column, sum of the ten cost categories), where transcribed
+        if "personnel_track_maintenance" in v:
+            out[sid].append(row(
+                obs_id=f"{sid}_{y}_opex_staff_costs_mlit", system_id=sid, year=y, year_basis=YB,
+                metric_id="opex_staff_costs", value=fmt(sum(v[f"personnel_{c}"] for c in CATS) * 1000),
+                unit="JPY", currency="JPY", price_basis="nominal", scope=SCOPE, value_type="derived",
+                source_id=src, method_id="sum_of_components",
+                source_locator=f"Table 地下鉄事業者, column {op}: sum of the 人件費 (personnel cost) column over the "
+                               "ten cost-category rows (線路保存費 to 一般管理費) (千円; multiplied by 1,000). "
+                               "Per-row values in data/raw/asia/mlit_yardstick_tokyo.csv",
+                notes="Railway-business personnel cost of the operator's own staff. Work contracted to other "
+                      "companies (including group subsidiaries) is in the 経費 (other expense) column instead."))
     # passenger-km estimate for years without a published value
     for sid in ("tokyo_metro", "tokyo_toei"):
         rows = out[sid]
@@ -188,6 +213,56 @@ def main():
             year=y, year_basis=YB, metric_id="employees_fte", value=str(val), value_low=lo, value_high=hi,
             unit="employees", scope=SCOPE, value_type=vt, source_id=src, source_locator=loc,
             method_id=meth, notes=note))
+    # staff cost per employee (own staff only)
+    def by_metric(sid, y):
+        return {r["metric_id"]: r for r in out[sid] if int(r["year"]) == y}
+    for sid, staff_metric in (("tokyo_metro", "employees_headcount_parent"), ("tokyo_toei", None)):
+        for y in sorted({int(r["year"]) for r in out[sid]}):
+            m = by_metric(sid, y)
+            if "opex_staff_costs" not in m:
+                continue
+            if sid == "tokyo_toei":
+                staff_rows = [r for r in out[sid] if int(r["year"]) == y and r["metric_id"] == "employees_fte"]
+                if not staff_rows:
+                    continue
+                staff_row = staff_rows[0]
+            else:
+                staff_row = m[staff_metric]
+            cost_row = m["opex_staff_costs"]
+            per = float(cost_row["value"]) / float(staff_row["value"])
+            per_oid = f"{sid}_{y}_staff_cost_per_employee_mlit"
+            out[sid].append(row(
+                obs_id=per_oid, system_id=sid, year=y, year_basis=YB, metric_id="staff_cost_per_employee",
+                value=fmt(per), unit="JPY/employee", currency="JPY", price_basis="nominal", scope=SCOPE,
+                value_type="derived", source_id=cost_row["source_id"],
+                source_locator="Computed from the input rows listed in inputs", method_id="staff_cost_per_employee",
+                inputs=f"{cost_row['obs_id']};{staff_row['obs_id']}",
+                notes="Personnel cost over own railway staff at fiscal year end."))
+            if sid == "tokyo_metro" and y in TM_SALARY:
+                sal, n_all, src = TM_SALARY[y]
+                sal_oid = f"{sid}_{y}_staff_wages_per_employee_yuho"
+                out[sid].append(row(
+                    obs_id=sal_oid, system_id=sid, year=y, year_basis=YB, metric_id="staff_wages_per_employee",
+                    value=str(sal), unit="JPY/employee", currency="JPY", price_basis="nominal", scope="whole_agency",
+                    value_type="reported", source_id=src,
+                    source_locator=f"第1【企業の概況】5【従業員の状況】(2) 提出会社の状況, 平均年間給与 (as of 31 March {y + 1})",
+                    notes=f"Average annual salary of all {n_all} parent-company employees, including bonus and "
+                          "overtime pay; excludes employer social insurance and retirement benefit cost."))
+                cost = float(cost_row["value"])
+                staff = float(staff_row["value"])
+                ben = per - sal
+                ben_lo = cost / n_all - sal          # all parent employees as denominator
+                ben_hi = ben + (ben - ben_lo)
+                out[sid].append(row(
+                    obs_id=f"{sid}_{y}_staff_benefits_per_employee_est", system_id=sid, year=y, year_basis=YB,
+                    metric_id="staff_benefits_per_employee", value=fmt(ben), value_low=fmt(ben_lo),
+                    value_high=fmt(ben_hi), unit="JPY/employee", currency="JPY", price_basis="nominal",
+                    scope=SCOPE, value_type="estimated", source_id=cost_row["source_id"],
+                    source_locator="Computed from the input rows listed in inputs",
+                    method_id="staff_cost_per_employee", inputs=f"{per_oid};{sal_oid}",
+                    notes="ESTIMATE. Personnel cost per railway employee minus the company-wide average salary. "
+                          "Assumes railway staff earn the company average; range uses all parent employees as the "
+                          "denominator (low) and the mirror image (high)."))
     for y, (val, src, tab) in TOEI_SUBSIDY.items():
         out["tokyo_toei"].append(row(
             obs_id=f"tokyo_toei_{y}_operating_subsidy_toei", system_id="tokyo_toei", year=y, year_basis=YB,
